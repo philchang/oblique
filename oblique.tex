@@ -527,15 +527,15 @@ where we have integrated by parts only the second term, associated with target p
 We discuss the solution to Equation (\ref{eq:dispersion kinetic}) in Appendix \ref{sec:solution kinetic}.  The associate growth rate for the kinetic beam plasma instability is  
 \begin{equation}
 \Gamma \simeq - \Gamma_0
-\frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{bz})}{4 \gamma_b T K_2(m/T)}
+\frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{B,z'})}{4 \gamma_b \mu K_2(\mu) \cG'^3}
 \left[
-\left( \cG'^2 + 2\cG' + 2 \right) 
+\left( \cG'^2\mu^2 + 2\cG'\mu + 2 \right) 
 +
-\frac{\gamma_b^2 v_{bx}^2}{2\cG^2} \frac{m^2}{T^2} \left(2 \cG' + 2\right)
+\frac{\gamma_B^2 v_{B,x'}^2}{2\cG^2c^2} \left(2 \cG'\mu+ 2\right)
 \right]
-\frac{e^{-\cG'}}{\cG'^3}\,.
-\label{eq:OGgen}
+\exp(-\cG'\mu),
 \end{equation}
+where $\Gamma_0 \equiv \omega_p \gamma_B (n_b/n_t) (m_e v_B^2/k_B T)$ is the typical maximum growth rate.
 
 In Figure \ref{fig:ObliqueGMZ}, we plot the maximum growth rate (maximized over $\vph$) as function of $v_{bx} = |k_{bx} v_b/k|$ and $T$.  From the figure, it is clear that the growth rate is maximized for $v_{bx}/v_b \gg 1/\gamma_b$.  Moreover the maximum growth rates vary little and are robust for broad range of $v_{bx}/v_b = k_{bx}/k$, i.e., large range in angles between beam and wavevector.  Hence, this suggests that we might estimate the maximal oblique growth rates by taking the limit as $v_{bx}\gg v_b/\gamma_b$ and maximizing over $\vph$.  This is further seen in Figure \ref{fig:OGgen}, we maximize over both $v_{bx}$ and $\vph$.  Here for relativistic beams, the maximum growth rate varies little with $T$, varying by less than $10\%$ between hot and cold beams.  Thus, we find: 
 \begin{equation}
@@ -543,8 +543,8 @@ In Figure \ref{fig:ObliqueGMZ}, we plot the maximum growth rate (maximized over 
 \simeq
 \left\{
 \begin{aligned}
-& 0.38 \Gamma_0 & T\ll m\\
-& 0.34 \Gamma_0 & T\gg m
+& 0.38 \Gamma_0 & k_BT/m_ec^2\ll 1\\
+& 0.34 \Gamma_0 & k_BT/m_ec^2\gg 1
 \end{aligned}
 \right.\,,
 \end{equation}
@@ -889,9 +889,13 @@ F_B &=& \frac{m_e c^2}{4\pi\gamma_B k_B T K_2(m_ec^2/k_B T )m_e^3c^3} \exp\left(
 %F_b &=& \frac{1}{4\pi\gamma_B m^2 T K_2(m/T)} \exp\left(-\frac {\gammabeam(E - \betabeamz p_{z'} - \betabeamx p_{x'}}{T}\right),\label{eq:dist1}\\
 &=& \frac{\mu m_e^{-3}c^{-3}}{4\pi\gamma_B K_2(\mu)}  \exp\left(-\frac {\gamma_B\gz(c^2 - v_{B,z'}v_{z'})\epsilon_\perp)} {k_BT c^2}\right)\exp\left(\frac{\gamma_Bv_{B,x'} p_{x'}}{k_BT}\right),\label{eq:dist2}
 \end{eqnarray}
-Plugging the equation into (??), we find that the this involves the integral of 
+Plugging the equation into (??), we find that the this gives an associated growth rate of
 \begin{equation}
-\int \frac{k\partial F_b/\partial p_{z'}}{\omega - k_{z'}v_{bz'}}d^3p = i 2\pi R,
+\Gamma \simeq -\omega_p\frac{\pi n_b}{2 n_t}   m_e v_B^2 R,
+\end{equation}
+which involves the integral of 
+\begin{equation}
+R\equiv \int \frac{k\partial F_b/\partial p_{z'}}{\omega - k_{z'}v_{bz'}}d^3p,
 \end{equation}
 where $R$ is the residue for $p_{z'}$ such that $v_{z'} = v_{\rm ph}$.  
    Here we find for the two elements that contribute to the pole:
@@ -1007,44 +1011,38 @@ and
 \end{equation}
 we find
 \begin{equation}
-\kI
-=
-\frac{2 \pi \gamma_w^2 (k_B T)^3}{\cG'^3} \left[
-\left(\qc{\cG'}^2+2\qc{\cG'}+2\right)
+\kI =
+\frac{2 \pi \gamma_w^2 m_e^3c^4}{\cG'^3\mu^3} \left[
+\left(\cG'^2\mu^2+2\cG'\mu+2\right)
 +
-\frac{w^2}{2}
-\left(2\qc{\cG'}+2\right)
-\right]\,\exp\left(-\frac{\cG'}{k_B T}\right).
+\frac{w^2}{2c^2}
+\left(2\cG'\mu+2\right)
+\right]\exp\left(-\cG'\mu\right).
 \end{equation}
 Inserting this into (\ref{eq:Rogen}) yields
 \begin{equation}
-R
-=
-\frac{
-  \gph^3 m^2 (\vph-v_{bz}) 
-}{
-  2 T^2 K_2(m/T)
-}
-\gamma_w^2
+R = \frac{
+  \gph^3 \gamma_w^2 (\vph-v_{B,z'}) 
+}{ 2 \mu m_ec^2 \cG'^3 K_2(\mu)}
 \left[
-\left(\cG'^2 + 2\cG' + 2\right)
+\left(\cG'^2\mu^2 + 2\cG'\mu + 2\right)
 +
-\frac{\gamma_b^2 v_{bx}^2}{2\cG^2} \frac{m^2}{T^2} \left(2 \cG' + 2\right)
-\right] \frac{e^{-\cG'}}{\cG'^3}
+\frac{\gamma_B^2 v_{B,x'}^2}{2\cG^2 c^2} \left(2 \cG'\mu + 2\right)
+\right] \exp\left(-\cG'\mu\right)
 \end{equation}
 and therefore,
 \begin{equation}
 \Gamma \simeq - \Gamma_0
-\frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{bz})}{4 \gamma_b T K_2(m/T)}
+\frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{B,z'})}{4 \gamma_b \mu K_2(\mu) \cG'^3}
 \left[
-\left( \cG'^2 + 2\cG' + 2 \right) 
+\left( \cG'^2\mu^2 + 2\cG'\mu + 2 \right) 
 +
-\frac{\gamma_b^2 v_{bx}^2}{2\cG^2} \frac{m^2}{T^2} \left(2 \cG' + 2\right)
+\frac{\gamma_B^2 v_{B,x'}^2}{2\cG^2c^2} \left(2 \cG'\mu+ 2\right)
 \right]
-\frac{e^{-\cG'}}{\cG'^3}\,.
+\exp(-\cG'\mu),
 \label{eq:OGgen}
 \end{equation}
-
+where $\Gamma_0 \equiv \omega_p \gamma_B (n_b/n_t) (m_e v_B^2/k_B T)$ is the typical maximum growth rate.
 %The above differs from the beam plasma instability only due to the
 %minor difference in the definition of $\cG'$ and the second term.  When
 %$v_{bx}=0$, it is precisely the beam plasma instability growth rate.
@@ -1112,44 +1110,45 @@ and therefore,
 %where $\Gamma_0\equiv \omega_{Pt} (n_b/n_t) \gamma_b m v_{bz}^2/T$, i.e.,
 %again $v_{bz}$.
 
-However, obtaining asymptotic expansions for the growth rate in the high and
-low temperature limits that can be easily solved for the maximum
-growth rate is difficult.  Even with the tremendous numerical insight
-provided by Figure \ref{fig:ObliqueGMZ}, it is unclear how to make
-significant progress.  However, some general remarks can be made.  It
-appears at the maximum growth rate, we have to leading order:
-\begin{equation}
-\begin{gathered}
-\vph\simeq\sqrt{2\delta Z_x}\,,\quad
-v_{bx}=(1-\delta Z_x) v_b\,,\quad
-v_{bz}\simeq\sqrt{2\delta Z_x}\,v_b\,,\quad\\
-v_{bz}-\vph\simeq\left\{
-\begin{aligned}
-&\frac{\sqrt{T/m}}{\gamma_b} & T\ll m\\
-&\frac{1}{2\gamma_b} & T\gg m
-\end{aligned}
-\right.\,,\quad
-\gph\simeq1+\delta Z_x\,,\quad
-\cG' \sim \frac{m}{T}\,,\\
-\text{and}\quad w \sim 1\,,
-\end{gathered}
-\end{equation}
-\qc{[can you add more details which equations you approximate under which conditions? e.g., I get $1/2\gamma_b^2$ for the hot beam case \ldots]}\\
-where $\delta Z_x\equiv 1 - v_{bx}/v_b$.  Inserting these into Equation
-(\ref{eq:OGgen}) suffices to show that there exists growth rates that
-are $\propto \Gamma_0$, with 
-\begin{equation}
-\Gamma_M
-\simeq
-\left\{
-\begin{aligned}
-& 0.38 \Gamma_0 & T\ll m\\
-& 0.34 \Gamma_0 & T\gg m
-\end{aligned}
-\right.\,,
-\end{equation}
-for $\gamma_b\gtrsim10$, as seen in Figure (\ref{fig:ObliqueGMZ}).  
+%However, obtaining asymptotic expansions for the growth rate in the high and
+%low temperature limits that can be easily solved for the maximum
+%growth rate is difficult.  Even with the tremendous numerical insight
+%provided by Figure \ref{fig:ObliqueGMZ}, it is unclear how to make
+%significant progress.  However, some general remarks can be made.  It
+%appears at the maximum growth rate, we have to leading order:
+%\begin{equation}
+%\begin{gathered}
+%\vph\simeq\sqrt{2\delta Z_x}\,,\quad
+%v_{bx}=(1-\delta Z_x) v_b\,,\quad
+%v_{bz}\simeq\sqrt{2\delta Z_x}\,v_b\,,\quad\\
+%v_{bz}-\vph\simeq\left\{
+%\begin{aligned}
+%&\frac{\sqrt{T/m}}{\gamma_b} & T\ll m\\
+%&\frac{1}{2\gamma_b} & T\gg m
+%\end{aligned}
+%\right.\,,\quad
+%\gph\simeq1+\delta Z_x\,,\quad
+%\cG' \sim \frac{m}{T}\,,\\
+%\text{and}\quad w \sim 1\,,
+%\end{gathered}
+%\end{equation}
+%\qc{[can you add more details which equations you approximate under which conditions? e.g., I get $1/2\gamma_b^2$ for the hot beam case \ldots]}\\
+%where $\delta Z_x\equiv 1 - v_{bx}/v_b$.  Inserting these into Equation
+%(\ref{eq:OGgen}) suffices to show that there exists growth rates that
+%are $\propto \Gamma_0$, with 
 
+%\begin{equation}
+%\Gamma_M
+%\simeq
+%\left\{
+%\begin{aligned}
+%& 0.38 \Gamma_0 & T\ll m\\
+%& 0.34 \Gamma_0 & T\gg m
+%\end{aligned}
+%\right.\,,
+%\end{equation}
+%for $\gamma_b\gtrsim10$, as seen in Figure (\ref{fig:ObliqueGMZ}).  
+%
 
 % We now proceed to the third term.  Without loss of generality, we orient our axes such that the beam is along the z-axis and the wavevector k sits in the x-z plane, i.e., $\kvec = k_x \xhat + k_z \zhat$. The beam distribution function (\ref{eq:distribution function beam}) now becomes
 % \begin{equation}
