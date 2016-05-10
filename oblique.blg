@@ -8,45 +8,45 @@ Warning--can't use both author and editor fields in Boyd
 Warning--empty publisher in Boyd
 Warning--can't use both author and editor fields in Melrose86
 Warning--empty publisher in Melrose86
-You've used 46 entries,
+You've used 48 entries,
             2988 wiz_defined-function locations,
-            953 strings with 14364 characters,
-and the built_in function-call counts, 21754 in all, are:
-= -- 1760
-> -- 1624
-< -- 19
-+ -- 544
-- -- 497
-* -- 1894
-:= -- 4117
-add.period$ -- 46
-call.type$ -- 46
-change.case$ -- 316
-chr.to.int$ -- 45
-cite$ -- 50
-duplicate$ -- 860
-empty$ -- 1257
-format.name$ -- 654
-if$ -- 4250
+            968 strings with 14666 characters,
+and the built_in function-call counts, 22509 in all, are:
+= -- 1829
+> -- 1658
+< -- 21
++ -- 555
+- -- 506
+* -- 1947
+:= -- 4258
+add.period$ -- 48
+call.type$ -- 48
+change.case$ -- 327
+chr.to.int$ -- 47
+cite$ -- 52
+duplicate$ -- 896
+empty$ -- 1311
+format.name$ -- 669
+if$ -- 4404
 int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 46
-newline$ -- 142
-num.names$ -- 186
-pop$ -- 339
+missing$ -- 48
+newline$ -- 148
+num.names$ -- 194
+pop$ -- 350
 preamble$ -- 1
-purify$ -- 316
+purify$ -- 327
 quote$ -- 0
-skip$ -- 727
+skip$ -- 759
 stack$ -- 0
-substring$ -- 957
+substring$ -- 999
 swap$ -- 4
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 408
+type$ -- 426
 warning$ -- 4
-while$ -- 181
+while$ -- 189
 width$ -- 0
-write$ -- 461
+write$ -- 481
 (There were 4 warnings)
