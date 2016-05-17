@@ -188,7 +188,7 @@
 
 \begin{document}
 
-\title{Clarifications of the Linear Instability of Dilute Ultrarelativistic \epm\ Pair Beams} 
+\title{The Linear Instability of Dilute Ultrarelativistic \epm\ Pair Beams} 
 
 %\author{Some people}
 \author{
@@ -345,18 +345,20 @@ In the COM frame of the beam, we assume that the distribution function is isotro
 \begin{equation}\label{eq:relativistic maxwellian}
 f\propto \exp\left(-\frac E T\right),
 \end{equation}
- where $E$ and $T$ are the dimensionless energy and temperature in terms of a particles rest mass.  In the non-relativistic case, this reduces to the Maxwell-Boltzmann distribution, while the relativistic version is known as the Maxwell-Juttner distribution ({\bf REFS}). 
+ where $E$ and $T$ are the dimensionless energy and temperature in terms of a particles rest mass.  In the non-relativistic case, this reduces to the Maxwell-Boltzmann distribution, while the relativistic version is known as the Maxwell-Juttner distribution \citep{1911AnP...340..145J}. 
 
-The relativistic Maxwellian distribution can be extended to a drifting (or boosted) distribution via an appropriate Lorentz transformation.  The relationship between the energies of the lab (boosted) frame and the COM frame is (Jackson) 
+The relativistic Maxwellian distribution can be extended to a drifting (or boosted) distribution via an appropriate Lorentz transformation.  The relationship between the energies of the lab (boosted) frame and the COM frame is
 \begin{equation}
   E_{\rm CM} = \gamma_B\left(E_{\rm L} - \betaBOOST p_{\rm L,\parallel}\right).
 \end{equation}
-Plugging this into (\ref{eq:relativistic maxwellian}), we find (Wright \& Hadley 1975)
+Plugging this into (\ref{eq:relativistic maxwellian}), we find the Maxwell-Juttner distribution \citep{1911AnP...340..145J,1975PhRvA..12..686W}
 \begin{eqnarray}\label{eq:distribution function beam} %{eq:drifting maxwellian}
 %f = \frac{1}{4\pi\gamma_B m^2 T_{\rm L} K_2(m/T_{\rm L})} \exp\left(-\frac {E_{\rm L} - \betaBOOST p_{\rm L,\parallel}} {T_{\rm L}}\right), \\
 f = \frac{n_b m_e c^2}{4\pi\gamma_B k_B T K_2(m_ec^2/k_B T )m_e^3c^3} \exp\left(-\frac {\gamma_B(E - \vel_B\cdot \bmath{p})} {k_B T}\right)
 \end{eqnarray}
-where $K_2$ is the 2nd order modified Bessel function. The transformation properties of the drifting Maxwell-Juttner distribution coupled with the Lorentz invariance of the distribution function (as discussed in Appendix~\ref{sec:lorentz}) demonstrates that the drifting Maxwell-Juttner distribution is the correct description of a boosted isotropic Maxwellian (relativistic or otherwise).
+where $K_2$ is the 2nd order modified Bessel function. 
+
+%The transformation properties of the drifting Maxwell-Juttner distribution coupled with the Lorentz invariance of the distribution function (as discussed in Appendix~\ref{sec:lorentz}) demonstrates that the drifting Maxwell-Juttner distribution is the correct description of a boosted isotropic Maxwellian (relativistic or otherwise).
 
 %In Appendix~\ref{sec:lorentz}, we explicitly derive the scaling of the
 %  parallel and perpendicular velocity dispersions with the Lorentz factor upon
@@ -542,7 +544,7 @@ We discuss the solution to Equation (\ref{eq:dispersion kinetic}) in Appendix \r
 \end{equation}
 where $\Gamma_0 \equiv \omega_p \gamma_B (n_b/n_t) (m_e v_B^2/k_B T)$ is the typical maximum growth rate.
 
-In Figure \ref{fig:ObliqueGMZ}, we plot the maximum growth rate (maximized over $\vph$) as function of $v_{bx} = |k_{bx} v_b/k|$ and $T$.  From the figure, it is clear that the growth rate is maximized for $v_{bx}/v_b \gg 1/\gamma_b$.  Moreover the maximum growth rates vary little and are robust for broad range of $v_{bx}/v_b = k_{bx}/k$, i.e., large range in angles between beam and wavevector.  Hence, this suggests that we might estimate the maximal oblique growth rates by taking the limit as $v_{bx}\gg v_b/\gamma_b$ and maximizing over $\vph$.  This is further seen in Figure \ref{fig:OGgen}, we maximize over both $v_{bx}$ and $\vph$.  Here for relativistic beams, the maximum growth rate varies little with $T$, varying by less than $10\%$ between hot and cold beams.  Thus, we find: 
+In Figure \ref{fig:ObliqueGMZ}, we plot the growth rate as a function of $k_{z}/k_{x}$ and $k_BT/m_e c^2$.  Here, it is clear that the growth rate reaches it maximum value $k_{z}/k_{x} \gg 1/\gamma_b$, i.e., at an oblique, but not perpendicular angle.  Moreover the maximum growth rates vary little and are robust for broad range of angles, $\theta$, between the wavevector and the beam direction, i.e., $\cot\theta = k_{z}/k_x$.  Because the maximal oblique growth rate varies little for a wide range of angles and relativistic temperatures for $k_B T/m_ec^2 > 1$, we maximize over $k_x$ and $k_z$ in Figure \ref{fig:OGgen} and plot the maximal growth rate as a function of $T$ and $\gamma_B - 1$.  Here for relativistic beams, the maximum growth rate varies little with $T$, varying by less than $10\%$ between hot and cold beams.  Thus, we find: 
 \begin{equation}
 \Gamma_M
 \simeq
@@ -896,7 +898,7 @@ where the second term is zero because it is odd\cc{, $\lambda_D^2 = k_B T/m_e \o
 \end{equation}
 
 To compute the contribution from the beam term, we will reorient our coordinate system and define the $z'$-axis along the wavevector, $\kvec$.  In this case we have the beam taking on a non-$z'$ component,  $\vel_b = v_{bz'}\zphat+v_{bx}\xphat$.   
-This frame moves with a velocity, $\vel_{\rm ph} = \omega_k/k \zphat$.  With an eye toward computing the residue in (??), we define $p_{z'}=\gz\vz E_\perp$, $E=\gz E_\perp$, and
+This frame moves with a velocity, $\vel_{\rm ph} = \omega_k/k \zphat$.  With an eye toward computing the residue that will appear in equation (\ref{eq:dispersion kinetic}), we define $p_{z'}=\gz\vz E_\perp$, $E=\gz E_\perp$, and
 $E_\perp=\sqrt{m^2+p_\perp^2}$ is the perpendicular energy.  In this case, we can rewrite the beam distribution function as
 \begin{eqnarray}
 F_B &=& \frac{m_e c^2}{4\pi\gamma_B k_B T K_2(m_ec^2/k_B T )m_e^3c^3} \exp\left(-\frac {\gamma_B(E - v_{B,z'} p_{z'} - v_{B,x'} p_{x'})} {k_B T}\right)\\
@@ -906,7 +908,7 @@ F_B &=& \frac{m_e c^2}{4\pi\gamma_B k_B T K_2(m_ec^2/k_B T )m_e^3c^3} \exp\left(
 where we define $\mu = m_ec^2/k_BT$.
 Plugging the equation into (\ref{eq:dispersion kinetic}) and using the results of equation (\ref{eq:dispersion-real-part}), we find 
 \begin{equation}
- 1 - \frac{\omega_{p,t}^2}{\omega^2}\left(1 + 3 {k^2\lambda_D^2}\right) - i\frac{\pi n_b}{n_t}   m_e v_B^2 R, 
+ 1 - \frac{\omega_{p,t}^2}{\omega^2}\left(1 + 3 {k^2\lambda_D^2}\right) + i\frac{\pi n_b}{n_t}   m_e v_B^2 R = 0, 
 \end{equation}
 which involves the integral of 
 \begin{equation}
@@ -914,12 +916,12 @@ R\equiv \int \frac{k\partial F_b/\partial p_{z'}}{\omega - k_{z'}v_{bz'}}d^3p,
 \end{equation}
 where $R$ is the residue for $p_{z'}$ such that $v_{z'} = v_{\rm ph}$.  
 
-we find that the this gives an associated growth rate of
+We can assume that $k\lambda_D \ll 1$ as the thermal velocity of the background plasma is much smaller than the speed of the ultrarelativistic beam.  We then take $\omega = \omega_r + i\Gamma$, where $\omega_r = \Re(\omega)$ is the real part of $\omega$ and the growth rate $\Gamma \ll \omega_r$, to find:
 \begin{equation}
-\Gamma \simeq -\omega_p\frac{\pi n_b}{2 n_t}   m_e v_B^2 R,
+\Gamma \simeq -\omega_p\frac{\pi n_b}{2 n_t}   m_e v_B^2 R.
 \end{equation}
 
-Here we find for the two elements that contribute to the pole:
+Here two elements contribute to the pole:
 \begin{equation}
 \left.
 \frac{\partial}{\partial p_{z'}} \left(\omega-k v_{bz'}\right)

@@ -188,7 +188,7 @@
 
 \begin{document}
 
-\title{Clarifications of the Linear Instability of Dilute Ultrarelativistic \epm\ Pair Beams} 
+\title{The Linear Instability of Dilute Ultrarelativistic \epm\ Pair Beams} 
 
 %\author{Some people}
 \author{
@@ -540,11 +540,27 @@ We discuss the solution to Equation (\ref{eq:dispersion kinetic}) in Appendix \r
 +
 \frac{\gamma_B^2 v_{B,x'}^2}{2\cG^2c^2} \left(2 \cG'\mu+ 2\right)
 \right]
-\exp(-\cG'\mu),
+\exp(-\cG'\mu),\label{eq:kinetic growth rate}
 \end{equation}
-where $\Gamma_0 \equiv \omega_p \gamma_B (n_b/n_t) (m_e v_B^2/k_B T)$ is the typical maximum growth rate.
+where $\Gamma_0 \equiv \omega_p \gamma_B (n_b/n_t) (m_e v_B^2/k_B T)$ is the typical maximum growth rate.  This specializes to the beam-plasma growth rate if we take $v_{B,x'} = 0$, which gives:
+\begin{equation}
+\Gamma_{\rm bp} \simeq - \Gamma_0
+\frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{B,z'})}{4 \gamma_b \mu K_2(\mu) \cG'^3}
+\left( \cG'^2\mu^2 + 2\cG'\mu + 2 \right) 
+\exp(-\cG'\mu),\label{eq:bp kinetic growth rate}
+\end{equation}
 
-In Figure \ref{fig:ObliqueGMZ}, we plot the maximum growth rate (maximized over $\vph$) as function of $v_{bx} = |k_{bx} v_b/k|$ and $T$.  From the figure, it is clear that the growth rate is maximized for $v_{bx}/v_b \gg 1/\gamma_b$.  Moreover the maximum growth rates vary little and are robust for broad range of $v_{bx}/v_b = k_{bx}/k$, i.e., large range in angles between beam and wavevector.  Hence, this suggests that we might estimate the maximal oblique growth rates by taking the limit as $v_{bx}\gg v_b/\gamma_b$ and maximizing over $\vph$.  This is further seen in Figure \ref{fig:OGgen}, we maximize over both $v_{bx}$ and $\vph$.  Here for relativistic beams, the maximum growth rate varies little with $T$, varying by less than $10\%$ between hot and cold beams.  Thus, we find: 
+
+\begin{figure*}
+\includegraphics[width=0.9\textwidth]{growthrates.png}
+\caption{Oblique growth rate maximized over $\vph$ as a function of
+  $v_{bx}$ and $T$ for various $\gamma_b$.  In each the green line
+  shows the chord along which $v_{bx}/v_b = 1/\gamma_b$.  In all
+  cases, the maximum growth rate occurs when
+  $v_{bx}/v_b\gg1/\gamma_b$.}\label{fig:ObliqueGMZ}
+\end{figure*}
+
+In Figure \ref{fig:ObliqueGMZ}, we plot the growth rate as a function of $\cos\theta = \hat{k}\cdot\vel$, i.e., the angle between the beam and the wave vector, and $k_BT/m_e c^2$.  Here, it is clear that the growth rate reaches it maximum value $\cos\theta \gg 1/\gamma_b$, i.e., at an oblique, but not perpendicular angle.  Moreover the maximum growth rates vary little and are robust for broad range of angles between the wavevector and the beam direction.  Because the maximal oblique growth rate varies little for a wide range of angles and relativistic temperatures for $k_B T/m_ec^2 > 1$, we maximize over $\theta$ in Figure \ref{fig:OGgen} and plot the maximal growth rate as a function of $T$ and $\gamma_B - 1$.  Here for relativistic beams, the maximum growth rate varies little with $T$, varying by less than $10\%$ between hot and cold beams.  Thus, we find: 
 \begin{equation}
 \Gamma_M
 \simeq
@@ -557,16 +573,6 @@ In Figure \ref{fig:ObliqueGMZ}, we plot the maximum growth rate (maximized over 
 \end{equation}
 for $\gamma_b\gtrsim10$, as seen in Figure \ref{fig:OGgen}.  
 
-\begin{figure*}
-\includegraphics[width=0.9\textwidth]{growthrates.png}
-\caption{Oblique growth rate maximized over $\vph$ as a function of
-  $v_{bx}$ and $T$ for various $\gamma_b$.  In each the green line
-  shows the chord along which $v_{bx}/v_b = 1/\gamma_b$.  In all
-  cases, the maximum growth rate occurs when
-  $v_{bx}/v_b\gg1/\gamma_b$.}\label{fig:ObliqueGMZ}
-\end{figure*}
-
-
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{oblique_GammaM.eps}
 \caption{Oblique kinetic growth rate, maximized over $v_{bx}/v_b$ and
@@ -578,6 +584,7 @@ for $\gamma_b\gtrsim10$, as seen in Figure \ref{fig:OGgen}.
   constituting a roughly $10\%$ reduction.} \label{fig:OGgen}
 \end{figure}
 
+This can be contrasted with Figure \ref{fig:bpgen} where we plot the maximized beam-plasma growth rate  (\ref{eq:bp kinetic growth rate}) as a function of $\gamma_b - 1$ and $k_B T/m_ec^2$.   Here, we see that the maximum growth rate is somewhat sensitive to temperature, varying from $\Gamma/\Gamma_0 \approx 0.4$ for $k_BT/m_ec^2 \ll 1$ to $\Gamma/\Gamma_0 \approx 0.1$ for $k_BT/m_ec^2 \gtrsim 1$.  Note, however, that that beam-plasma growth rate remains competitive with the oblique growth rate, i.e., it is not orders of magnitude lower.  
 
 
 
