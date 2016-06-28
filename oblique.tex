@@ -220,6 +220,25 @@ Here we study the initial conditions of these \epm\ beams and the linear phase o
 
 \section{Introduction}\label{sec:introduction}
 
+
+
+
+This excess heating of the IGM may resolve a variety
+of cosmological puzzles, including naturally explaining
+  anomalies in the statistics of the high-redshift Ly$\alpha$ forest
+\citep{paperIV} and potentially explaining a number of the X-ray
+  properties of groups and clusters and anomalies in galaxy formation on
+  the scale of dwarfs \citep{paperIII,Lu+2013}.  We
+  have recently shown that \textit{if} the IC halos are ignored, it is possible
+  to quantitatively reproduce the redshift and flux distributions
+  of nearby hard gamma-ray blazars and the extragalactic gamma-ray background
+  spectrum above 3~GeV simultaneously with a unified model of AGN evolution
+  \citep{Broderick+2013,Broderick+2013b}.  All of these empirical successes provide
+  circumstantial evidence for the presence of virulent plasma beam
+  instabilities. 
+
+
+
 The \Fermi satellite and ground based imaging atmospheric Cerenkov telescopes such as
 % Phil: I added "imaging atmospheric" to distinguish this class of
 % telescopes from imaging water CTs, e.g., MILAGRO; I am not aware of
@@ -231,24 +250,17 @@ H.E.S.S., MAGIC, and VERITAS\footnote{High Energy
 energy Universe is teeming with energetic very high-energy gamma-ray 
 (VHEGR, $E > 100\,\GeV$) sources, the extragalactic component of which mainly consists of TeV
 blazars with a minority population of other sources  such as radio galaxies
-and starburst galaxies.  These VHEGR observations have proven to be useful in constraining mechanisms 
-of particle acceleration
-\citep[see, e.g., ][]{Pagl_etal:96,Domi-Torr:05,Thom-Quat-Waxm:07,Pers-Reph-Arie:08,deCe-Torr-Rodr:09,Reph-Arie-Pers:10,Lack_etal:10} and
-black hole jets
-\citep[see, e.g., ][]{Jones+1974,Ghisellini+1989,Ghisellini+2008,Tavecchio+2008,Ghisellini+2009}.
-% Phil: I cut this part because it is written as a fact (while it is not) and the same long author list is repeated in the next paragraph (the \qc command did not work with the \citep command):
-% and intergalactic magnetic fields (IGMF)
-% \citep[IGMF; ][]{Nero-Vovk:10,Tave_etal:10a,Tave_etal:10b,Derm_etal:10,Tayl-Vovk-Nero:11,Dola_etal:11,Taka_etal:11,Vovk+12}.
+and starburst galaxies. These extragalactic VHEGR emitters produce TeV photons that are greatly attenuated via annihilation upon soft photons in the extragalactic background light
+(EBL) and produce pairs \citep[see, e.g.,][]{Goul-Schr:67,Sala-Stec:98,Nero-Semi:09}.
 
-It has recently been argued by a number authors
-that the {\it non-observation} of $\sim 1-100\,\GeV$ flux by the \Fermi satellite toward these TeV blazars provides lower bounds on the strength of the  intergalactic magnetic field (IGMF) of $B\gtrsim 10^{-19}-10^{-15}\,\G$ \citep{Nero-Vovk:10,Tave_etal:10a,Tave_etal:10b,Derm_etal:10,Tayl-Vovk-Nero:11,Dola_etal:11,Taka_etal:11,Vovk+12}.
-To understand how these claimed limits arise, we begin by revisiting the physics of VHEGR propagation in the universe.
-
-As these VHEGR photon propagate through the universe, they pair produce off the extragalactic background light (EBL) and produce ultrarelativistic electron-positron beams  with typical Lorentz factors of $10^5$--$10^7$.  
-Within the current epoch, the mean free path for these photons is $\Dpp\sim 800 \,E_{\TeV}^{-1}\,\Mpc$, where $E_{\TeV} = E/1\,\TeV$ is the energy of the photon in \TeV.  At high redshifts, $z\geq 1$, this drops to $D_{\rmn{pp}}\sim 35\, E_{\TeV}^{-1}\,\Mpc$ due to the larger number density of EBL photons.  Because these typical mean free paths are much shorter than the Hubble length, the universe is optically thick to VHEGRs. This effect is seen in the relative nearness of TeV blazars ($z\sim 0.1$) and the observed softening of their VHE spectra with increasing distance.  
-
-Previously, it has been  assumed that the resultant electron-positron pairs lose energy through inverse-Compton scattering the cosmic microwave background (CMB) and EBL. This yields an inverse-Compton cascade (ICC) that reprocesses TeV emission to gamma-rays with energies $\lesssim 100 \GeV$, for which the mean free path is comparable to the size of the universe.    
-Hence, associated with every VHEGR source should be a $\sim 100\,\GeV$ source.  It is the {\it non-observation} of this $100\,\GeV$ flux, presumably due to the magnetic deflection of the pairs, that is used to constraint the strength of a putative IGMF.
+It has been assumed that these ultrarelativistic pairs produced by VHEGR annihilation 
+lose energy exclusively through inverse-Compton (IC) scattering off of the cosmic microwave
+background (CMB),   transferring the energy of the original VHEGR to gamma-rays with
+energies $\lesssim100\,\GeV$.  The absence of observed secondary IC emission leads a number of
+authors to argue that this \textit{lack} places lower bounds upon the
+intergalactic magnetic field
+\citep[IGMF; see, e.g.,][]{Nero-Vovk:10,Tave_etal:10a,Tave_etal:10b,Derm_etal:10,Tayl-Vovk-Nero:11,Taka_etal:11,Dola_etal:11} with 
+typical numbers ranging from $10^{-19}\,\G$ to $10^{-15}\,\G$.  
 
 In addition, \Fermi has also provided the most precise estimate of the unresolved
 extragalactic gamma-ray background (EGRB) for energies between
@@ -262,54 +274,34 @@ remained essentially fixed, at odds with both the physical picture
 underlying these systems and with the observed evolution of similarly
 accreting systems, i.e., quasars.
 
-Ultimately, these conclusions rest upon the assumption that ICCs dominate the evolution of the ultra-relativistic pairs.  
-However, we have strongly challenged this assumption in a recent series of papers, \citet[][hereafter paper I, II, and III respectively]{BCP,CBP, PCB}.  In particular, we find that ultrarelativistic pair beam that results from TeV photon annihilation on the EBL is subject to virulent plasma beam instabilities that sap the energy of the pair beam and convert it to heat in the intergalactic medium (IGM) before ICCs have a chance to act.
+These two important conclusions depends on IC cooling dominating the evolution of the ultra-relativistic pairs.  However, it was recently found that plasma instabilities driven by the
+ultrarelativistic pair beams  likely is the dominant cooling mechanism
+\citep{paperI,Schlickeiser+12,Schlickeiser+13}, depositing this energy
+as heat in the intergalactic medium \citep{paperII,paperIII}.  Therefore, the lack of an observed
+ IC halo emission from TeV blazars does not imply the existence of the IGMF as previous groups have argued
+\citep{paperI,Schlickeiser+12,Schlickeiser+13}.
 
-In Paper I, we showed that despite the extraordinarily dilute nature of this ultra-relativistic pair plasma, a variety of plasma instabilities grow on timescales short in comparison to the inverse-Compton cooling time. Of the three instabilities that we studied --- the beam-plasma or two-stream instability\footnote{In order to follow the plasma literature more closely, henceforth we will refer to what we have called the ``two-stream'' instability as the ``beam-plasma'' instability}, the Weibel instability, and the ``oblique'' instability  ---  the most
-important of which is the ``oblique'' instability \citep{Bret-Firp-Deut:04}
-Because the pairs lose their energy primarily via depositing it as heat into the IGM, the ICCs critical to the above arguments commonly employed to provide constraints upon the IGMF and high-redshift blazar population are necessarily precluded.  In the latter case in particular, the \Fermi limits on the EGRB and high-energy blazar statistics allow a large and evolving blazar population more similar to that found for other AGN.
+% Phil: I cut this part because it is written as a fact (while it is not) and the same long author list is repeated in the next paragraph (the \qc command did not work with the \citep command):
+% and intergalactic magnetic fields (IGMF)
+% \citep[IGMF; ][]{Nero-Vovk:10,Tave_etal:10a,Tave_etal:10b,Derm_etal:10,Tayl-Vovk-Nero:11,Dola_etal:11,Taka_etal:11,Vovk+12}.
 
-Assuming that these plasma-instability mechanisms drive ultra-relativistic pairs to deposit their energy as heat in
-the IGM, we explored the impact of this heating on the
-thermodynamics of the IGM in Paper II and the effect on this additional heating on structure formation in the universe in Paper III.  
-By correcting for the selection effects of the current pencil beam VHEGR observations using
-the all-sky monitoring of the \Fermi satellite, we argued that 
-luminosity density in VHEGRs is of order $0.2\%$ of the quasar
-luminosity density in Paper II.  Because of the greater conversion efficiency of TeV photon energy to heat (as compared to photoheating), we showed that this heating dominates the
-photoheating rate at low $z$. This steady volumetric homogeneous heating naturally produces an inverted temperature-density relation and, with only a minor rescaling of the empirically determined TeV blazar
-heating normalization, reproduces the inferred
-inverted temperature-density relation at $z=2-3$ \citep{Bolton+09,Viel+09}, a feature that standard reionization models have proven unable to reproduce \citep{McQuinn+09,Bolton+09}.
+The deposition of the kinetic energy into the IGM via plasma instabilities produces excess heating, which over cosmological time, may resolve a variety
+of puzzles, including explaining
+anomalies in the statistics of the high-redshift Ly$\alpha$ forest
+\citep{paperIV} and potentially explaining a number of the X-ray
+properties of groups and clusters and anomalies in galaxy formation on
+the scale of dwarfs \citep{paperIII,Lu+2013}.  We
+have recently shown that \textit{if} the IC halos are ignored, it is possible
+to quantitatively reproduce the redshift and flux distributions
+of nearby hard gamma-ray blazars and the extragalactic gamma-ray background
+spectrum above 3~GeV simultaneously with a unified model of AGN evolution
+\citep{Broderick+2013,Broderick+2013b}.  All of these empirical successes provide
+circumstantial evidence for the presence of virulent plasma beam
+instabilities. 
 
-Following the work of Paper II, we studied the effects of blazar heating in a
-more detailed hydrodynamic model of structure formation 
-\citep{Puchwein+2011}. Using the same blazar heating prescription as in Paper
-II, we showed that the optical depth of the \Lya\ forest is reproduced using a
-H{\sc i} photoionization rate of $\Gamma_{\rm H\mathsc{i}} \approx 5\times
-10^{-13}\,{\rm s}^{-1}$ or equivalently using the inferred ionizing background
-from \citet{FG+09}.  We also demonstrated that the low-density IGM again
-possesses an inverted temperature-density relation, confirming the results of
-Paper II in greater detail.  In addition, we showed that a blazar heated
-universe not only matches the one- and two-point statistics of the
-  high redshift Ly$\alpha$ forest but also the linewidth and column depth
-  distribution. This excellent quantitative agreement is achieved
-without tuning the photoionizing background and is due specifically to the
-excess energy injection into the low-density IGM from TeV blazars.
+These potential implications of blazar heating rely on an understanding of the linear and nonlinear physics of these plasma instabilities.  Recent work in this area has been inconclusive.  For instance, \citet{Miniati+12} argued that these instabilities are physically irrelevant for the cooling of these pair beams because they would saturate at a very low level due to nonlinear Landau damping (NLD).  However, \citet{Chang+14} showed that a detailed calculation of NLD showed that these plasma processes remain dominant.  In addition, \citet{Siron+14} performed particle-in-cell simulations of these plasma processes and argued that these processes saturate at a very low level.  It is unclear, however, if the conclusions of their work is robust as it is unclear if these numerical setup is adequate (e.g. Mohamad's paper).  
 
-Finally in Paper III, we explored the result of this additional IGM heating upon
-the formation of structure in the Universe.  In particular, we showed that
-the injection of entropy into the IGM by TeV blazars contributes to
-developing a redshift dependent entropy floor for galaxy clusters and groups at
-$z\lesssim 2$ and suppresses the formation of dwarfs.  The redshift dependent nature of TeV blazar heating suggests a large injection of entropy around $z\sim 1$, boosting the entropy of late forming groups and clusters.  This predicted enhanced entropy
-of young groups is consistent with recent observations 
-that show optically bright, and therefore young, groups and
-clusters are X-ray dim ---  that is having a lower gas density due to a
-raised entropy floor.  We also found that TeV
-blazar heating suppresses the formation of late forming dwarfs both in
-galactic halos, which is potentially important for the missing satellite problem \citep{Krav:10}, and
-in voids, which is likewise potentially important for the void phenomenon \citep{Peebles2001}, by raising the
-temperature of the IGM such that gas cannot collapse to form galaxies.
-
-These potential implications of blazar heating rely on the assumption that the nonlinear state of these plasma instabilities efficiently convert the kinetic energy of the beam and convert it into heat.  In our previous work, we appealed to nonlinear simulations conducted in a radically different regime to argue for such a conversion.  However, a full nonlinear study is called for.  We begin this task in this initial work where we study the distribution function of the electron-positron pairs that are produced from VHEGR-EBL photon annihilation.  We study the evolution of a distribution function under Lorentz transformations to develop an analytic understanding of how the perpendicular and parallel velocity dispersions transform under boosts.  Using this understanding, we then develop a simple description of the distribution function of the beam, which we then use to calculate the unstable modes analytically in both the reactive (hydrodynamic) and kinetic regimes. Here the reactive instability refers to the instability where the entire beam participates in the instability.  In particular, all the beam particles are resonant with the unstable wave on a timescale longer than the growth time of the instability.  The reactive instability is also referred to as the hydrodynamic instability since the instability can be derived from the fluid equations instead of kinetic theory.  On the other hand, in the kinetic regime, only a fraction of the beam particles are resonant with the beam over a the growth time of the instability, which reduces the growth rate compared to the reactive instability for the same beam density and beam Lorentz factor.  We recover the well-known results for the reactive regime for both the beam-plasma and ``oblique'' modes.  We also derive the growth rate for these two instabilities in the kinetic regime and delineate the range of applicability for both the reactive and kinetic cases and apply these results for ultrarelativistic \epm\ pair beams. 
+However, a full nonlinear study is called for.  We begin this task in this initial work where we study the distribution function of the electron-positron pairs that are produced from VHEGR-EBL photon annihilation.  We study the evolution of a distribution function under Lorentz transformations to develop an analytic understanding of how the perpendicular and parallel velocity dispersions transform under boosts.  Using this understanding, we then develop a simple description of the distribution function of the beam, which we then use to calculate the unstable modes analytically in both the reactive (hydrodynamic) and kinetic regimes. Here the reactive instability refers to the instability where the entire beam participates in the instability.  In particular, all the beam particles are resonant with the unstable wave on a timescale longer than the growth time of the instability.  The reactive instability is also referred to as the hydrodynamic instability since the instability can be derived from the fluid equations instead of kinetic theory.  On the other hand, in the kinetic regime, only a fraction of the beam particles are resonant with the beam over a the growth time of the instability, which reduces the growth rate compared to the reactive instability for the same beam density and beam Lorentz factor.  We recover the well-known results for the reactive regime for both the beam-plasma and ``oblique'' modes.  We also derive the growth rate for these two instabilities in the kinetic regime and delineate the range of applicability for both the reactive and kinetic cases and apply these results for ultrarelativistic \epm\ pair beams. 
 
 This paper is organized as follows.  In Section \ref{sec:setup}, we describe the transformation properties of an ultrarelativistic \epm\ beam in terms of its distribution function.  We then calculate the various linear instabilities that this beam is subject to in section \ref{sec:linear}.  In particular, we pay careful attention to both the reactive (or hydrodynamic) and kinetic regimes of the beam plasma and ``oblique'' instabilities and the transition between the two.  Applying these result to TeV electron-positron pair beams that arise from TeV photon pair production in Section \ref{sec:application},
 we demonstrate the despite the extraordinary coldness of the beam that we are always in the kinetic regime for the ``oblique'' mode, but may be in the reactive regime for the beam plasma mode.  However, because the controlling parameter is close to unity, the growth rates calculated in either regime are similar.  We close with a discussion the implications of this work and application of these results for nonlinear theory in Section \ref{sec:conclusions}.
@@ -341,7 +333,7 @@ The basic requirement of this process is that the energies of the VHEGR ($E_{\rm
 
 \subsection{Distribution Function of the Pair Beam}
 
-In the COM frame of the beam, we assume that the distribution function is isotropic, such that $f=f(E)$ is just a function of energy.  We model this distribution as a relativistic thermal distribution:
+In the COM frame of the beam, we assume that the distribution function is isotropic, such that $f=f(E)$ is just a function of energy.   This equilibrium energy distribution of a relativistic thermal plasma gas is
 \begin{equation}\label{eq:relativistic maxwellian}
 f\propto \exp\left(-\frac E T\right),
 \end{equation}
@@ -445,7 +437,7 @@ The plasma couples to the field through the Maxwell equations
 \grad \times \delta \Efield &=& -\frac 1 c \frac {\partial \delta \Bfield} {\partial t},\\
 \grad \times \delta \Bfield &=& \frac {4\pi} {c} \delta\jvec + \frac{1}{ c} \frac {\partial \delta \Efield} {\partial t},\label{eq:maxwell2}
 \end{eqnarray}
-where $\delta\jvec = \sum_s q_s\int \vel_s \delta f_s d^3 p$ is the linear current density perturbation.
+where $\delta\jvec = \sum_s q_s\int \vel \delta f_s d^3 p$ is the linear current density perturbation.
 
 Here it is useful to work within the electrostatic approximation ($\kvec \times \delta \Efield = 0$), where we only need to include Coulomb's law for the electric field rather than the full Maxwell equations:
 \begin{equation}
@@ -501,7 +493,7 @@ For $k_x = 0 \rightarrow Z_x = 0$, this reduces to the beam-plasma growth rate, 
  \Gamma = \Gamma_{\rm TS} \equiv \frac{\sqrt{3}}{2^{4/3}}\left(\frac{n_b}{n_t}\right)^{1/3}\frac{\omega_{p,t}}{\gamma},
 \end{equation}
 which we denote the beam-plasma or ``two-stream'' growth rate.
-For the more general case where $Z_x\ne 0$, this becomes the oblique instability studied by Bret et al.  Indeed for $\gamma \gg 1$ and $Z_x \sim 1$, the growth rate approaches oblique growth rate:
+For the more general case where $Z_x\ne 0$, this becomes the oblique instability studied by Bret et al.  Indeed for $\gamma \gg 1$ and $Z_x \rightarrow \infty$, the growth rate approaches oblique growth rate:
 \begin{equation}
  \Gamma = \Gamma_{\rm ob} \equiv \frac{\sqrt{3}}{2^{4/3}}\left(\frac{n_b}{n_t}\right)^{1/3}\frac{\omega_{p,t}}{\gamma^{1/3}},
 \end{equation}
@@ -515,7 +507,7 @@ Equation (\ref{eq:dispersion relation reactive}) can also be solved numerically 
 \begin{equation}\label{eq:dispersion relation beam-plasma}
  1 - \frac{\omega_{p,t}^2}{\omega^2} - \frac{\omega_{p,b}^2}{\gamma^3(\omega-k_z v_b)^2} = 0,
 \end{equation}
-which we can numerically solve in terms of $\omega/\omega_{p,t}$, $k_z\lambda_D$, $v_b/c$, and $n_b/n_t$, where $\lambda_D = c/\omega_{p,t}$ is the skin depth.  In Figure \ref{fig:OffResonance} we show the real and imaginary parts for $\omega/\omega_{p,t}$ as a function of $k_z\lambda_D$ for representative case of $v_b/c \approx 1$ and $n_b/n_t = 10^{-3}$ and $\gamma=100$.    For $k_z\lambda_D = 1$, the growth rate reaches it maximum of $\Gamma_{\rm max}$ and the real part of the frequency is $\Re(\omega) = \omega_{p,t}$, which is plasma oscillation frequency.  This wave would exist in the absence of a tenuous beam.  However, as we move away from this frequency toward lower $k_z$, we still find substantial growth, with $\Gamma \approx 0.1 \Gamma_{\rm max}$ as $k_z \approx 0.9\lambda_D^{-1}$.  Interestingly, the real part of the unstable wave has a phase velocity, $v_{\rm ph} = \Re(\omega)/k = c$, which is still in resonance with the beam.  This unstable wave does not exist in the absence of the destabilizing beam and does not correspond to any wave in the unperturbed system.  
+which we can numerically solve in terms of $\omega/\omega_{p,t}$, $k_z\lambda_D$, $v_b/c$, and $n_b/n_t$, where $\lambda_D = c/\omega_{p,t}$ is the skin depth.  In Figure \ref{fig:OffResonance} we show the real and imaginary parts for $\omega/\omega_{p,t}$ as a function of $k_z\lambda_D$ for representative case of $v_b/c \approx 1$ and $n_b/n_t = 10^{-3}$ and $\gamma=100$.    For $k_z\lambda_D = 1$, the growth rate reaches it maximum of $\Gamma_{\rm max}$ and the real part of the frequency is $\Re(\omega) = \omega_{p,t}$, which is plasma oscillation frequency.  This wave would exist in the absence of a tenuous beam.  However, as we move away from this frequency toward lower $k_z$, we still find substantial growth, with $\Gamma \approx 0.1 \Gamma_{\rm max}$ as $k_z \approx 0.9\lambda_D^{-1}$.  Interestingly, the real part of the unstable wave has a phase velocity, $v_{\rm ph} = \Re(\omega)/k = c$, which is still in resonance with the beam.  This unstable wave does not exist in the absence of the destabilizing beam and does not correspond to any wave in the unperturbed target plasma.  
 
 In a continuous system, these waves do not matter compare to the unstable mode at $k\lambda_D = 1$.   However, for discrete numerical systems, which do not sufficiently resolve the most unstable modes, these sub maximal modes drive the growth of the instability of numerically calculated beam-plasma systems, which may lead to an incorrect nonlinear state compare to the physical system.
 
@@ -657,7 +649,7 @@ Taking $\kvec$ to be $\omega_{p,t}/\vel_b$, so that the RHS is $\approx \Gamma$,
  \frac{\Delta v_{\perp}}{v_b} \ll \left(\frac{n_b}{\gamma_b n_t}\right)^{1/3}
 %\left(1 - \beta_b^2\cos^2\Psi\right)^{1/3}, 
 \end{equation}
-where we have dropped constant factors of order unity and assumed that $Z_x \sim O(1)$.  Hence, this defines the upper limit on the velocity dispersion of the plasma for the cold-plasma approximation to hold and, hence, the range of validity for the reactive oblique growth rate (\ref{eq:growth rate reactive}).  For $Z_x \ll \gamma^{-2}$, we recover the condition for the relativistic, reactive beam-plasma instability \citep{Boyd}
+where we have dropped constant factors of order unity and assumed that $Z_x \sim O(1)$.  Hence, this defines the upper limit on the velocity dispersion of the plasma for the cold-plasma approximation to hold and, hence, the range of validity for the reactive oblique growth rate (\ref{eq:growth rate reactive}).  For $Z_x \ll \gamma^{-2}$, we recover the condition for the relativistic, reactive beam-plasma instability:
 \begin{equation}\label{eq:bp reactive regime}
 \frac{\Delta v_{\parallel}}{v_b} \ll \gamma_b^{-1}\left(\frac{n_b}{n_t}\right)^{1/3}.
 \end{equation}

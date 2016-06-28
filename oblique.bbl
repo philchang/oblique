@@ -1,4 +1,4 @@
-\begin{thebibliography}{48}
+\begin{thebibliography}{28}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Aharonian} {et~al.}(2006){Aharonian}, {Akhperjanian}, {Bazer-Bachi},
@@ -21,16 +21,9 @@
   {Wagner}}]{Ahar_etal:06}
 {Aharonian}, F., {et~al.} 2006, \nat, 440, 1018
 
-\bibitem[{{Bolton} \& {Becker}(2009)}]{Bolton+09}
-{Bolton}, J.~S., \& {Becker}, G.~D. 2009, \mnras, 398, L26
-
 \bibitem[{{Boyd} \& {Sanderson}(2003)}]{Boyd}
 {Boyd}, T.~J.~M., \& {Sanderson}, J.~J. 2003, {The Physics of Plasmas}, ed.
   {Boyd, T.~J.~M.~\& Sanderson, J.~J.}
-
-\bibitem[{{Bret} {et~al.}(2004){Bret}, {Firpo}, \&
-  {Deutsch}}]{Bret-Firp-Deut:04}
-{Bret}, A., {Firpo}, M., \& {Deutsch}, C. 2004, \pre, 70, 046401
 
 \bibitem[{{Bret} {et~al.}(2010){Bret}, {Gremillet}, \&
   {B{\'e}nisti}}]{Bret-Grem-Beni:10}
@@ -38,14 +31,6 @@
 
 \bibitem[{{Broderick} {et~al.}(2012){Broderick}, {Chang}, \& {Pfrommer}}]{BCP}
 {Broderick}, A.~E., {Chang}, P., \& {Pfrommer}, C. 2012, \apj, 752, 22
-
-\bibitem[{{Chang} {et~al.}(2012){Chang}, {Broderick}, \& {Pfrommer}}]{CBP}
-{Chang}, P., {Broderick}, A.~E., \& {Pfrommer}, C. 2012, \apj, 752, 23
-
-\bibitem[{{de Cea del Pozo} {et~al.}(2009){de Cea del Pozo}, {Torres}, \&
-  {Rodriguez Marrero}}]{deCe-Torr-Rodr:09}
-{de Cea del Pozo}, E., {Torres}, D.~F., \& {Rodriguez Marrero}, A.~Y. 2009,
-  \apj, 698, 1054
 
 \bibitem[{{de Jager} {et~al.}(1994){de Jager}, {Stecker}, \&
   {Salamon}}]{deJa-Stec-Sala:94}
@@ -61,24 +46,6 @@
 {Dolag}, K., {Kachelriess}, M., {Ostapchenko}, S., \& {Tom{\`a}s}, R. 2011,
   \apjl, 727, L4
 
-\bibitem[{{Domingo-Santamar{\'{\i}}a} \& {Torres}(2005)}]{Domi-Torr:05}
-{Domingo-Santamar{\'{\i}}a}, E., \& {Torres}, D.~F. 2005, \aap, 444, 403
-
-\bibitem[{{Faucher-Gigu{\`e}re} {et~al.}(2009){Faucher-Gigu{\`e}re}, {Lidz},
-  {Zaldarriaga}, \& {Hernquist}}]{FG+09}
-{Faucher-Gigu{\`e}re}, C., {Lidz}, A., {Zaldarriaga}, M., \& {Hernquist}, L.
-  2009, \apj, 703, 1416
-
-\bibitem[{{Ghisellini} \& {Maraschi}(1989)}]{Ghisellini+1989}
-{Ghisellini}, G., \& {Maraschi}, L. 1989, \apj, 340, 181
-
-\bibitem[{{Ghisellini} {et~al.}(2009){Ghisellini}, {Maraschi}, \&
-  {Tavecchio}}]{Ghisellini+2009}
-{Ghisellini}, G., {Maraschi}, L., \& {Tavecchio}, F. 2009, \mnras, 396, L105
-
-\bibitem[{{Ghisellini} \& {Tavecchio}(2008)}]{Ghisellini+2008}
-{Ghisellini}, G., \& {Tavecchio}, F. 2008, \mnras, 387, 1669
-
 \bibitem[{{Gould} \& {Schr{\'e}der}(1966)}]{Gould+66}
 {Gould}, R.~J., \& {Schr{\'e}der}, G. 1966, Physical Review Letters, 16, 252
 
@@ -92,30 +59,14 @@
 \bibitem[{{Inoue} \& {Totani}(2009)}]{Inou-Tota:09}
 {Inoue}, Y., \& {Totani}, T. 2009, \apj, 702, 523
 
-\bibitem[{{Jones} {et~al.}(1974){Jones}, {O'dell}, \& {Stein}}]{Jones+1974}
-{Jones}, T.~W., {O'dell}, S.~L., \& {Stein}, W.~A. 1974, \apj, 192, 261
-
 \bibitem[{{J{\"u}ttner}(1911)}]{1911AnP...340..145J}
 {J{\"u}ttner}, F. 1911, Annalen der Physik, 340, 145
 
 \bibitem[{{Kneiske} \& {Mannheim}(2008)}]{Knei-Mann:08}
 {Kneiske}, T.~M., \& {Mannheim}, K. 2008, \aap, 479, 41
 
-\bibitem[{{Kravtsov}(2010)}]{Krav:10}
-{Kravtsov}, A. 2010, Advances in Astronomy, 2010
-
-\bibitem[{{Lacki} {et~al.}(2011){Lacki}, {Thompson}, {Quataert}, {Loeb}, \&
-  {Waxman}}]{Lack_etal:10}
-{Lacki}, B.~C., {Thompson}, T.~A., {Quataert}, E., {Loeb}, A., \& {Waxman}, E.
-  2011, \apj, 734, 107
-
 \bibitem[{{Madau} \& {Pozzetti}(2000)}]{Madau+00}
 {Madau}, P., \& {Pozzetti}, L. 2000, \mnras, 312, L9
-
-\bibitem[{{McQuinn} {et~al.}(2009){McQuinn}, {Lidz}, {Zaldarriaga},
-  {Hernquist}, {Hopkins}, {Dutta}, \& {Faucher-Gigu{\`e}re}}]{McQuinn+09}
-{McQuinn}, M., {Lidz}, A., {Zaldarriaga}, M., {Hernquist}, L., {Hopkins},
-  P.~F., {Dutta}, S., \& {Faucher-Gigu{\`e}re}, C. 2009, \apj, 694, 842
 
 \bibitem[{{Melrose}(1986)}]{Melrose86}
 {Melrose}, D.~B. 1986, {Instabilities in Space and Laboratory Plasmas}, ed.
@@ -124,35 +75,22 @@
 \bibitem[{{Narumoto} \& {Totani}(2006)}]{Naru-Tota:06}
 {Narumoto}, T., \& {Totani}, T. 2006, \apj, 643, 81
 
+\bibitem[{{Neronov} \& {Semikoz}(2009)}]{Nero-Semi:09}
+{Neronov}, A., \& {Semikoz}, D.~V. 2009, \prd, 80, 123012
+
 \bibitem[{{Neronov} \& {Vovk}(2010)}]{Nero-Vovk:10}
 {Neronov}, A., \& {Vovk}, I. 2010, Science, 328, 73
 
 \bibitem[{{Nikishov}(1962)}]{Nikishov62}
 {Nikishov}, A.~I. 1962, JETP, 14, 393
 
-\bibitem[{{Paglione} {et~al.}(1996){Paglione}, {Marscher}, {Jackson}, \&
-  {Bertsch}}]{Pagl_etal:96}
-{Paglione}, T.~A.~D., {Marscher}, A.~P., {Jackson}, J.~M., \& {Bertsch}, D.~L.
-  1996, \apj, 460, 295
-
-\bibitem[{{Peebles}(2001)}]{Peebles2001}
-{Peebles}, P.~J.~E. 2001, \apj, 557, 495
-
-\bibitem[{{Persic} {et~al.}(2008){Persic}, {Rephaeli}, \&
-  {Arieli}}]{Pers-Reph-Arie:08}
-{Persic}, M., {Rephaeli}, Y., \& {Arieli}, Y. 2008, \aap, 486, 143
-
-\bibitem[{{Pfrommer} {et~al.}(2012){Pfrommer}, {Chang}, \& {Broderick}}]{PCB}
-{Pfrommer}, C., {Chang}, P., \& {Broderick}, A.~E. 2012, \apj, 752, 24
-
 \bibitem[{{Puchwein} {et~al.}(2012){Puchwein}, {Pfrommer}, {Springel},
   {Broderick}, \& {Chang}}]{Puchwein+2011}
 {Puchwein}, E., {Pfrommer}, C., {Springel}, V., {Broderick}, A.~E., \& {Chang},
   P. 2012, \mnras, 423, 149
 
-\bibitem[{{Rephaeli} {et~al.}(2010){Rephaeli}, {Arieli}, \&
-  {Persic}}]{Reph-Arie-Pers:10}
-{Rephaeli}, Y., {Arieli}, Y., \& {Persic}, M. 2010, \mnras, 401, 473
+\bibitem[{{Salamon} \& {Stecker}(1998)}]{Sala-Stec:98}
+{Salamon}, M.~H., \& {Stecker}, F.~W. 1998, \apj, 493, 547
 
 \bibitem[{{Stecker} {et~al.}(1992){Stecker}, {de Jager}, \&
   {Salamon}}]{Stec-deJa-Sala:92}
@@ -161,9 +99,6 @@
 \bibitem[{{Takahashi} {et~al.}(2012){Takahashi}, {Mori}, {Ichiki}, \&
   {Inoue}}]{Taka_etal:11}
 {Takahashi}, K., {Mori}, M., {Ichiki}, K., \& {Inoue}, S. 2012, \apjl, 744, L7
-
-\bibitem[{{Tavecchio} \& {Ghisellini}(2008)}]{Tavecchio+2008}
-{Tavecchio}, F., \& {Ghisellini}, G. 2008, \mnras, 386, 945
 
 \bibitem[{{Tavecchio} {et~al.}(2011){Tavecchio}, {Ghisellini}, {Bonnoli}, \&
   {Foschini}}]{Tave_etal:10b}
@@ -179,20 +114,8 @@
   {Neronov}}]{Tayl-Vovk-Nero:11}
 {Taylor}, A.~M., {Vovk}, I., \& {Neronov}, A. 2011, \aap, 529, A144
 
-\bibitem[{{Thompson} {et~al.}(2007){Thompson}, {Quataert}, \&
-  {Waxman}}]{Thom-Quat-Waxm:07}
-{Thompson}, T.~A., {Quataert}, E., \& {Waxman}, E. 2007, \apj, 654, 219
-
 \bibitem[{{Venters}(2010)}]{Vent:10}
 {Venters}, T.~M. 2010, \apj, 710, 1530
-
-\bibitem[{{Viel} {et~al.}(2009){Viel}, {Bolton}, \& {Haehnelt}}]{Viel+09}
-{Viel}, M., {Bolton}, J.~S., \& {Haehnelt}, M.~G. 2009, \mnras, 399, L39
-
-\bibitem[{{Vovk} {et~al.}(2012){Vovk}, {Taylor}, {Semikoz}, \&
-  {Neronov}}]{Vovk+12}
-{Vovk}, I., {Taylor}, A.~M., {Semikoz}, D., \& {Neronov}, A. 2012, \apjl, 747,
-  L14
 
 \bibitem[{{Wright} \& {Hadley}(1975)}]{1975PhRvA..12..686W}
 {Wright}, T.~P., \& {Hadley}, G.~R. 1975, \pra, 12, 686
