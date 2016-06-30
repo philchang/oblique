@@ -1,62 +1,52 @@
-This is BibTeX, Version 0.99d (TeX Live 2015/dev/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2013)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: oblique.aux
 The style file: apj.bst
 Database file #1: obliqueNotes.bib
 Database file #2: bigmh.bib
-Warning--I didn't find a database entry for "paperIV"
-Warning--I didn't find a database entry for "paperIII"
-Warning--I didn't find a database entry for "Lu+2013"
-Warning--I didn't find a database entry for "Broderick+2013"
-Warning--I didn't find a database entry for "Broderick+2013b"
-Warning--I didn't find a database entry for "paperI"
-Warning--I didn't find a database entry for "Schlickeiser+12"
-Warning--I didn't find a database entry for "Schlickeiser+13"
-Warning--I didn't find a database entry for "paperII"
-Warning--I didn't find a database entry for "Miniati+12"
 Warning--can't use both author and editor fields in Boyd
 Warning--empty publisher in Boyd
 Warning--can't use both author and editor fields in Melrose86
 Warning--empty publisher in Melrose86
-You've used 28 entries,
+You've used 38 entries,
             2988 wiz_defined-function locations,
-            867 strings with 11686 characters,
-and the built_in function-call counts, 13465 in all, are:
-= -- 1052
-> -- 1046
-< -- 16
-+ -- 349
-- -- 320
-* -- 1189
-:= -- 2562
-add.period$ -- 28
-call.type$ -- 28
-change.case$ -- 185
-chr.to.int$ -- 27
-cite$ -- 32
-duplicate$ -- 521
-empty$ -- 774
-format.name$ -- 421
-if$ -- 2621
-int.to.chr$ -- 2
+            903 strings with 13391 characters,
+and the built_in function-call counts, 18178 in all, are:
+= -- 1445
+> -- 1410
+< -- 18
++ -- 474
+- -- 434
+* -- 1602
+:= -- 3459
+add.period$ -- 38
+call.type$ -- 38
+change.case$ -- 263
+chr.to.int$ -- 36
+cite$ -- 42
+duplicate$ -- 709
+empty$ -- 1029
+format.name$ -- 569
+if$ -- 3528
+int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 28
-newline$ -- 88
-num.names$ -- 114
-pop$ -- 197
+missing$ -- 38
+newline$ -- 118
+num.names$ -- 154
+pop$ -- 279
 preamble$ -- 1
-purify$ -- 185
+purify$ -- 263
 quote$ -- 0
-skip$ -- 450
+skip$ -- 596
 stack$ -- 0
-substring$ -- 583
-swap$ -- 4
+substring$ -- 758
+swap$ -- 6
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 246
+type$ -- 336
 warning$ -- 4
-while$ -- 110
+while$ -- 148
 width$ -- 0
-write$ -- 281
-(There were 14 warnings)
+write$ -- 379
+(There were 4 warnings)

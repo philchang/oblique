@@ -1,4 +1,4 @@
-\begin{thebibliography}{28}
+\begin{thebibliography}{38}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Aharonian} {et~al.}(2006){Aharonian}, {Akhperjanian}, {Bazer-Bachi},
@@ -29,8 +29,27 @@
   {B{\'e}nisti}}]{Bret-Grem-Beni:10}
 {Bret}, A., {Gremillet}, L., \& {B{\'e}nisti}, D. 2010, \pre, 81, 036402
 
-\bibitem[{{Broderick} {et~al.}(2012){Broderick}, {Chang}, \& {Pfrommer}}]{BCP}
+\bibitem[{{Broderick} {et~al.}(2012){Broderick}, {Chang}, \&
+  {Pfrommer}}]{paperI}
 {Broderick}, A.~E., {Chang}, P., \& {Pfrommer}, C. 2012, \apj, 752, 22
+
+\bibitem[{{Broderick} {et~al.}(2014{\natexlab{a}}){Broderick}, {Pfrommer},
+  {Puchwein}, \& {Chang}}]{Broderick+2013}
+{Broderick}, A.~E., {Pfrommer}, C., {Puchwein}, E., \& {Chang}, P.
+  2014{\natexlab{a}}, \apj, 790, 137
+
+\bibitem[{{Broderick} {et~al.}(2014{\natexlab{b}}){Broderick}, {Pfrommer},
+  {Puchwein}, {Chang}, \& {Smith}}]{Broderick+2013b}
+{Broderick}, A.~E., {Pfrommer}, C., {Puchwein}, E., {Chang}, P., \& {Smith},
+  K.~M. 2014{\natexlab{b}}, \apj, 796, 12
+
+\bibitem[{{Chang} {et~al.}(2012){Chang}, {Broderick}, \& {Pfrommer}}]{paperII}
+{Chang}, P., {Broderick}, A.~E., \& {Pfrommer}, C. 2012, \apj, 752, 23
+
+\bibitem[{{Chang} {et~al.}(2014){Chang}, {Broderick}, {Pfrommer}, {Puchwein},
+  {Lamberts}, \& {Shalaby}}]{Chang+14}
+{Chang}, P., {Broderick}, A.~E., {Pfrommer}, C., {Puchwein}, E., {Lamberts},
+  A., \& {Shalaby}, M. 2014, \apj, 797, 110
 
 \bibitem[{{de Jager} {et~al.}(1994){de Jager}, {Stecker}, \&
   {Salamon}}]{deJa-Stec-Sala:94}
@@ -65,12 +84,20 @@
 \bibitem[{{Kneiske} \& {Mannheim}(2008)}]{Knei-Mann:08}
 {Kneiske}, T.~M., \& {Mannheim}, K. 2008, \aap, 479, 41
 
+\bibitem[{{Lu} {et~al.}(2013){Lu}, {Mo}, {Lu}, {Katz}, {Weinberg}, {van den
+  Bosch}, \& {Yang}}]{Lu+2013}
+{Lu}, Z., {Mo}, H., {Lu}, Y., {Katz}, N., {Weinberg}, M.~D., {van den Bosch},
+  F.~C., \& {Yang}, X. 2013, ArXiv e-prints
+
 \bibitem[{{Madau} \& {Pozzetti}(2000)}]{Madau+00}
 {Madau}, P., \& {Pozzetti}, L. 2000, \mnras, 312, L9
 
 \bibitem[{{Melrose}(1986)}]{Melrose86}
 {Melrose}, D.~B. 1986, {Instabilities in Space and Laboratory Plasmas}, ed.
   {Melrose, D.~B.}
+
+\bibitem[{{Miniati} \& {Elyiv}(2013)}]{Miniati+12}
+{Miniati}, F., \& {Elyiv}, A. 2013, \apj, 770, 54
 
 \bibitem[{{Narumoto} \& {Totani}(2006)}]{Naru-Tota:06}
 {Narumoto}, T., \& {Totani}, T. 2006, \apj, 643, 81
@@ -84,13 +111,28 @@
 \bibitem[{{Nikishov}(1962)}]{Nikishov62}
 {Nikishov}, A.~I. 1962, JETP, 14, 393
 
+\bibitem[{{Pfrommer} {et~al.}(2012){Pfrommer}, {Chang}, \&
+  {Broderick}}]{paperIII}
+{Pfrommer}, C., {Chang}, P., \& {Broderick}, A.~E. 2012, \apj, 752, 24
+
 \bibitem[{{Puchwein} {et~al.}(2012){Puchwein}, {Pfrommer}, {Springel},
-  {Broderick}, \& {Chang}}]{Puchwein+2011}
+  {Broderick}, \& {Chang}}]{paperIV}
 {Puchwein}, E., {Pfrommer}, C., {Springel}, V., {Broderick}, A.~E., \& {Chang},
   P. 2012, \mnras, 423, 149
 
 \bibitem[{{Salamon} \& {Stecker}(1998)}]{Sala-Stec:98}
 {Salamon}, M.~H., \& {Stecker}, F.~W. 1998, \apj, 493, 547
+
+\bibitem[{{Schlickeiser} {et~al.}(2012){Schlickeiser}, {Ibscher}, \&
+  {Supsar}}]{Schlickeiser+12}
+{Schlickeiser}, R., {Ibscher}, D., \& {Supsar}, M. 2012, \apj, 758, 102
+
+\bibitem[{{Schlickeiser} {et~al.}(2013){Schlickeiser}, {Krakau}, \&
+  {Supsar}}]{Schlickeiser+13}
+{Schlickeiser}, R., {Krakau}, S., \& {Supsar}, M. 2013, ArXiv e-prints
+
+\bibitem[{{Sironi} \& {Giannios}(2014)}]{Sironi+14}
+{Sironi}, L., \& {Giannios}, D. 2014, \apj, 787, 49
 
 \bibitem[{{Stecker} {et~al.}(1992){Stecker}, {de Jager}, \&
   {Salamon}}]{Stec-deJa-Sala:92}
