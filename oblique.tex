@@ -11,6 +11,7 @@
 
 \definecolor{DarkGreen}{rgb}{0.64,0.80,0.35}
 \newcommand\ac[1]{{\color{green} \bf #1}} %% AEB color
+\newcommand\cp[1]{{\color{blue} \bf #1}} %% CP color
 \newcommand\asout[1]{\color{green}\sout{{\rm  #1}}} %% AEB strikeout of text
 \newcommand\qc[1]{{\color{red} \bf #1}}
 %\newcommand\qc[1]{{\color{black} #1}}
@@ -215,41 +216,41 @@ BL Lacertae objects: general -- gamma rays: general -- plasmas -- instabilities 
 
 \begin{abstract}
 The annihilation of TeV photons from extragalactic TeV sources and the extragalactic background light produces ultrarelativistic $\epm$ beams, which are subject to powerful plasma instabilities that sap their kinetic energy.
-Here we study the initial conditions of these \epm\ beams and the linear phase of the plasma instabilities that cool them.  Starting from an isotropic distribution in the center of mass frame, we show that the velocity dispersions parallel and transverse to the direction of beam propagation become highly anisotropic under Lorentz boosts and scale differently with the Lorentz factor, $\gamma$.  Using these results to construct a simplified distribution function, we then calculate the linear growth rate of the beam plasma and ``oblique'' instability in both the reactive and kinetic regimes.  We reproduce the well-known reactive growth rates for both the beam plasma and ``oblique'' mode and show that they both have similar growth rates in the kinetic regime.  In contrast to the earlier claim by the authors that the oblique mode is dominant, we instead find that both the beam-plasma (parallel) and oblique modes are similarly strong.  In addition, we also delineate the conditions for applicability for the reactive and kinetic regimes and find that the beam plasma mode transitions to the reactive regime at a lower $\gamma$ than the ``oblique'' mode due to a combination of their different scalings and the anisotropy of the velocity dispersions.  Applying these results to the ultrarelativistic $\epm$ beams from TeV blazars, we not only confirm that these beams are unstable to the kinetic ``oblique'' mode.  For sufficiently cold beams in the beam direction or for sufficiently larger Lorentz factor, these beams are also unstable to the ``reactive'' beam-plasma instability.  We show that overall growth rates for both the ``oblique'' and beam plasma growth rates are similar and in line with our earlier claims.  These results strengthen the case that powerful plasma instabilities  sap the energy of the ultrarelativistic $\epm$ beams as they propagate through intergalactic space, which has profound consequences on constraints of the intergalactic magnetic field, the thermal state of the intergalactic medium, and the formation of structure in the universe. 
+Here we study the initial conditions of these \epm\ beams and the linear phase of the plasma instabilities that cool them.  Starting from an isotropic distribution in the center of mass frame, we show that the velocity dispersions parallel and transverse to the direction of beam propagation become highly anisotropic under Lorentz boosts and scale differently with the Lorentz factor, $\gamma$.  Using these results to construct a simplified distribution function, we then calculate the linear growth rate of the beam plasma and oblique instability in both the reactive and kinetic regimes.  We reproduce the well-known reactive growth rates for both the beam plasma and oblique mode and show that they both have similar growth rates in the kinetic regime.  In contrast to the earlier claim by the authors that the oblique mode is dominant, we instead find that both the beam-plasma (parallel) and oblique modes are similarly strong.  In addition, we also delineate the conditions for applicability for the reactive and kinetic regimes and find that the beam plasma mode transitions to the reactive regime at a lower $\gamma$ than the oblique mode due to a combination of their different scalings and the anisotropy of the velocity dispersions.  Applying these results to the ultrarelativistic $\epm$ beams from TeV blazars, we not only confirm that these beams are unstable to the kinetic oblique mode.  For sufficiently cold beams in the beam direction or for sufficiently larger Lorentz factor, these beams are also unstable to the reactive beam-plasma instability.  We show that overall growth rates for both the oblique and beam plasma growth rates are similar and in line with our earlier claims.  These results strengthen the case that powerful plasma instabilities  sap the energy of the ultrarelativistic $\epm$ beams as they propagate through intergalactic space, which has profound consequences on constraints of the intergalactic magnetic field, the thermal state of the intergalactic medium, and the formation of structure in the universe. 
 \end{abstract}
 
 \section{Introduction}\label{sec:introduction}
 
 
 
+%CP: this appears twice - I cut the following:
+%This excess heating of the IGM may resolve a variety
+%of cosmological puzzles, including naturally explaining
+%  anomalies in the statistics of the high-redshift Ly$\alpha$ forest
+%\citep{paperIV} and potentially explaining a number of the X-ray
+%  properties of groups and clusters and anomalies in galaxy formation on
+%  the scale of dwarfs \citep{paperIII,Lu+2013}.  We
+%  have recently shown that \textit{if} the IC halos are ignored, it is possible
+%  to quantitatively reproduce the redshift and flux distributions
+%  of nearby hard gamma-ray blazars and the extragalactic gamma-ray background
+%  spectrum above 3~GeV simultaneously with a unified model of AGN evolution
+%  \citep{Broderick+2013,Broderick+2013b}.  All of these empirical successes provide
+%  circumstantial evidence for the presence of virulent plasma beam
+%  instabilities. 
 
-This excess heating of the IGM may resolve a variety
-of cosmological puzzles, including naturally explaining
-  anomalies in the statistics of the high-redshift Ly$\alpha$ forest
-\citep{paperIV} and potentially explaining a number of the X-ray
-  properties of groups and clusters and anomalies in galaxy formation on
-  the scale of dwarfs \citep{paperIII,Lu+2013}.  We
-  have recently shown that \textit{if} the IC halos are ignored, it is possible
-  to quantitatively reproduce the redshift and flux distributions
-  of nearby hard gamma-ray blazars and the extragalactic gamma-ray background
-  spectrum above 3~GeV simultaneously with a unified model of AGN evolution
-  \citep{Broderick+2013,Broderick+2013b}.  All of these empirical successes provide
-  circumstantial evidence for the presence of virulent plasma beam
-  instabilities. 
 
 
-
-The \Fermi satellite and ground based imaging atmospheric Cerenkov telescopes such as
+The \Fermi satellite and ground-based imaging atmospheric Cerenkov telescopes such as
 % Phil: I added "imaging atmospheric" to distinguish this class of
 % telescopes from imaging water CTs, e.g., MILAGRO; I am not aware of
 % any space based IACT apart from a planned telescope on the ISS, but
 % who knows whether this will ever fly
 H.E.S.S., MAGIC, and VERITAS\footnote{High Energy
   Stereoscopic System, Major Atmospheric Gamma Imaging Cerenkov Telescope, Very
-  Energetic Radiation Imaging Telescope Array System.} have demonstrated that the ultra-high
+  Energetic Radiation Imaging Telescope Array System.} have demonstrated that the \cp{\sout{ultra-}}high
 energy Universe is teeming with energetic very high-energy gamma-ray 
 (VHEGR, $E > 100\,\GeV$) sources, the extragalactic component of which mainly consists of TeV
-blazars with a minority population of other sources  such as radio galaxies
+blazars with a minority population of other sources  such as radio\cp{- \sout{galaxies}}
 and starburst galaxies. These extragalactic VHEGR emitters produce TeV photons that are greatly attenuated via annihilation upon soft photons in the extragalactic background light
 (EBL) and produce pairs \citep[see, e.g.,][]{Goul-Schr:67,Sala-Stec:98,Nero-Semi:09}.
 
@@ -268,14 +269,14 @@ $200\,\MeV$ and $100\,\GeV$.  Since ICCs reprocess the VHEGR emission of
 distant sources into this band, this has been used to constrain the
 evolution of the luminosity density of VHEGR sources
 \citep[see, e.g., ][]{Naru-Tota:06,Knei-Mann:08,Inou-Tota:09,Vent:10}.
-These constraints preclude any dramatic rise in numbers of source by $z\sim1$--$2$ that seen in the quasar
+These constraints preclude any dramatic rise in numbers of source by $z\sim1$--$2$ that is seen in the quasar
 distribution.  That is, the comoving number of blazars must have
 remained essentially fixed, at odds with both the physical picture
 underlying these systems and with the observed evolution of similarly
-accreting systems, i.e., quasars.
+accreting systems, i.e., quasars and radio galaxies.
 
-These two important conclusions depends on IC cooling dominating the evolution of the ultra-relativistic pairs.  However, it was recently found that plasma instabilities driven by the
-ultrarelativistic pair beams  likely is the dominant cooling mechanism
+These two important conclusions depend on IC cooling dominating the evolution of the ultra-relativistic pairs.  However, it was recently found that plasma instabilities driven by the
+ultrarelativistic pair beams  likely are the dominant cooling mechanisms
 \citep{paperI,Schlickeiser+12,Schlickeiser+13}, depositing this energy
 as heat in the intergalactic medium \citep{paperII,paperIII}.  Therefore, the lack of an observed
  IC halo emission from TeV blazars does not imply the existence of the IGMF as previous groups have argued
@@ -285,7 +286,7 @@ as heat in the intergalactic medium \citep{paperII,paperIII}.  Therefore, the la
 % and intergalactic magnetic fields (IGMF)
 % \citep[IGMF; ][]{Nero-Vovk:10,Tave_etal:10a,Tave_etal:10b,Derm_etal:10,Tayl-Vovk-Nero:11,Dola_etal:11,Taka_etal:11,Vovk+12}.
 
-The deposition of the kinetic energy into the IGM via plasma instabilities produces excess heating, which over cosmological time, may resolve a variety
+The deposition of kinetic energy into the IGM via plasma instabilities produces excess heating, which over cosmological time, may resolve a variety
 of puzzles, including explaining
 anomalies in the statistics of the high-redshift Ly$\alpha$ forest
 \citep{paperIV} and potentially explaining a number of the X-ray
@@ -299,12 +300,12 @@ spectrum above 3~GeV simultaneously with a unified model of AGN evolution
 circumstantial evidence for the presence of virulent plasma beam
 instabilities. 
 
-These potential implications of blazar heating rely on an understanding of the linear and nonlinear physics of these plasma instabilities.  Recent work in this area has been inconclusive.  For instance, \citet{Miniati+12} argued that these instabilities are physically irrelevant for the cooling of these pair beams because they would saturate at a very low level due to nonlinear Landau damping (NLD).  However, \citet{Chang+14} showed that a detailed calculation of NLD showed that these plasma processes remain dominant.  In addition, \citet{Sironi+14} performed particle-in-cell simulations of these plasma processes and argued that these processes saturate at a very low level.  It is unclear, however, if the conclusions of their work is robust as it is unclear if these numerical setup is adequate (e.g. Mohamad's paper).  
+These potential implications of blazar heating rely on an understanding of the linear and nonlinear physics of these plasma instabilities.  Recent work in this area has been inconclusive.  For instance, \citet{Miniati+12} argued that these instabilities are physically irrelevant for the cooling of these pair beams because they would saturate at a very low level due to nonlinear Landau damping (NLD).  However, \citet{Chang+14} showed that a detailed calculation of NLD showed that these plasma processes remain dominant.  In addition, \citet{Sironi+14} performed particle-in-cell simulations of these plasma processes and argued that these processes saturate at a very low level.  It is unclear, however, if the conclusions of their work are robust as it is unclear if these numerical setup is adequate (e.g. Mohamad's paper).  \cp{[This last sentence needs to be weakened or supported with a reference, e.g. by Mohamad's paper provided it is out by then.]}
 
-However, a full nonlinear study is called for.  We begin this task in this initial work where we study the distribution function of the electron-positron pairs that are produced from VHEGR-EBL photon annihilation.  We study the evolution of a distribution function under Lorentz transformations to develop an analytic understanding of how the perpendicular and parallel velocity dispersions transform under boosts.  Using this understanding, we then develop a simple description of the distribution function of the beam, which we then use to calculate the unstable modes analytically in both the reactive (hydrodynamic) and kinetic regimes. Here the reactive instability refers to the instability where the entire beam participates in the instability.  In particular, all the beam particles are resonant with the unstable wave on a timescale longer than the growth time of the instability.  The reactive instability is also referred to as the hydrodynamic instability since the instability can be derived from the fluid equations instead of kinetic theory.  On the other hand, in the kinetic regime, only a fraction of the beam particles are resonant with the beam over a the growth time of the instability, which reduces the growth rate compared to the reactive instability for the same beam density and beam Lorentz factor.  We recover the well-known results for the reactive regime for both the beam-plasma and ``oblique'' modes.  We also derive the growth rate for these two instabilities in the kinetic regime and delineate the range of applicability for both the reactive and kinetic cases and apply these results for ultrarelativistic \epm\ pair beams. 
+\cp{To this end\sout{However}}, a full nonlinear study is called for.  We begin this task in this initial work where we study the distribution function of the electron-positron pairs that are produced from VHEGR-EBL photon annihilation.  We study the evolution of a distribution function under Lorentz transformations to develop an analytic understanding of how the perpendicular and parallel velocity dispersions transform under boosts.  Using this understanding, we then develop a simple description of the distribution function of the beam, which we then use to calculate the unstable modes analytically in both the reactive (hydrodynamic) and kinetic regimes. Here the reactive instability refers to the instability where the entire beam participates in the instability.  In particular, all the beam particles are resonant with the unstable wave on a timescale longer than the growth time of the instability.  The reactive instability is also referred to as the hydrodynamic instability since the instability can be derived from the fluid equations instead of kinetic theory.  On the other hand, in the kinetic regime, only a fraction of the beam particles are resonant with the beam over a the growth time of the instability, which reduces the growth rate compared to the reactive instability for the same beam density and beam Lorentz factor.  We recover the well-known results for the reactive regime for both the beam-plasma and oblique modes.  We also derive the growth rate for these two instabilities in the kinetic regime and delineate the range of applicability for both the reactive and kinetic cases and apply these results for ultrarelativistic \epm\ pair beams. 
 
-This paper is organized as follows.  In Section \ref{sec:setup}, we describe the transformation properties of an ultrarelativistic \epm\ beam in terms of its distribution function.  We then calculate the various linear instabilities that this beam is subject to in section \ref{sec:linear}.  In particular, we pay careful attention to both the reactive (or hydrodynamic) and kinetic regimes of the beam plasma and ``oblique'' instabilities and the transition between the two.  Applying these result to TeV electron-positron pair beams that arise from TeV photon pair production in Section \ref{sec:application},
-we demonstrate the despite the extraordinary coldness of the beam that we are always in the kinetic regime for the ``oblique'' mode, but may be in the reactive regime for the beam plasma mode.  However, because the controlling parameter is close to unity, the growth rates calculated in either regime are similar.  We close with a discussion the implications of this work and application of these results for nonlinear theory in Section \ref{sec:conclusions}.
+This paper is organized as follows.  In Section \ref{sec:setup}, we describe the transformation properties of an ultrarelativistic \epm\ beam in terms of its distribution function.  We then calculate the various linear instabilities that this beam is subject to in section \ref{sec:linear}.  In particular, we pay careful attention to both the reactive (or hydrodynamic) and kinetic regimes of the beam plasma and oblique instabilities and the transition between the two.  Applying these results to TeV electron-positron pair beams that arise from TeV photon pair production in Section \ref{sec:application},
+we demonstrate that despite the extraordinary coldness of the beam \cp{\sout{that}} we are always in the kinetic regime for the oblique mode, but may be in the reactive regime for the beam plasma mode.  However, because the controlling parameter is close to unity, the growth rates calculated in either regime are similar.  We close with a discussion the implications of this work and application of these results for nonlinear theory in Section \ref{sec:conclusions}.
 
 % \ac{[There are some notational issues throughout the text, which I'll list here.  Usually it is simply a matter of choosing, and then sticking to, a convention.
 % \begin{itemize}
@@ -613,11 +614,11 @@ This can be contrasted with Figure \ref{fig:bpgen} where we plot the maximized b
 % \Gamma &=&  -\sqrt{\frac{\pi k_z}{k_x}}\frac{n_b\gamma}{n_t}\frac{\Delta\beta_{z,r}}{\sqrt{\alpha_{\perp}}}\frac{k_z}{k}\left(\frac{1}{\alpha'_{\perp}} + \frac{1}{\alpha'_{\parallel}} - \frac{k_z}{k_x\alpha'_{\parallel}}\right)\nonumber\\
 % && \exp\left(-\frac{k_z^2\Delta\beta_{z,r}^2}{k_x^2\alpha_{\perp}}\right),\label{eq:growth-rate-oblique}
 % \end{eqnarray}
-% where $\alpha'_{\perp} = \gamma^2\alpha_{\perp}$ is an O(1) factor.  Again, we find that the overall scaling of the kinetic ``oblique'' instability is $\sim \gamma n_b/n_t$ like the kinetic beam plasma instability above.  Also we have made the assumption that $k_x/k_z \gg 1/\gamma$.  For $k_x/k_z < 1/\gamma$, the dispersion relation reverts back to the beam plasma case given in Equation (\ref{eq:growth-rate-bp})
+% where $\alpha'_{\perp} = \gamma^2\alpha_{\perp}$ is an O(1) factor.  Again, we find that the overall scaling of the kinetic oblique instability is $\sim \gamma n_b/n_t$ like the kinetic beam plasma instability above.  Also we have made the assumption that $k_x/k_z \gg 1/\gamma$.  For $k_x/k_z < 1/\gamma$, the dispersion relation reverts back to the beam plasma case given in Equation (\ref{eq:growth-rate-bp})
 % 
 % % In Figure \ref{fig:oblique-growth-rate} we plot the growth rate for the oblique instability (eq.[\ref{eq:growth-rate-oblique}]) for $\alpha=\alpha'_{\perp} = \alpha'_{\parallel} = 0.1, 0.3, 1,$ and 3.  Here we have assumed that the perpendicular and parallel velocity dispersions are the same once the scaling for $\gamma$ has been removed.  This is true for small values of $\alpha$ that result from a rest-frame nonrelativistic distribution in Figure \ref{fig:distribution_non_rel}, but would not be the case for a rest frame relativistic distribution as shown in Figure \ref{fig:distribution_rel} where larger $v/c$ corrections come into play.  
 % 
-% Figure \ref{fig:oblique-growth-rate} also demonstrates that the ``oblique'' mode follows its name in that the fastest 
+% Figure \ref{fig:oblique-growth-rate} also demonstrates that the oblique mode follows its name in that the fastest 
 % growing mode is neither perfectly parallel ($k_x/k_z = 0$) nor perpendicular ($k_x/k_z = \infty$), but rather at a k-vector 
 % where $k_x/k_z \sim O(1)$. This qualitatively matches the results of a full analysis of \citet{Bret-Grem-Beni:10}, who also found the greatest growth for nontrivial $k_x/k_z$. 
 % 
@@ -669,18 +670,18 @@ Applying these results, we find
 \frac{\Delta v_{\perp}}{v_b} &\sim&  \gamma_b^{-1}\sqrt{\frac{k_BT}{m_ec^2}},\\
 \frac{\Delta v_{\parallel}}{v_b} &\sim& \gamma_b^{-2}\sqrt{\frac{k_BT}{m_ec^2}}.
 \end{eqnarray}
-Hence, the conditions for the reactive regime for the ``oblique'' mode (eq.[\ref{eq:oblique reactive regime}]) and beam-plasma mode (eq.[\ref{eq:bp reactive regime}]) can be reduced to 
+Hence, the conditions for the reactive regime for the oblique mode (eq.[\ref{eq:oblique reactive regime}]) and beam-plasma mode (eq.[\ref{eq:bp reactive regime}]) can be reduced to 
 \begin{equation}\label{eq:generic reactive regime}
  \displaystyle
 1 \ll \left\{
  \begin{array}{cl}
- ({k_BT}/{m_ec^2})^{-1/2}\gamma_b^{2/3}\left({n_b}/{n_t}\right)^{1/3} & \textrm{``oblique''} \\
+ ({k_BT}/{m_ec^2})^{-1/2}\gamma_b^{2/3}\left({n_b}/{n_t}\right)^{1/3} & \textrm{oblique} \\
 ({k_BT}/{m_ec^2})^{-1/2}\gamma_b\left({n_b}/{n_t}\right)^{1/3} & \textrm{beam plasma} 
 \end{array}
 \right..
 \end{equation}
 
-We now proceed to study the range of validity for the kinetic growth rate for the beam plasma mode (eq.[\ref{eq:bp kinetic growth rate}]) and ``oblique'' mode (eq.[\ref{eq:kinetic growth rate}]).  Following the argument of \cite{Boyd}, the growth occurs over a range where the distribution function is positive or $v_b - \Delta v < \omega/k < v_b$.  Hence the bandwidth over which the distribution powers grows is $\Delta \omega \sim k \Delta v$  For the beam plasma case, the growth rate is roughly
+We now proceed to study the range of validity for the kinetic growth rate for the beam plasma mode (eq.[\ref{eq:bp kinetic growth rate}]) and oblique mode (eq.[\ref{eq:kinetic growth rate}]).  Following the argument of \cite{Boyd}, the growth occurs over a range where the distribution function is positive or $v_b - \Delta v < \omega/k < v_b$.  Hence the bandwidth over which the distribution powers grows is $\Delta \omega \sim k \Delta v$  For the beam plasma case, the growth rate is roughly
 \begin{equation}
  \Gamma \sim \frac{n_b}{\gamma^3n_t} \left(\frac{c}{\Delta v_{\parallel}}\right)^{2}.
 \end{equation}
@@ -689,17 +690,17 @@ The bandwidth, $\Delta \omega$, is then greater than the growth rate if
  \frac{\Delta v_{\parallel}}{v_b} \gtrsim \gamma^{-1}\left(\frac{n_b}{n_t}\right)^{1/3},
 \end{equation}
 which connects with the condition on the reactive beam plasma instability from Equation (\ref{eq:bp reactive regime}).
-Similarly for the ``oblique'' mode, the bandwidth, $\Delta \omega$, is then greater than the growth rate if 
+Similarly for the oblique mode, the bandwidth, $\Delta \omega$, is then greater than the growth rate if 
 \begin{equation}\label{eq:oblique kinetic regime}
 \frac{\Delta v_{\perp}}{v_b} \gtrsim \left(\frac{n_b}{\gamma n_t}\right)^{1/3},
 \end{equation}
-which can similarly compared to the condition on the reactive ``oblique'' mode from Equation (\ref{eq:oblique reactive regime}).
+which can similarly compared to the condition on the reactive oblique mode from Equation (\ref{eq:oblique reactive regime}).
 
 Combining these two kinetic condition and our result again from Section \ref{sec:setup}, we find  
 \begin{equation}\label{eq:generic kinetic regime}
 1 \ge \left\{
 \begin{array}{cl}
-({k_BT}/{m_ec^2})^{-1/2}\gamma_b^{2/3}\left({n_b}/{n_t}\right)^{1/3} & \textrm{``oblique''} \\
+({k_BT}/{m_ec^2})^{-1/2}\gamma_b^{2/3}\left({n_b}/{n_t}\right)^{1/3} & \textrm{oblique} \\
 ({k_BT}/{m_ec^2})^{-1/2}\gamma_b\left({n_b}/{n_t}\right)^{1/3} & \textrm{beam plasma} 
 \end{array}
 \right.,
@@ -708,7 +709,7 @@ which in combination with Equation (\ref{eq:generic reactive regime}) denotes th
 
 \section{Application to Ultrarelativistic $\epm$ Beams}\label{sec:application}
 
-As discussed in the Introduction, the annihilation of VHEGRs and EBL photons produce ultrarelativistic \epm\ beams that are unstable to the beam plasma and ``oblique'' modes discussed above.  To apply the above results to the ultrarelativistic \epm\ beams, we now calculate their initial conditions.
+As discussed in the Introduction, the annihilation of VHEGRs and EBL photons produce ultrarelativistic \epm\ beams that are unstable to the beam plasma and oblique modes discussed above.  To apply the above results to the ultrarelativistic \epm\ beams, we now calculate their initial conditions.
 
 \subsection{Average COM Energy of the \epm\ Beam}\label{sec:temperature}
 
@@ -782,19 +783,19 @@ and
 \left(\frac{E}{\TeV}\right)^{1/3},\label{eq:beam bp condition}
 \end{eqnarray}
 where $\gamma_6 = \gamma/10^6$. 
-We see from our reactive (\ref{eq:generic reactive regime}) and kinetic (\ref{eq:generic kinetic regime}) conditions, that the ``oblique'' instability always exists in the kinetic regime, but the beam plasma instability sits in the reactive regime at $z\gtrsim 1$ or for sufficiently cold beams $k_BT/m_e c^2 \lesssim 0.5$, which occurs $E_{\rm ph} \sim 1\,\TeV$ and for large $\gamma$, which occurs for $E_{\rm ph} \sim 10\,\TeV$ at $z=0$.  
+We see from our reactive (\ref{eq:generic reactive regime}) and kinetic (\ref{eq:generic kinetic regime}) conditions, that the oblique instability always exists in the kinetic regime, but the beam plasma instability sits in the reactive regime at $z\gtrsim 1$ or for sufficiently cold beams $k_BT/m_e c^2 \lesssim 0.5$, which occurs $E_{\rm ph} \sim 1\,\TeV$ and for large $\gamma$, which occurs for $E_{\rm ph} \sim 10\,\TeV$ at $z=0$.  
 
-The discussion above confirmed our earlier estimate in Paper I that the ``oblique'' instability sits in the kinetic regime.  However, our new results suggest that the beam-plasma instability matches the ``oblique'' instability in effective growth rate in the kinetic regime and that the beam-plasma mode may also sit in the reactive regime.  However, we do not expect that the reactive beam-plasma mode will have a major effect on our earlier results.  First, plasma instabilities losses on the TeV pairs could easily push the beam plasma mode into the kinetic regime by reducing $n_b$, but this requires a proper estimate of the effect of the nonlinear instability.  This is a part of ongoing work and will be presented in a future publication. Second, while it seems that the beam plasma mode may sit in the reactive regime, it is not too far from the kinetic regime, i.e., the controlling parameter, $({\gamma_b}/{\sqrt{k_BT/m_e c^2}})\left({n_b}/{\nIGM}\right)^{1/3}$, is order unity.  Thus, both the reactive and the kinetic growth rates are similar and likely makes little difference for the beam plasma mode which regime is assumed (in terms of growth rate).  Therefore, the use of the kinetic growth rate for the ``oblique'' mode (and beam-plasma mode)  in Paper I is valid, and the results of this paper buttresses the results of Paper I, II, III, and \citet{paperIV}.
+The discussion above confirmed our earlier estimate in Paper I that the oblique instability sits in the kinetic regime.  However, our new results suggest that the beam-plasma instability matches the oblique instability in effective growth rate in the kinetic regime and that the beam-plasma mode may also sit in the reactive regime.  However, we do not expect that the reactive beam-plasma mode will have a major effect on our earlier results.  First, plasma instabilities losses on the TeV pairs could easily push the beam plasma mode into the kinetic regime by reducing $n_b$, but this requires a proper estimate of the effect of the nonlinear instability.  This is a part of ongoing work and will be presented in a future publication. Second, while it seems that the beam plasma mode may sit in the reactive regime, it is not too far from the kinetic regime, i.e., the controlling parameter, $({\gamma_b}/{\sqrt{k_BT/m_e c^2}})\left({n_b}/{\nIGM}\right)^{1/3}$, is order unity.  Thus, both the reactive and the kinetic growth rates are similar and likely makes little difference for the beam plasma mode which regime is assumed (in terms of growth rate).  Therefore, the use of the kinetic growth rate for the oblique mode (and beam-plasma mode)  in Paper I is valid, and the results of this paper buttresses the results of Paper I, II, III, and \citet{paperIV}.
 
 \section{Summary and Conclusion}\label{sec:conclusions}
 
-The ultrarelativistic $\epm$ beams that result from VHEGR-EBL annihilation are subject to powerful plasma beam instabilities including the beam plasma and ``oblique'' instability.  In this work, we have these linear instabilities as they would apply to the ultrarelativistic pair beams.  Our main findings are:
+The ultrarelativistic $\epm$ beams that result from VHEGR-EBL annihilation are subject to powerful plasma beam instabilities including the beam plasma and oblique instability.  In this work, we have these linear instabilities as they would apply to the ultrarelativistic pair beams.  Our main findings are:
 \begin{itemize}
 %\item{We calculate how the parallel and perpendicular velocity dispersions of a distribution function responds under Lorentz boosts.  We show that these two velocities dispersions respectively scale like $\gamma^{-2}$ and $\gamma^{-1}$, allowing us to develop a simplified distribution function of the TeV electron-positron beam. We also show that this can be identified with a drifting relativistic Maxwell-Juttner distribution. }
-\item{We analytically calculated the beam-plasma and ``oblique'' instabilities in both the reactive and kinetic regime.  We have recovered the reactive scalings for the beam-plasma mode $\Gamma \sim \gamma^{-1}(n_b/n_t)^{1/3}$ and the ``oblique'' mode $\Gamma \sim (n_b/\gamma n_t)^{1/3}$.  In the kinetic regime, we have shown that the growth rate for both modes have the same scaling and similar normalization.}
-\item{We also delineated the regime of applicability of the kinetic and reactive calculation and found, while the kinetic growth rates are similar for both the beam plasma and ``oblique'' mode, the condition for transition between the kinetic and reactive regimes for both are different.  In particular, the beam-plasma mode transitions at a lower value of $\gamma$ in comparison to the ``oblique'' mode.  This is due to a difference of $\gamma^{1/3}$ scaling between the two modes.}
+\item{We analytically calculated the beam-plasma and oblique instabilities in both the reactive and kinetic regime.  We have recovered the reactive scalings for the beam-plasma mode $\Gamma \sim \gamma^{-1}(n_b/n_t)^{1/3}$ and the oblique mode $\Gamma \sim (n_b/\gamma n_t)^{1/3}$.  In the kinetic regime, we have shown that the growth rate for both modes have the same scaling and similar normalization.}
+\item{We also delineated the regime of applicability of the kinetic and reactive calculation and found, while the kinetic growth rates are similar for both the beam plasma and oblique mode, the condition for transition between the kinetic and reactive regimes for both are different.  In particular, the beam-plasma mode transitions at a lower value of $\gamma$ in comparison to the oblique mode.  This is due to a difference of $\gamma^{1/3}$ scaling between the two modes.}
 \item{We calculate the average COM energy of the ultrarelativistic pair beam using a simplified model of the spectra of the EBL.  We found that the average energy of these beams range from $E_e/m_e c^2 = 1.3-3$ for $E_{\rm ph} = 1-10\,\TeV$, with colder beams at lower energies.  This is due to the rapid cutoff in the EBL above $10\,\eV$. }
-\item{We demonstrate that the ``oblique'' mode is in the kinetic regime, while, the beam plasma mode is marginally in the reactive regime. In any case, the use of either regime produces roughly the same growth rate.  Moreover, the inclusion of plasma instability losses on the number density of beam particles may place the beam plasma mode firmly in the kinetic regime.}
+\item{We demonstrate that the oblique mode is in the kinetic regime, while, the beam plasma mode is marginally in the reactive regime. In any case, the use of either regime produces roughly the same growth rate.  Moreover, the inclusion of plasma instability losses on the number density of beam particles may place the beam plasma mode firmly in the kinetic regime.}
 \end{itemize}
 
 %The results of this paper are a first step toward an understanding of the nonlinear regime of these plasma instabilities for ultrarelativistic \epm\ beams.  In particular, by developing a simple distribution function, whose modes can be analytically calculated, we will develop a quasilinear theory for these modes in a forthcoming publication.  Such a quasilinear calculation will capture the dominant wave-particle interaction and capture the initial nonlinear evolution of this instability.  
@@ -808,8 +809,8 @@ Canada through Industry Canada and by the Province of Ontario through
 the Ministry of Research and Innovation.
 PC is supported by the UWM Research Growth Initiative, the NASA ATP
 program through NASA grant NNX13AH43G, and NSF grant AST-1255469.
-C.P.~gratefully acknowledges
-financial support of the Klaus Tschira Foundation. E.P. acknowledges support by the ERC grant ``The Emergence of Structure during the epoch of Reionization''.
+C.P.~gratefully acknowledges support by the European Research Council under ERC-CoG grant CRAGSMAN-646955 and by the Klaus Tschira Foundation.
+E.P. acknowledges support by the ERC grant ``The Emergence of Structure during the epoch of Reionization''.
 We thank A. Bret for sharing his notes of the oblique instability and for extensive and enlightening discussions. 
 
 %\onecolappendix
@@ -1318,7 +1319,7 @@ where $\Gamma_0 \equiv \omega_p \gamma_B (n_b/n_t) (m_e v_B^2/k_B T)$ is the typ
 %  &=& -\frac{\sqrt{\pi} n_b\gamma}{n_t}\frac{\Delta\beta_{z,r}}{\sqrt{\alpha_{\parallel}}\alpha'_{\parallel}}\exp\left(-\frac{\Delta\beta_{z,r}^2}{\alpha_{\parallel}}\right),
 % \end{eqnarray}
 % where $\alpha'_{\parallel} = \gamma^4\alpha_{\parallel}$ is the rescaled factor such that it is order unity.
-% As $\Delta\beta_z \sim \sqrt{\alpha_{\parallel}}$, Equation (\ref{eq:growth-rate-bp}) has an overall scaling like $\gamma\nb/n_t$ in line scalings found for the kinetic ``oblique'' mode quoted in Paper I (also see below).  
+% As $\Delta\beta_z \sim \sqrt{\alpha_{\parallel}}$, Equation (\ref{eq:growth-rate-bp}) has an overall scaling like $\gamma\nb/n_t$ in line scalings found for the kinetic oblique mode quoted in Paper I (also see below).  
 % 
 % We now assume $k_x \neq 0$ and perform the integral over $\Delta\beta_z$ in Equation (\ref{eq:integral2}) to find for the imaginary part
 % \begin{equation}\label{eq:integral-kinetic}
@@ -1339,7 +1340,7 @@ where $\Gamma_0 \equiv \omega_p \gamma_B (n_b/n_t) (m_e v_B^2/k_B T)$ is the typ
 % \begin{eqnarray}
 % \Gamma = -\sqrt{\frac{\pi k_z}{k_x}}\frac{n_b\gamma}{n_t}\frac{\Delta\beta_{z,r}}{\sqrt{\alpha_{\perp}}}\frac{k_z}{k}\left(\frac{1}{\alpha'_{\perp}} + \frac{1}{\alpha'_{\parallel}} - \frac{k_z}{k_x\alpha'_{\parallel}}\right) \exp\left(-\frac{k_z^2\Delta\beta_{z,r}^2}{k_x^2\alpha_{\perp}}\right),\label{eq:growth-rate-oblique-appendix}
 % \end{eqnarray}
-% where $\alpha'_{\perp} = \gamma^2\alpha_{\perp}$ is an O(1) factor.  Again, we find that the overall scaling of the kinetic ``oblique'' instability is $\sim \gamma n_b/n_t$ like the kinetic beam plasma instability above.  Also we have made the assumption that $k_x/k_z \gg 1/\gamma$.  For $k_x/k_z < 1/\gamma$, the dispersion relation reverts back to the beam plasma case given in Equation (\ref{eq:growth-rate-bp})
+% where $\alpha'_{\perp} = \gamma^2\alpha_{\perp}$ is an O(1) factor.  Again, we find that the overall scaling of the kinetic oblique instability is $\sim \gamma n_b/n_t$ like the kinetic beam plasma instability above.  Also we have made the assumption that $k_x/k_z \gg 1/\gamma$.  For $k_x/k_z < 1/\gamma$, the dispersion relation reverts back to the beam plasma case given in Equation (\ref{eq:growth-rate-bp})
 
 
 \bibliography{bigmh}
