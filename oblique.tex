@@ -476,7 +476,27 @@ Upon integrating by parts, Equation (\ref{eq:dispersion relation}) becomes
 \end{multline}
 %\ac{[$\beta$ vs. $v$ issue above.]}
 
-There are two distinct, often qualitatively different, regimes in which we may consider the implications of this dispersion relation.  The first is the cold plasma limit or the hydrodynamic or reactive limit.  The hydrodynamic limit is aptly named because the resulting dispersion relation that is found could have also been calculated directly from the continuity equation and the momentum equation.  In this limit, the internal distribution of the particles of the background or beam are irrelevant to the physics of the instability and it is only the bulk response that is important.  In particular, this means that the beam particles are resonance with the unstable wave over a timescale much longer than the growth them as stated above, i.e., the beam particles do not drift a distance larger than the wavelength of the unstable mode over the growth time of the instability.  The second is the kinetic regime, where the internal distribution of the beam particles are important to the physics of the instability. Here, only a fraction of the beam particles stay within one wavelength of the unstable mode over the growth time of the instability.   Here, the bulk of the plasma (background or beam) do not response to the disturbance, but rather only a fraction of the particles are relevant for driving (instability) or damping (Landau damping).  We discuss below the evaluation of the dispersion relation in these two regimes, which gives two regimes of instability, and the delineation between these two regimes.
+There are two distinct, often qualitatively different, regimes in which we may
+consider the implications of this dispersion relation.  The first is the cold
+plasma limit or the hydrodynamic or reactive limit.  The hydrodynamic limit is
+aptly named because the resulting dispersion relation that is found could have
+also been calculated directly from the continuity equation and the momentum
+equation.  In this limit, the internal distribution of the particles of the
+background or beam are irrelevant to the physics of the instability and it is
+only the bulk response that is important.  In particular, this means that the
+beam particles are resonance with the unstable wave over a timescale much longer
+than the growth \cp{\sout{them}time} as stated above, i.e., the beam particles
+do not drift a distance larger than the wavelength of the unstable mode over the
+growth time of the instability.  The second is the kinetic regime, where the
+internal distribution of \cp{\sout{the}} beam particles \cp{\sout{are}is}
+important to the physics of the instability. Here, only a fraction of
+\cp{\sout{the}} beam particles stay within one wavelength of the unstable mode
+over the growth time of the instability.  \cp{\sout{Here}Moreover}, the bulk of
+the plasma (background or beam) does not respond to the disturbance\cp{\sout{, but rather}. Instead,}
+only a fraction of \cp{\sout{the}} particles \cp{\sout{are}is} relevant for
+driving (instability) or damping (Landau damping).  We discuss below the
+evaluation of the dispersion relation in these two regimes, which gives two
+regimes of instability, and the delineation between these two regimes.
 
 \subsection{Hydrodynamic (Reactive) Instability}
 
@@ -487,7 +507,7 @@ Taking the limit of Equation (\ref{eq:distribution function beam}) as $k_BT  \ri
 \end{equation}
 For $k_x = 0$, we recover the same beam-plasma instability which was described in the Appendix of \citet{paperI}.  
 
-The solution to Equation (\ref{eq:dispersion relation reactive}) is given in Appendix \ref{sec:solution reactive} where we show that the associated growth rate (eq.[\ref{eq:growth rate reactive appendix}]) is 
+The solution to Equation (\ref{eq:dispersion relation reactive}) is given in Appendix \ref{sec:solution reactive} where we show that the associated growth rate (eq.~\ref{eq:growth rate reactive appendix}) is 
 \begin{equation}\label{eq:growth rate reactive}
  \Gamma = \frac{\sqrt{3}}{2^{4/3}}\left(\frac{n_b}{n_t}\right)^{1/3}\left(\frac{\gamma^2 Z_x^2 + 1}{Z_x^2 + 1}\right)^{1/3}\frac{\omega_{p,t}}{\gamma},
 \end{equation}
@@ -514,7 +534,7 @@ Equation (\ref{eq:dispersion relation reactive}) can also be solved numerically 
 \end{equation}
 which we can numerically solve in terms of $\omega/\omega_{p,t}$, $k_z\lambda_D$, $v_b/c$, and $n_b/n_t$, where $\lambda_D = c/\omega_{p,t}$ is the skin depth.  In Figure \ref{fig:OffResonance} we show the real and imaginary parts for $\omega/\omega_{p,t}$ as a function of $k_z\lambda_D$ for representative case of $v_b/c \approx 1$ and $n_b/n_t = 10^{-3}$ and $\gamma=100$.    For $k_z\lambda_D = 1$, the growth rate reaches it maximum of $\Gamma_{\rm max}$ and the real part of the frequency is $\Re(\omega) = \omega_{p,t}$, which is plasma oscillation frequency.  This wave would exist in the absence of a tenuous beam.  However, as we move away from this frequency toward lower $k_z$, we still find substantial growth, with $\Gamma \approx 0.1 \Gamma_{\rm max}$ as $k_z \approx 0.9\lambda_D^{-1}$.  Interestingly, the real part of the unstable wave has a phase velocity, $v_{\rm ph} = \Re(\omega)/k = c$, which is still in resonance with the beam.  This unstable wave does not exist in the absence of the destabilizing beam and does not correspond to any wave in the unperturbed target plasma.  
 
-In a continuous system, these waves do not matter compare to the unstable mode at $k\lambda_D = 1$.   However, for discrete numerical systems, which do not sufficiently resolve the most unstable modes, these sub maximal modes drive the growth of the instability of numerically calculated beam-plasma systems, which may lead to an incorrect nonlinear state compare to the physical system.
+In a continuous system, these waves do not matter in comparison to the unstable mode at $k\lambda_D = 1$.   However, for discrete numerical systems, which do not sufficiently resolve the most unstable modes, these sub maximal modes drive the growth of the instability of numerically calculated beam-plasma systems, which may lead to an incorrect nonlinear state in comparison to the physical system.
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{off_res.pdf}
@@ -532,7 +552,7 @@ We begin first with the distribution function for the target plasma:
  F_t = \left(\frac{1}{2\pi m_e k_B T}\right)^{3/2}\exp\left(-\frac{p^2}{2m_e k_B T}\right),
 \end{equation}
 where the target plasma is assumed to be nonrelativistic, $\bmath{p}=m_e\vel$ is the nonrelativistic momentum,  and$T$ is the temperature of the background.
-For the beam plasma, we adopt the Maxwell-J{\"u}ttner distribution (eq.[\ref{eq:distribution function beam}]).
+For the beam plasma, we adopt the Maxwell-J{\"u}ttner distribution (eq.~\ref{eq:distribution function beam}).
 %\begin{equation}\label{eq:distribution function beam}
 %F_b = \frac{n_b}{4\pi\gamma_b m^2 T K_2(m/T_{\rm L})} \exp\left(-\frac {\gammabeam(E - \betabeam \cdot \pmom)} {T}\right),
 %\end{equation}
@@ -676,7 +696,7 @@ Applying these results, we find
 \frac{\Delta v_{\perp}}{v_b} &\sim&  \gamma_b^{-1}\sqrt{\frac{k_BT}{m_ec^2}},\\
 \frac{\Delta v_{\parallel}}{v_b} &\sim& \gamma_b^{-2}\sqrt{\frac{k_BT}{m_ec^2}}.
 \end{eqnarray}
-Hence, the conditions for the reactive regime for the oblique mode (eq.[\ref{eq:oblique reactive regime}]) and beam-plasma mode (eq.[\ref{eq:bp reactive regime}]) can be reduced to 
+Hence, the conditions for the reactive regime for the oblique mode (eq.~\ref{eq:oblique reactive regime}) and beam-plasma mode (eq.~\ref{eq:bp reactive regime}) can be reduced to 
 \begin{equation}\label{eq:generic reactive regime}
  \displaystyle
 1 \ll \left\{
@@ -687,7 +707,7 @@ Hence, the conditions for the reactive regime for the oblique mode (eq.[\ref{eq:
 \right..
 \end{equation}
 
-We now proceed to study the range of validity for the kinetic growth rate for the beam plasma mode (eq.[\ref{eq:bp kinetic growth rate}]) and oblique mode (eq.[\ref{eq:kinetic growth rate}]).  Following the argument of \cite{Boyd}, the growth occurs over a range where the distribution function is positive or $v_b - \Delta v < \omega/k < v_b$.  Hence the bandwidth over which the distribution powers grows is $\Delta \omega \sim k \Delta v$  For the beam plasma case, the growth rate is roughly
+We now proceed to study the range of validity for the kinetic growth rate for the beam plasma mode (eq.~\ref{eq:bp kinetic growth rate}) and oblique mode (eq.~\ref{eq:kinetic growth rate}).  Following the argument of \cite{Boyd}, the growth occurs over a range where the distribution function is positive or $v_b - \Delta v < \omega/k < v_b$.  Hence the bandwidth over which the distribution powers grows is $\Delta \omega \sim k \Delta v$  For the beam plasma case, the growth rate is roughly
 \begin{equation}
  \Gamma \sim \frac{n_b}{\gamma^3n_t} \left(\frac{c}{\Delta v_{\parallel}}\right)^{2}.
 \end{equation}
@@ -776,7 +796,7 @@ Still some progress can be made if we assume that the dominant loss rate is ICC 
 \end{eqnarray}
 where $\Dpp$ is defined in the Introduction to be the mean free path of a VHEGR, $L_E$ is the isotropic luminosity of the VHEGR source, $E$ is the energy of the VHEGR photon, $\Gamma_{\rm IC}$ is the inverse Compton cooling rate, and $\zeta = 4.5$ for $z \leq 1$ and $\zeta = 0$ for $z\geq 1$.
 
-In Section \ref{sec:transition}, we derived the controlling parameter that delineates the reactive (eq.[\ref{eq:generic reactive regime}]) and kinetic regimes (eq.[\ref{eq:generic kinetic regime}]) by comparing the frequency spread of resonant waves, $\Delta\omega\sim k\Delta v$, with the growth rate, $\Gamma$.  Applying these conditions (eqns. [\ref{eq:generic reactive regime}] and [\ref{eq:generic kinetic regime}]) to the ultrarelativistic $e^+e^-$ pair beams of interest, we find for the controlling parameter: 
+In Section \ref{sec:transition}, we derived the controlling parameter that delineates the reactive (eq.~\ref{eq:generic reactive regime}) and kinetic regimes (eq.~\ref{eq:generic kinetic regime}) by comparing the frequency spread of resonant waves, $\Delta\omega\sim k\Delta v$, with the growth rate, $\Gamma$.  Applying these conditions (eqns.~\ref{eq:generic reactive regime} and \ref{eq:generic kinetic regime}) to the ultrarelativistic $e^+e^-$ pair beams of interest, we find for the controlling parameter: 
 \begin{eqnarray}
 \frac{\gamma_b^{2/3}}{\sqrt{k_BT/m_e c^2}}\left(\frac{n_b}{\nIGM}\right)^{1/3} &=& 3.2\times 10^{-2} \frac{\gamma_6^{2/3}}{\sqrt{k_BT/m_e c^2}}\left(\frac{1+z}{2}\right)^{\zeta-7/3}\nonumber\\
 &&\left(\frac{E L_E}{10^{45}\erg\,\s^{-1}}\right)^{1/3}
