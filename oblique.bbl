@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{39}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Aharonian} {et~al.}(2006){Aharonian}, {Akhperjanian}, {Bazer-Bachi},
@@ -80,6 +80,11 @@
 
 \bibitem[{{J{\"u}ttner}(1911)}]{1911AnP...340..145J}
 {J{\"u}ttner}, F. 1911, Annalen der Physik, 340, 145
+
+\bibitem[{{Kneiske} {et~al.}(2004){Kneiske}, {Bretz}, {Mannheim}, \&
+  {Hartmann}}]{Knei_etal:04}
+{Kneiske}, T.~M., {Bretz}, T., {Mannheim}, K., \& {Hartmann}, D.~H. 2004, \aap,
+  413, 807
 
 \bibitem[{{Kneiske} \& {Mannheim}(2008)}]{Knei-Mann:08}
 {Kneiske}, T.~M., \& {Mannheim}, K. 2008, \aap, 479, 41
