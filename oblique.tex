@@ -133,7 +133,7 @@
 \newcommand{\betabar}{\ensuremath{\overline{\bmath{\beta}}}}
 \newcommand{\betabarLAB}{\ensuremath{\betabar_{\rm L}}}
 \newcommand{\betabarCM}{\ensuremath{\betabar_{\rm CM}}}
-\newcommand{\betaBOOST}{\ensuremath{\beta_{\rm B}}}
+\newcommand{\betaBOOST}{\ensuremath{\beta_b}}
 
 
 \newcommand{\betabarLABpara}{\ensuremath{\overline{\beta}_{\rm L,\parallel}}}
@@ -346,12 +346,12 @@ f\propto \exp\left(-\frac E T\right),
 
 The relativistic Maxwellian distribution can be extended to a drifting (or boosted) distribution via an appropriate Lorentz transformation.  The relationship between the energies of the lab (boosted) frame and the COM frame is
 \begin{equation}
-  E_{\rm CM} = \gamma_B\left(E_{\rm L} - \betaBOOST p_{\rm L,\parallel}\right).
+  E_{\rm CM} = \gamma_b\left(E_{\rm L} - \betaBOOST p_{\rm L,\parallel}\right).
 \end{equation}
 \cp{\sout{Plugging}Inserting} this into (\ref{eq:relativistic maxwellian}), we find the Maxwell-J{\"u}ttner distribution \citep{1911AnP...340..145J,1975PhRvA..12..686W}
 \begin{eqnarray}\label{eq:distribution function beam} %{eq:drifting maxwellian}
-%f = \frac{1}{4\pi\gamma_B m^2 T_{\rm L} K_2(m/T_{\rm L})} \exp\left(-\frac {E_{\rm L} - \betaBOOST p_{\rm L,\parallel}} {T_{\rm L}}\right), \\
-f = \frac{n_b m_e c^2}{4\pi\gamma_B k_B T K_2(m_ec^2/k_B T )m_e^3c^3} \exp\left(-\frac {\gamma_B(E - \vel_B\cdot \bmath{p})} {k_B T}\right)
+%f = \frac{1}{4\pi\gamma_b m^2 T_{\rm L} K_2(m/T_{\rm L})} \exp\left(-\frac {E_{\rm L} - \betaBOOST p_{\rm L,\parallel}} {T_{\rm L}}\right), \\
+f = \frac{n_b m_e c^2}{4\pi\gamma_b k_B T K_2(m_ec^2/k_B T )m_e^3c^3} \exp\left(-\frac {\gamma_b(E - \vel_b\cdot \bmath{p})} {k_B T}\right)
 \end{eqnarray}
 where $K_2$ is the 2nd order modified Bessel function. 
 
@@ -363,7 +363,7 @@ where $K_2$ is the 2nd order modified Bessel function.
 %In the limit in which the perpendicular velocity dispersion in the COM frame is non-relativistic, i.e.,
 %$\left|\betaCM\right| \ll 1$, we find to lowest order in $\betaCM$
 %\begin{equation}
-% \dbetabarLABperp \approx \frac{\dbetabarCMperp}{\gamma_{\rm B}^2}.
+% \dbetabarLABperp \approx \frac{\dbetabarCMperp}{\gamma_b^2}.
 % \label{eq:betaperp}
 %\end{equation}
 %This simple scaling of the perpendicular velocity dispersion is an immediate 
@@ -379,7 +379,7 @@ where $K_2$ is the 2nd order modified Bessel function.
 %dispersion in the non-relativistic limit, $\left|\betaCM\right| \ll 1$, we find
 %to lowest order in $\betaCM$:
 %\begin{equation}
-% \dbetabarLABpara \approx \frac{\dbetabarCMpara}{\gamma_{\rm B}^{4}},
+% \dbetabarLABpara \approx \frac{\dbetabarCMpara}{\gamma_b^{4}},
 % \label{eq:betapara}
 %\end{equation}
 %Again this scaling follows immediately from the transformation of velocities under Lorentz boosts, and may be simply understood as a consequence of both time dilation and, for the parallel case, length contraction.
@@ -390,34 +390,34 @@ where $K_2$ is the 2nd order modified Bessel function.
 % To see how this distribution function appears in velocity space, we show four examples of the  Maxwell-J{\"u}ttner distribution in the center-of-mass frame for the nonrelativistic temperatures ($T=10^{-2}$ and $ 0.1$) in Figure \ref{fig:distribution_non_rel} and for relativistic temperatures ( $T=1$ and $10$) in Figure \ref{fig:distribution_rel}, where $T$ is listed in the natural relativistic units: $m_e c^2/k_B$.
 % We plot these in terms of $\beta_z$, which is parallel to the beam and $\beta_x$, which is perpendicular to the beam direction though, in the center-of-mass frame, an isotropic distribution makes no distinction between these directions.  We note that not all combinations of $\beta_x$ and $\beta_z$ are allowed as $\beta_x^2 + \beta_z^2 < 1$.  \ac{[Could you blank out the portions for which $\beta^2>=1$ in the figure to both drive this point home as well has emphasize the scaling difference?]}
 % 
-% Also plotted in Figures \ref{fig:distribution_non_rel} and \ref{fig:distribution_rel} on the right side is the distribution function that is boosted by $\gamma_B = 10^6$.  Motivated by our discussion in Appendix~\ref{sec:lorentz}, we have scaled the perpendicular component of the velocity by $\gamma_B^{-1}$ and the parallel component by $\gamma_B^{-2}$.
+% Also plotted in Figures \ref{fig:distribution_non_rel} and \ref{fig:distribution_rel} on the right side is the distribution function that is boosted by $\gamma_b = 10^6$.  Motivated by our discussion in Appendix~\ref{sec:lorentz}, we have scaled the perpendicular component of the velocity by $\gamma_b^{-1}$ and the parallel component by $\gamma_b^{-2}$.
 % When $T\ll1$, as anticipated above, the parallel and transverse velocity dispersions are well approximated by the scaling in Equations (\ref{eq:betaperp}) and (\ref{eq:betapara}).  As seen explicitly in Figure \ref{fig:distribution_non_rel}, the distribution functions remain roughly isotropic in the rescaled and shifted velocity units.
 % 
 % For relativistic temperatures, the conditions under which the expressions in Equations (\ref{eq:betaperp}) and (\ref{eq:betapara}) were derived no longer hold.  Nevertheless, despite the importance of higher-order and anisotropic terms in the distribution function, the magnitudes of the velocity dispersions remain well approximated by these scalings.  This may be seen explicitly in the right panels of Figure \ref{fig:distribution_rel}.
-% While these scaling will necessarily break down as $T \rightarrow \gamma_B$, for the problem of interest this is never the case.  Hence, for both the nonrelativistic and mildly relativistic case, the velocity dispersion generally scales like $\gamma_{\rm B}^{-1}$ in the perpendicular direction and like $\gamma_{\rm B}^{-2}$ in the parallel direction provided the boost is much larger than the center-of-mass temperature ($\gamma_B \gg T$).  
+% While these scaling will necessarily break down as $T \rightarrow \gamma_b$, for the problem of interest this is never the case.  Hence, for both the nonrelativistic and mildly relativistic case, the velocity dispersion generally scales like $\gamma_b^{-1}$ in the perpendicular direction and like $\gamma_b^{-2}$ in the parallel direction provided the boost is much larger than the center-of-mass temperature ($\gamma_b \gg T$).  
 % 
 % \begin{figure*}
 %  \includegraphics[width=0.5\textwidth]{distribution_cm_E_0_01.pdf}
 %  \includegraphics[width=0.5\textwidth]{distribution_boosted_E_0_01.pdf}\\
 %  \includegraphics[width=0.5\textwidth]{distribution_cm_E_0_1.pdf}
 %  \includegraphics[width=0.5\textwidth]{distribution_boosted_E_0_1.pdf}\\
-%  \caption{Distribution function in velocity space in the center-of-mass frame (left) and the boosted (lab) frame (right) for nonrelativistic temperatures: $T=0.01$ (top) and $0.1$ (bottom).  Note that while we plot $\beta_z$ and $\beta_x$ from -1 to 1, not all values of $\beta_z$ and $\beta_x$ are allowed. \ac{[Can this be shown explicitly, e.g., by making those values NaN, or some other method that results in no plot in that instance?  Also, how are these normalized?]}  On the right plot, we show the distribution in a boosted frame by a Lorentz factor of $10^6$.  As these plots would be compressed near $\beta_z \approx 1$, we have chosen to plot $\beta_z-\beta_B$ on the x-axis.  We have also multiplied the $\beta$ factors by a factor of $\gamma_B^2$ for the z (parallel) component and $\gamma_B$ for the x (perpendicular) component inspired by our discussion in Appendix~\ref{sec:lorentz}. These plots show that a non-relativistic velocity dispersion transforms as $\gamma_B^{-2}$ and $\gamma_B^{-1}$ for the parallel and perpendicular direction, respectively.\label{fig:distribution_non_rel}}
+%  \caption{Distribution function in velocity space in the center-of-mass frame (left) and the boosted (lab) frame (right) for nonrelativistic temperatures: $T=0.01$ (top) and $0.1$ (bottom).  Note that while we plot $\beta_z$ and $\beta_x$ from -1 to 1, not all values of $\beta_z$ and $\beta_x$ are allowed. \ac{[Can this be shown explicitly, e.g., by making those values NaN, or some other method that results in no plot in that instance?  Also, how are these normalized?]}  On the right plot, we show the distribution in a boosted frame by a Lorentz factor of $10^6$.  As these plots would be compressed near $\beta_z \approx 1$, we have chosen to plot $\beta_z-\beta_b$ on the x-axis.  We have also multiplied the $\beta$ factors by a factor of $\gamma_b^2$ for the z (parallel) component and $\gamma_b$ for the x (perpendicular) component inspired by our discussion in Appendix~\ref{sec:lorentz}. These plots show that a non-relativistic velocity dispersion transforms as $\gamma_b^{-2}$ and $\gamma_b^{-1}$ for the parallel and perpendicular direction, respectively.\label{fig:distribution_non_rel}}
 % \end{figure*}
 % \begin{figure*}
 % \includegraphics[width=0.5\textwidth]{distribution_cm_E_1.pdf}
 %  \includegraphics[width=0.5\textwidth]{distribution_boosted_E_1.pdf}\\
 %  \includegraphics[width=0.5\textwidth]{distribution_cm_E_10.pdf}
 %  \includegraphics[width=0.5\textwidth]{distribution_boosted_E_10.pdf}
-%  \caption{Same as Figure \ref{fig:distribution_non_rel} but for relativistic temperatures: $T=1$ (top) and $10$ (bottom).  Again, we have multiplied the $\beta$ factors on the right plot by a factor of $\gamma_B^2$ for the z (parallel) component and $\gamma_B$ for the x (perpendicular) component inspired by our discussion in Appendix~\ref{sec:lorentz}. Even here the dominant effect of the boost remains the rescaling of the velocity dispersions obtained formally for $T\ll1$.  Nevertheless, higher-order corrections are beginning to spread the distribution function over a velocity range larger than that anticipated by these scalings. 
+%  \caption{Same as Figure \ref{fig:distribution_non_rel} but for relativistic temperatures: $T=1$ (top) and $10$ (bottom).  Again, we have multiplied the $\beta$ factors on the right plot by a factor of $\gamma_b^2$ for the z (parallel) component and $\gamma_b$ for the x (perpendicular) component inspired by our discussion in Appendix~\ref{sec:lorentz}. Even here the dominant effect of the boost remains the rescaling of the velocity dispersions obtained formally for $T\ll1$.  Nevertheless, higher-order corrections are beginning to spread the distribution function over a velocity range larger than that anticipated by these scalings. 
 % \ac{[Can you make the righthand panels with square aspect ratios?  Right now, I think that they extend a factor of two more in the parallel direction, which appears to give the impression that they are more isotropic than they really are!  Also, how are the normlizations obtained?  Specifically, are they unit normalized?]}
 % \label{fig:distribution_rel}}
 % \end{figure*}
 % 
-% Motivated by these scalings, to probe the dependence of the oblique and beam instabilities upon $\gamma_B$ and $T$, we adopt the following simplified distribution function\footnote{This form for $f$ may be explicitly derived in the $T\ll1$ limit by Taylor expanding $\gamma_{\rm B}(E-\beta_{\rm B}p_\parallel)$ around $\bmath{\beta}-\bmath{\beta}_{\rm B}=0$.}: 
+% Motivated by these scalings, to probe the dependence of the oblique and beam instabilities upon $\gamma_b$ and $T$, we adopt the following simplified distribution function\footnote{This form for $f$ may be explicitly derived in the $T\ll1$ limit by Taylor expanding $\gamma_b(E-\beta_b p_\parallel)$ around $\bmath{\beta}-\bmath{\beta}_{\rm B}=0$.}: 
 % \begin{equation}
-%  f = \frac{n_b}{\sqrt{\pi^3\alpha_\parallel\alpha_\perp^2}}\exp\left(-\frac{\left(\beta_{\parallel}-\beta_{\rm B}\right)^2}{\dbetabarpara}-\frac{\beta_{\perp}^2}{\dbetabarperp}\right),
+%  f = \frac{n_b}{\sqrt{\pi^3\alpha_\parallel\alpha_\perp^2}}\exp\left(-\frac{\left(\beta_{\parallel}-\beta_b\right)^2}{\dbetabarpara}-\frac{\beta_{\perp}^2}{\dbetabarperp}\right),
 % \end{equation}
-% where $\alpha_\perp\equiv T/\gamma_{\rm B}^2$ and $\alpha_\parallel \equiv T/\gamma_{\rm B}^4 = \alpha_\perp/\gamma_{\rm B}^2$ and here and henceforth we have dropped the subscript L, with all quanties are to be interpreted in the lab frame unless otherwise indicated.
+% where $\alpha_\perp\equiv T/\gamma_b^2$ and $\alpha_\parallel \equiv T/\gamma_b^4 = \alpha_\perp/\gamma_b^2$ and here and henceforth we have dropped the subscript L, with all quanties are to be interpreted in the lab frame unless otherwise indicated.
 % This form of the distribution function has many of the properties of the Maxwell-Boltzmann distribution function, which we exploit below in our analytic calculations.
 
 \section{Linear Theory}\label{sec:linear}
@@ -534,7 +534,7 @@ We begin first with the distribution function for the target plasma:
 where the target plasma is assumed to be nonrelativistic, $\bmath{p}=m_e\vel$ is the nonrelativistic momentum,  and$T$ is the temperature of the background.
 For the beam plasma, we adopt the Maxwell-J{\"u}ttner distribution (eq.[\ref{eq:distribution function beam}]).
 %\begin{equation}\label{eq:distribution function beam}
-%F_b = \frac{n_b}{4\pi\gamma_B m^2 T K_2(m/T_{\rm L})} \exp\left(-\frac {\gammabeam(E - \betabeam \cdot \pmom)} {T}\right),
+%F_b = \frac{n_b}{4\pi\gamma_b m^2 T K_2(m/T_{\rm L})} \exp\left(-\frac {\gammabeam(E - \betabeam \cdot \pmom)} {T}\right),
 %\end{equation}
 Plugging these into the dispersion relation (\ref{eq:dispersion relation}), we find
 %\begin{equation}\label{eq:dispersion kinetic}
@@ -549,19 +549,19 @@ We discuss the solution to Equation (\ref{eq:dispersion kinetic}) in Appendix \r
 \begin{equation}
 \begin{aligned}
 \Gamma &\simeq - \Gamma_0
-\frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{B,z'})}{4 \gamma_b \mu K_2(\mu) \cG'^3}\\
+\frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{b,z'})}{4 \gamma_b \mu K_2(\mu) \cG'^3}\\
 &\times\left[
 \left( \cG'^2\mu^2 + 2\cG'\mu + 2 \right) 
 +
-\frac{\gamma_B^2 v_{B,x'}^2}{2\cG^2c^2} \left(2 \cG'\mu+ 2\right)
+\frac{\gamma_b^2 v_{b,x'}^2}{2\cG^2c^2} \left(2 \cG'\mu+ 2\right)
 \right]
 \exp(-\cG'\mu),\label{eq:kinetic growth rate}
 \end{aligned}
 \end{equation}
-where $\Gamma_0 \equiv \omega_p \gamma_B (n_b/n_t) (m_e v_B^2/k_B T)$ is the typical maximum growth rate.  This specializes to the beam-plasma growth rate if we take $v_{B,x'} = 0$, which gives:
+where $\Gamma_0 \equiv \omega_p \gamma_b (n_b/n_t) (m_e v_B^2/k_B T)$ is the typical maximum growth rate.  This specializes to the beam-plasma growth rate if we take $v_{b,x'} = 0$, which gives:
 \begin{equation}
 \Gamma_{\rm bp} \simeq - \Gamma_0
-\frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{B,z'})}{4 \gamma_b \mu K_2(\mu) \cG'^3}
+\frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{b,z'})}{4 \gamma_b \mu K_2(\mu) \cG'^3}
 \left( \cG'^2\mu^2 + 2\cG'\mu + 2 \right) 
 \exp(-\cG'\mu),\label{eq:bp kinetic growth rate}
 \end{equation}
@@ -576,7 +576,7 @@ where $\Gamma_0 \equiv \omega_p \gamma_B (n_b/n_t) (m_e v_B^2/k_B T)$ is the typ
   $v_{bx}/v_b\gg1/\gamma_b$.}\label{fig:ObliqueGMZ}
 \end{figure}
 
-In Figure \ref{fig:ObliqueGMZ}, we plot the growth rate as a function of $\cos\theta = \hat{k}\cdot\vel$, i.e., the angle between the beam and the wave vector, and $k_BT/m_e c^2$.  Here, it is clear that the growth rate reaches it maximum value $\cos\theta \gg 1/\gamma_b$, i.e., at an oblique, but not perpendicular angle.  Moreover the maximum growth rates vary little and are robust for broad range of angles between the wavevector and the beam direction.  Because the maximal oblique growth rate varies little for a wide range of angles and relativistic temperatures for $k_B T/m_ec^2 > 1$, we maximize over $\theta$ in Figure \ref{fig:OGgen} and plot the maximal growth rate as a function of $T$ and $\gamma_B - 1$.  Here for relativistic beams, the maximum growth rate varies little with $T$, varying by less than $10\%$ between hot and cold beams.  Thus, we find: 
+In Figure \ref{fig:ObliqueGMZ}, we plot the growth rate as a function of $\cos\theta = \hat{k}\cdot\vel$, i.e., the angle between the beam and the wave vector, and $k_BT/m_e c^2$.  Here, it is clear that the growth rate reaches it maximum value $\cos\theta \gg 1/\gamma_b$, i.e., at an oblique, but not perpendicular angle.  Moreover the maximum growth rates vary little and are robust for broad range of angles between the wavevector and the beam direction.  Because the maximal oblique growth rate varies little for a wide range of angles and relativistic temperatures for $k_B T/m_ec^2 > 1$, we maximize over $\theta$ in Figure \ref{fig:OGgen} and plot the maximal growth rate as a function of $T$ and $\gamma_b - 1$.  Here for relativistic beams, the maximum growth rate varies little with $T$, varying by less than $10\%$ between hot and cold beams.  Thus, we find: 
 \begin{equation}
 \Gamma_M
 \simeq
@@ -663,11 +663,11 @@ where we have dropped constant factors of order unity and assumed that $Z_x \sim
 
 In Appendix \ref{sec:lorentz}, we estimate how the parallel and perpendicular velocity spreads scale in a Maxwell-Junter distribution.  The relevant results are: 
 \begin{equation}
-\frac{\Delta v_{\perp}^2}{c^2} \approx \frac {k_B T}{\gamma_{\rm B}^2 m_e c^2 },
+\frac{\Delta v_{\perp}^2}{c^2} \approx \frac {k_B T}{\gamma_b^2 m_e c^2 },
 \end{equation}
 and 
 \begin{equation}
-\frac{\Delta v_{\parallel}^2}{c^2} \approx \frac {k_B T}{\gamma_{\rm B}^4 m_e c^2 },
+\frac{\Delta v_{\parallel}^2}{c^2} \approx \frac {k_B T}{\gamma_b^4 m_e c^2 },
 \end{equation}
 where $T$ is measured in the COM frame of the beam.  
 
@@ -860,9 +860,9 @@ Breaking the components of \betabarLAB\ into components parallel and
 perpendicular to the boost, we find: 
 \begin{eqnarray}
 \betabarLABpara &=& \int \frac{\betaCMpara -\betaBOOST}{1-\betaBOOST\betaCMpara} \fCM \dVCM,\\
-\betabarLABperp &=& \int \frac{\betaCMperp}{\gamma_{\rm B}\left(1-\betaBOOST\betaCMpara\right)} \fCM \dVCM,
+\betabarLABperp &=& \int \frac{\betaCMperp}{\gamma_b\left(1-\betaBOOST\betaCMpara\right)} \fCM \dVCM,
 \end{eqnarray}
-where $\gamma_{\rm B} = \left(1-\betaBOOST^2\right)^{-1/2}$ is the Lorentz factor of the boost between the lab and COM frame.  
+where $\gamma_b = \left(1-\betaBOOST^2\right)^{-1/2}$ is the Lorentz factor of the boost between the lab and COM frame.  
 For $\left|\betaCM\right|,\betaBOOST \ll 1$, we recover the Galilean invariant result, $\betabarLAB \approx \betabarCM - \betaBOOST\hat{\boldsymbol x}$.  
 However, this Galilean result no longer holds for relativistic motion.
 
@@ -879,18 +879,18 @@ In the lab frame, it is again useful to break it into components -- the parallel
 while the perpendicular component becomes
 \begin{eqnarray}
  \dbetabarLABperp &=& \int \beta_{\rm L,\perp}^2 \fLAB \dVLAB, \nonumber\\
-&=& \gamma_{\rm B}^{-2} \int \frac{\betaCMperp^2}{\left(1-\betaMEAN^2\right)^2} \fCM \dVCM,
+&=& \gamma_b^{-2} \int \frac{\betaCMperp^2}{\left(1-\betaMEAN^2\right)^2} \fCM \dVCM,
 \label{eq:dbetabarLABperp}
 \end{eqnarray}
 where we have defined $\betaMEAN^2 = \betaCMpara\betaBOOST$ as the geometric mean for matters of convenience.  
 
 It is easier to look at the perpendicular component first.  For $\left|\betaCM\right| \ll 1$, Equation (\ref{eq:dbetabarLABperp}) becomes to lowest order in $\betaCM$ 
 \begin{equation}
- \dbetabarLABperp \approx \frac{\dbetabarCMperp}{\gamma_{\rm B}^2} \approx \frac {k_B T}{\gamma_{\rm B}^2 m_e c^2 }.
+ \dbetabarLABperp \approx \frac{\dbetabarCMperp}{\gamma_b^2} \approx \frac {k_B T}{\gamma_b^2 m_e c^2 }.
 \end{equation}
 This simple scaling of the perpendicular velocity dispersion can be understood as a scaling with time between two frames boosted relative to each other, where the coordinates perpendicular to the boost axis remain invariant.  This result is also in line with the transformation of temperature as $T\rightarrow T/\gamma$ under a boost, i.e., $mv^2 \sim kT$ -- two factors of $1/\gamma$ from the perpendicular velocity dispersion is countered by one factor of $\gamma$ from the mass.  Let us now consider the parallel component (eq.(\ref{eq:dbetabarLABpara})) again to lowest order in $\betaCM$: 
 \begin{equation}
- \dbetabarLABpara \approx \frac{\dbetabarCMpara}{\gamma_{\rm B}^{4}}  \approx \frac {k_B T}{\gamma_{\rm B}^4 m_e c^2 },
+ \dbetabarLABpara \approx \frac{\dbetabarCMpara}{\gamma_b^{4}}  \approx \frac {k_B T}{\gamma_b^4 m_e c^2 },
 \end{equation}
 Here, the scaling of the parallel velocity dispersion can be understood as a double scaling of both time and coordinate (along the boost axis) between same two frames boosted relative to each other, giving an extra scaling of $\gamma^{-2}$.
 This scaling of the parallel component of the velocity dispersion has important consequences that we explore in the main part of the paper.  
@@ -937,9 +937,9 @@ To compute the contribution from the beam term, we will reorient our coordinate 
 This frame moves with a velocity, $\vel_{\rm ph} = \omega_k/k \zphat$.  With an eye toward computing the residue that will appear in equation (\ref{eq:dispersion kinetic}), we define $p_{z'}=\gz\vz E_\perp$, $E=\gz E_\perp$, and
 $E_\perp=\sqrt{m^2+p_\perp^2}$ is the perpendicular energy.  In this case, we can rewrite the beam distribution function as
 \begin{eqnarray}
-F_B &=& \frac{m_e c^2}{4\pi\gamma_B k_B T K_2(m_ec^2/k_B T )m_e^3c^3} \exp\left(-\frac {\gamma_B(E - v_{B,z'} p_{z'} - v_{B,x'} p_{x'})} {k_B T}\right)\\
-%F_b &=& \frac{1}{4\pi\gamma_B m^2 T K_2(m/T)} \exp\left(-\frac {\gammabeam(E - \betabeamz p_{z'} - \betabeamx p_{x'}}{T}\right),\label{eq:dist1}\\
-&=& \frac{\mu m_e^{-3}c^{-3}}{4\pi\gamma_B K_2(\mu)}  \exp\left(-\frac {\gamma_B\gz(c^2 - v_{B,z'}v_{z'})E_\perp)} {k_BT c^2}\right)\exp\left(\frac{\gamma_Bv_{B,x'} p_{x'}}{k_BT}\right),\label{eq:dist2}
+F_B &=& \frac{m_e c^2}{4\pi\gamma_b k_B T K_2(m_ec^2/k_B T )m_e^3c^3} \exp\left(-\frac {\gamma_b(E - v_{b,z'} p_{z'} - v_{b,x'} p_{x'})} {k_B T}\right)\\
+%F_b &=& \frac{1}{4\pi\gamma_b m^2 T K_2(m/T)} \exp\left(-\frac {\gammabeam(E - \betabeamz p_{z'} - \betabeamx p_{x'}}{T}\right),\label{eq:dist1}\\
+&=& \frac{\mu m_e^{-3}c^{-3}}{4\pi\gamma_b K_2(\mu)}  \exp\left(-\frac {\gamma_b\gz(c^2 - v_{b,z'}v_{z'})E_\perp)} {k_BT c^2}\right)\exp\left(\frac{\gamma_bv_{b,x'} p_{x'}}{k_BT}\right),\label{eq:dist2}
 \end{eqnarray}
 where we define $\mu = m_ec^2/k_BT$.
 Plugging the equation into (\ref{eq:dispersion kinetic}) and using the results of equation (\ref{eq:dispersion-real-part}), we find 
@@ -980,16 +980,16 @@ k\frac{\partial F_b}{\partial p_{z'}}
 %&=
 &=
 \left.
--\frac{k\gamma_B}{k_BT} \left( \frac{p_{z'} c^2}{E} - v_{B,z'}\right)
+-\frac{k\gamma_b}{k_BT} \left( \frac{p_{z'} c^2}{E} - v_{b,z'}\right)
 F_b
 \right|_{\rm pole}\\
 &=
 -
 \frac{
   k
-  (\vph-v_{B,z'}) \mu^2}{
+  (\vph-v_{b,z'}) \mu^2}{
   4\pi m_e^{4}c^{5}K_2(\mu)
-} \exp\left(-\frac {\gamma_B\gph(c^2 - v_{B,z'}v_{\rm ph})E_\perp)} {k_BT c^2}\right)\exp\left(\frac{\gamma_Bv_{B,x'} p_{x'}}{k_BT}\right).
+} \exp\left(-\frac {\gamma_b\gph(c^2 - v_{b,z'}v_{\rm ph})E_\perp)} {k_BT c^2}\right)\exp\left(\frac{\gamma_bv_{b,x'} p_{x'}}{k_BT}\right).
 \end{aligned}
 \end{equation}
 %where we have used
@@ -1011,7 +1011,7 @@ Putting this all together, the residue is
 R
 =
 \frac{
-  \gph^3 (\vph-v_{B,z'})\mu^2}{4\pi K_2(\mu)
+  \gph^3 (\vph-v_{b,z'})\mu^2}{4\pi K_2(\mu)
 }
 \frac{\kI}{m_e^4c^7}
 ,
@@ -1021,10 +1021,10 @@ where
 \begin{equation}\label{eq:I-integral}
 \kI \equiv \int d^2\!p_\perp E_\perp \exp\left(-\frac{\cG(E_\perp-w p_x)}{k_B T}\right)
 \end{equation}
-and $\cG\equiv\gamma_B\gph(1-v_{B,z'}\vph/c^2)$ and
-$w\equiv \gamma_Bv_{B,x'}/\cG \le 1$.  This latter inequality is guaranteed as 
+and $\cG\equiv\gamma_b\gph(1-v_{b,z'}\vph/c^2)$ and
+$w\equiv \gamma_bv_{b,x'}/\cG \le 1$.  This latter inequality is guaranteed as 
 \begin{equation}
-\cG E_\perp - \gamma_B v_{B,x'} p_{x'} = \gamma_B(E - v_{B,z'} p_{z'} - v_{B,x'}p_{x'})|_{v_{B,z'}=v_{\rm ph}} > 0
+\cG E_\perp - \gamma_b v_{b,x'} p_{x'} = \gamma_b(E - v_{b,z'} p_{z'} - v_{b,x'}p_{x'})|_{v_{b,z'}=v_{\rm ph}} > 0
 \end{equation}
 is the energy in beam frame and is therefore positive definite.  Noting that the $\exp(-wp_{x'})$ term appears as a boosted distribution, we boost by $w$
 along the $x'$-axis, removing the anisotropic term from the
@@ -1080,27 +1080,27 @@ we find
 Inserting this into (\ref{eq:Rogen}) yields
 \begin{equation}
 R = \frac{
-  \gph^3 \gamma_w^2 (\vph-v_{B,z'}) 
+  \gph^3 \gamma_w^2 (\vph-v_{b,z'}) 
 }{ 2 \mu m_ec^2 \cG'^3 K_2(\mu)}
 \left[
 \left(\cG'^2\mu^2 + 2\cG'\mu + 2\right)
 +
-\frac{\gamma_B^2 v_{B,x'}^2}{2\cG^2 c^2} \left(2 \cG'\mu + 2\right)
+\frac{\gamma_b^2 v_{b,x'}^2}{2\cG^2 c^2} \left(2 \cG'\mu + 2\right)
 \right] \exp\left(-\cG'\mu\right)
 \end{equation}
 and therefore,
 \begin{equation}
 \Gamma \simeq - \Gamma_0
-\frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{B,z'})}{4 \gamma_b \mu K_2(\mu) \cG'^3}
+\frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{b,z'})}{4 \gamma_b \mu K_2(\mu) \cG'^3}
 \left[
 \left( \cG'^2\mu^2 + 2\cG'\mu + 2 \right) 
 +
-\frac{\gamma_B^2 v_{B,x'}^2}{2\cG^2c^2} \left(2 \cG'\mu+ 2\right)
+\frac{\gamma_b^2 v_{b,x'}^2}{2\cG^2c^2} \left(2 \cG'\mu+ 2\right)
 \right]
 \exp(-\cG'\mu),
 \label{eq:OGgen}
 \end{equation}
-where $\Gamma_0 \equiv \omega_p \gamma_B (n_b/n_t) (m_e v_B^2/k_B T)$ is the typical maximum growth rate.
+where $\Gamma_0 \equiv \omega_p \gamma_b (n_b/n_t) (m_e v_B^2/k_B T)$ is the typical maximum growth rate.
 %The above differs from the beam plasma instability only due to the
 %minor difference in the definition of $\cG'$ and the second term.  When
 %$v_{bx}=0$, it is precisely the beam plasma instability growth rate.
