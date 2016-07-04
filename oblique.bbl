@@ -1,4 +1,4 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{40}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Aharonian} {et~al.}(2006){Aharonian}, {Akhperjanian}, {Bazer-Bachi},
@@ -88,6 +88,11 @@
 
 \bibitem[{{Kneiske} \& {Mannheim}(2008)}]{Knei-Mann:08}
 {Kneiske}, T.~M., \& {Mannheim}, K. 2008, \aap, 479, 41
+
+\bibitem[{{Lamberts} {et~al.}(2015){Lamberts}, {Chang}, {Pfrommer}, {Puchwein},
+  {Broderick}, \& {Shalaby}}]{2015ApJ...811...19L}
+{Lamberts}, A., {Chang}, P., {Pfrommer}, C., {Puchwein}, E., {Broderick},
+  A.~E., \& {Shalaby}, M. 2015, \apj, 811, 19
 
 \bibitem[{{Lu} {et~al.}(2013){Lu}, {Mo}, {Lu}, {Katz}, {Weinberg}, {van den
   Bosch}, \& {Yang}}]{Lu+2013}
