@@ -16,7 +16,7 @@
 \newcommand\qc[1]{{\color{red} \bf #1}}
 %\newcommand\qc[1]{{\color{black} #1}}
 \newcommand\cc[1]{{\color{blue} \bf #1}}
-
+\newcommand\phil[1]{{\color{cyan} #1}}
 \newcommand{\mathsc}[1]{\text{\textsc{#1}}}
 
 \def\eV{{\rm eV}} %.........electron volts
@@ -301,7 +301,7 @@ spectrum above 3~GeV simultaneously with a unified model of AGN evolution
 circumstantial evidence for the presence of virulent plasma beam
 instabilities. 
 
-These potential implications of blazar heating rely on an understanding of the linear and nonlinear physics of these plasma instabilities.  Recent work in this area has been inconclusive.  For instance, \citet{Miniati+12} argued that these instabilities are physically irrelevant for the cooling of these pair beams because they would saturate at a very low level due to nonlinear Landau damping (NLD).  However, \citet{Chang+14} performed a detailed calculation of NLD to show that these plasma processes remain dominant.  In addition, \citet{Sironi+14} performed particle-in-cell simulations of these plasma processes and argued that these processes saturate at a very low level.  It is unclear, however, if the conclusions of their work are robust as it is unclear if their numerical setup is adequate (e.g. Mohamad's paper).  \cp{[This last sentence needs to be weakened or supported with a reference, e.g. by Mohamad's paper provided it is out by then.]}
+These potential implications of blazar heating rely on an understanding of the linear and nonlinear physics of these plasma instabilities.  Recent work in this area has been inconclusive.  For instance, \citet{Miniati+12} argued that these instabilities are physically irrelevant for the cooling of these pair beams because they would saturate at a very low level due to nonlinear Landau damping (NLD).  However, \citet{Chang+14} performed a detailed calculation of NLD to show that these plasma processes remain dominant.  In addition, \citet{Sironi+14} performed particle-in-cell simulations of these plasma processes and argued that these processes saturate at a very low level.  It is unclear, however, if the conclusions of their work is applicable to the parameter regime of blazar heating.  \cp{[This last sentence needs to be weakened or supported with a reference, e.g. by Mohamad's paper provided it is out by then.]}\phil{[Hopefully this is sufficiently weak]}
 
 To this end, a full nonlinear study is called for.  We begin this task in this initial work where we study the distribution function of the $e^+e^-$ pairs that are produced from VHEGR-EBL photon annihilation.  We study the evolution of a distribution function under Lorentz transformations to develop an analytic understanding of how the perpendicular and parallel velocity dispersions transform under boosts.  Using this understanding, we then develop a simple description of the distribution function of the beam, which we then use to calculate the unstable modes analytically in both the reactive (hydrodynamic) and kinetic regimes. Here the reactive instability refers to the instability where the entire beam participates in the instability.  In particular, all the beam particles are resonant with the unstable wave on a timescale longer than the growth time of the instability.  The reactive instability is also referred to as the hydrodynamic instability since the instability can be derived from the fluid equations instead of kinetic theory.  On the other hand, in the kinetic regime, only a fraction of the beam particles are resonant with the beam over a the growth time of the instability, which reduces the growth rate compared to the reactive instability for the same beam density and beam Lorentz factor.  We recover the well-known results for the reactive regime for both the beam-plasma and oblique modes.  We also derive the growth rate for these two instabilities in the kinetic regime and delineate the range of applicability for both the reactive and kinetic cases and apply these results for ultrarelativistic \epm\ pair beams. 
 
@@ -592,18 +592,14 @@ where $\Gamma_0 \equiv \omega_p \gammabeam (n_b/n_t) (m_e v_B^2/k_B T)$ is the t
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{pp1.pdf}
 \caption{Oblique growth rate maximized over $\vph$ as a function of
-  \cp{\sout{$v_{bx}$ and $T$}$\sin\theta$ and $k_BT/m_e c^2$, where $\theta$ is the angle between the beam direction and wave vector.\sout{ for various $\gammabeam$.
-  In each the green line shows the chord along which $v_{bx}/\vbeam = 1/\gammabeam$.
-  In all cases, the maximum growth rate occurs when
-  $v_{bx}/\vbeam\gg1/\gammabeam$.}} \cp{[Which $\gammabeam$ was assumed for this -- $10^6$? Can you please add $k_B$ instead of $k$ to the axis label and $\Gamma/\Gamma_0$ at the color bar? In the paper, the notation $T$ is used instead of $T_b$ here -- can you unify this?]}}\label{fig:ObliqueGMZ}
+ $\sin\theta$ and $k_BT/m_e c^2$, where $\theta$ is the angle between the beam direction and wave vector for $\gammabeam = 10^6$. The maximum growth rate occurs when
+  $\sin\theta \gg1/\gammabeam$. \cp{[ Can you please add $k_B$ instead of $k$ to the axis label and $\Gamma/\Gamma_0$ at the color bar? In the paper, the notation $T$ is used instead of $T_b$ here -- can you unify this?]}}\label{fig:ObliqueGMZ}
 \end{figure}
 
 In Figure \ref{fig:ObliqueGMZ}, we plot the growth rate as a function of
 $\sin\theta$, where $\cos\theta = \hat{\kvec}\cdot\hat{\vel}$, i.e., the angle between the
 beam and the wave vector, and $k_BT/m_e c^2$.  Here, it is clear that the growth
-rate reaches it maximum value $\cos\theta \gg 1/\gammabeam$ \cp{[This is not
-    clear, as the axis shows $\sin\theta$.]}, i.e., at an oblique, but not
-perpendicular angle.  Moreover the maximum growth rates vary little and are
+rate reaches it maximum value $\sin\theta \gg 1/\gammabeam$, i.e., at an oblique angle.  Note that at $\sin\theta = 0$, we recover the beam-plasma instability.  Moreover the maximum growth rates vary little and are
 robust for broad range of angles between the wavevector and the beam direction.
 Because the maximal oblique growth rate varies little for a wide range of angles
 and relativistic temperatures for $k_B T/m_ec^2 > 1$, we maximize over $\theta$
@@ -631,13 +627,10 @@ for $\gammabeam\gtrsim10$, as seen in Figure \ref{fig:OGgen}.
 \caption{Oblique kinetic growth rate (left) and beam-plasma growth rate (right),
   maximized over $\theta$ and normalized by
   $\Gamma_0\equiv\omega_{Pt}(n_b/n_t)\gammabeam m \vbeam^2/T$ as a function of
-  $k_BT/m_ec^2$ and \cp{$\gammabeam-1$}.  \cp{\sout{Note that unlike the beam plasma case
-      shown in Figure \ref{fig:Ggen}, at high $\gammabeam$ the transition between
-      high and low temperature is only marginal, constituting a roughly $10\%$
-      reduction.} Unlike the beam-plasma case on the right, in the case of the
+  $k_BT/m_ec^2$ and $\gammabeam-1$.  Unlike the beam-plasma case on the right, in the case of the
     oblique kinetic growth rate at high $\gammabeam$ the transition between high
     and low temperature is only marginal, constituting a roughly $10\%$
-    reduction.}  \cp{[Can you please add $k_B$ instead of $k$ to the axis label
+    reduction.  \cp{[Can you please add $k_B$ instead of $k$ to the axis label
       and $\Gamma/\Gamma_0$ at the color bar? In the paper, the notation $T$ is
       used instead of $T_b$ here -- can you unify this?]}} \label{fig:OGgen}
 \end{figure*}
@@ -796,7 +789,7 @@ E_{\rm ebl}^{-1.5} & 1\,\eV < E_{\rm ebl} \leq 10\,\eV \\
 \right.
 \end{equation}
 
-In Figure \ref{fig:rates}, we plot the differential rate of pair production as a function of the COM energy of the electron (and positron) for a photon energy of $E_{\rm ph} = 0.3$ (dotted line), $1$ (solid line), $3$ (dash-dotted line) and $10\,\TeV$ (dashed line).  We use the COM energy in this case because in the COM frame, the energy of the EBL and TeV photon is the same and is $E_{\rm COM} = \sqrt{E_{\rm ebl}E_{\rm ph}}$ and $\theta \approx \pi - \sqrt{E_{\rm ebl}/E_{\rm ph}} \rightarrow \cos\theta = -1$\cp{ [What do you mean by $\theta\to\cos\theta$: this is not clear!]}, allowing us to ignore the dependence on $\theta$ in Equation (\ref{eq:cross section}).
+In Figure \ref{fig:rates}, we plot the differential rate of pair production as a function of the COM energy of the electron (and positron) for a photon energy of $E_{\rm ph} = 0.3$ (dotted line), $1$ (solid line), $3$ (dash-dotted line) and $10\,\TeV$ (dashed line).  We use the COM energy in this case because in the COM frame, the energy of the EBL and TeV photon is the same and is $E_{\rm COM} = \sqrt{E_{\rm ebl}E_{\rm ph}}$ and $\theta \approx \pi - \sqrt{E_{\rm ebl}/E_{\rm ph}} \approx \pi$.  As a result, we can ignore the dependence on $\theta$ on the energy of the electron in the COM frame (eq.[\ref{eq:threshold}]) and set $1-\cos\theta \approx 2$.\cp{ [What do you mean by $\theta\to\cos\theta$: this is not clear!]}\phil{[hope this clarifies it.]}
 We note several feature of this Figure.  First the distribution of COM energy for the electrons (and positrons) depends on the initial photon energy. This is because different energy photons probe different regimes of the EBL spectra.  Due to the rapid cutoff in the EBL above $10\,\eV$, lower energy VHEGRs produce colder beams.  This is seen in the average COM energies of the produced electrons, which are respectively, $E_e/m_e c^2 \approx 1.3, 1.6, 2$ and $3$ for $E_{\rm ph} = 0.3, 1, 3$ and $10\,\TeV$. Hence we expect that these pairs are in the sub-relativistic to mildly-relativistic regimes in their COM frame.
 Second, the effect of the EBL spectra on the distribution of electron COM energies is also seen in the breaks in the distribution.  For instance, the cutoff in $d\Gamma_{\pm}/dE_{\rm ebl}$ above $E_e/m_e c^2 \approx 3$ for $E_{\rm ph} = 1\,\TeV$ is due to the cutoff in the EBL spectra above $10\,\eV$.  Additionally, the break in $d\Gamma_{\pm}/dE_{\rm ebl}$ at the same position for $E_{\rm ph} = 10\,\TeV$ is due to change in the EBL spectra at $1\,\eV$.  
 \cp{[What $\Dpp$ does this correspond to?]}
@@ -809,7 +802,7 @@ Second, the effect of the EBL spectra on the distribution of electron COM energi
 
 \subsection{Regime of Instability}
 
-Given that the range of $E_e/m_e c^2$ between $1.3-3$ for $E_{\rm ph} = 1-10\,\TeV$, this corresponds to values of $\alpha_{\perp}'$ and $\alpha_{\parallel}'$ between $\sim 0.3-2$. \cp{[Define $\alpha_{\perp}'$ and $\alpha_{\parallel}'$.]}  To determine whether or not the reactive or kinetic instabilities apply to these beams, it is necessary to determine $n_b/n_t$.  Here the target is the background IGM, so $n_t = \nIGM$, where $\nIGM \approx 2\times 10^{-7}\,(1+\delta)\,(1+z)^3\,\cm^{-3}$ is the mean density of the IGM, $z$ is the redshift, and $\delta$ denotes the overdensity.  The number density of the TeV beam is more complicated as the production rate of pairs must be balanced against their loss due to plasma instabilities or ICC.  This is discussed extensively in Paper I and will not be repeated here.  However, we note that the important issue here is the loss rate due to plasma instabilities, which is a nonlinear process.  In Paper I, we assumed that the nonlinear loss rate was the same as the linear growth rate.  This remains to be shown and is the focus of ongoing work, of which this paper lays the initial foundation. 
+Given that the range of $k_BT/m_ec^2 = E_e/m_e c^2$ between $1.3-3$ for $E_{\rm ph} = 1-10\,\TeV$, we now determine whether or not the reactive or kinetic instabilities apply to these beams. First, it is necessary to determine $n_b/n_t$.  Here the target is the background IGM, so $n_t = \nIGM$, where $\nIGM \approx 2\times 10^{-7}\,(1+\delta)\,(1+z)^3\,\cm^{-3}$ is the mean density of the IGM, $z$ is the redshift, and $\delta$ denotes the overdensity.  The number density of the TeV beam is more complicated as the production rate of pairs must be balanced against their loss due to plasma instabilities or ICC.  This is discussed extensively in Paper I and will not be repeated here.  However, we note that the important issue here is the loss rate due to plasma instabilities, which is a nonlinear process.  In Paper I, we assumed that the nonlinear loss rate was the same as the linear growth rate.  This remains to be shown and is the focus of ongoing work, of which this paper lays the initial foundation. 
 
 Still some progress can be made if we assume that the dominant loss rate is IC so that we can place a lower limit on the various plasma processes.  In this case, the ratio of the beam plasma density to the IGM, $n_b/\nIGM$, is then (Paper I):
 \begin{eqnarray}
@@ -988,7 +981,7 @@ As the target plasma is nonrelativistic, we can take $v\ll c$ and $\gamma \right
 &\approx& \frac {k^2c^2}{\omega^2}\left(1 + 3 {k^2\lambda_D^2}\right),
 \label{eq:dispersion-real-part}
 \end{eqnarray}
-where the second term is zero because it is odd\cc{, $\lambda_D^2 = k_B T/m_e \omega_p^2$ is the Debye length, and we have assumed that $k^2\lambda_D^2 \ll 1$ and $\omega \approx \omega_p$ in the last term on the RHS\footnote{A direct solution to equation (\ref{eq:dispersion-real-part}) without approximating $\omega\approx \omega_p$ will reveal waves with nontrivial growth or damping rates.  These wave are not legitimate and result from the Taylor expansion of the denominator of equation (\ref{eq:dispersion-real-part}).  A correct treatment of equation (\ref{eq:dispersion-real-part}) with the appropriate Landau contours will give the correct growing or damping behavoirs for waves with phase speeds approximately that of the electron phase speeds.}}. If we ignore the third term in the kinetic dispersion relation (\ref{eq:dispersion kinetic}), this yields two plasma modes: an undamped plasma oscillation mode with $\omega = \omega_{p,t}$ and a longitudinal electron plasma wave, i.e., Langmuir wave, with
+where the second term is zero because it is odd, $\lambda_D^2 = k_B T/m_e \omega_p^2$ is the Debye length, and we have assumed that $k^2\lambda_D^2 \ll 1$ and $\omega \approx \omega_p$ in the last term on the RHS\footnote{A direct solution to equation (\ref{eq:dispersion-real-part}) without approximating $\omega\approx \omega_p$ will reveal waves with nontrivial growth or damping rates.  These wave are not legitimate and result from the Taylor expansion of the denominator of equation (\ref{eq:dispersion-real-part}).  A correct treatment of equation (\ref{eq:dispersion-real-part}) with the appropriate Landau contours will give the correct growing or damping behavoirs for waves with phase speeds approximately that of the electron phase speeds.}. If we ignore the third term in the kinetic dispersion relation (\ref{eq:dispersion kinetic}), this yields two plasma modes: an undamped plasma oscillation mode with $\omega = \omega_{p,t}$ and a longitudinal electron plasma wave, i.e., Langmuir wave, with
 \begin{equation}
 \omega \approx \omega_{p,t}\left(1 + \frac 3 2 k^2\lambda_{D,t}^2\right).
 \end{equation}
