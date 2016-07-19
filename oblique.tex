@@ -534,7 +534,8 @@ Equation (\ref{eq:dispersion relation reactive}) can also be solved numerically 
 \begin{equation}\label{eq:dispersion relation beam-plasma}
  1 - \frac{\omega_{p,t}^2}{\omega^2} - \frac{\omega_{p,b}^2}{\gamma^3(\omega-k_z \vbeam)^2} = 0,
 \end{equation}
-which we can numerically solve in terms of $\omega/\omega_{p,t}$, $k_z\lambda_D$, $\vbeam/c$, and $n_b/n_t$, where $\lambda_D = c/\omega_{p,t}$ is the skin depth.  In Figure \ref{fig:OffResonance} we show the real and imaginary parts for $\omega/\omega_{p,t}$ as a function of $k_z\lambda_D$ for representative case of $\vbeam/c \approx 1$ and $n_b/n_t = 10^{-3}$ and $\gamma=100$.    For $k_z\lambda_D = 1$, the growth rate reaches it maximum of $\Gamma_{\rm max}$ and the real part of the frequency is $\Re(\omega) = \omega_{p,t}$, which is the plasma oscillation frequency.  This wave would exist in the absence of a tenuous beam.  However, as we move away from this frequency toward lower $k_z$, we still find substantial growth, with $\Gamma \approx 0.1 \Gamma_{\rm max}$ as $k_z \approx 0.9\lambda_D^{-1}$.  Interestingly, the real part of the unstable wave has a phase velocity, $v_{\rm ph} = \Re(\omega)/k = c$, which is still in resonance with the beam.  This unstable wave does not exist in the absence of the destabilizing beam and does not correspond to any wave in the unperturbed target plasma.  
+which we can numerically solve in terms of $\omega/\omega_{p,t}$, $k_z\lambda_D$, $\vbeam/c$, and $n_b/n_t$, where $\lambda_D = c/\omega_{p,t}$ is the skin depth.  In Figure \ref{fig:OffResonance} we show the real and imaginary parts for $\omega/\omega_{p,t}$ as a function of $k_z\lambda_D$ for representative case of $\vbeam/c \approx 1$ and $n_b/n_t = 10^{-3}$ and $\gamma=100$.    For $k_z\lambda_D = 1$, the growth rate reaches it maximum of $\Gamma_{\rm max}$ and the real part of the frequency is $\Re(\omega) = \omega_{p,t}$, which is the plasma oscillation frequency.  This wave would exist in the absence of a tenuous beam.  However, as we move away from this frequency toward lower $k_z$, we still find substantial growth, with $\Gamma \approx 0.1 \Gamma_{\rm max}$ as $k_z \approx 0.9\lambda_D^{-1}$.  Interestingly, the real part of the unstable wave has a phase velocity, $v_{\rm ph} = \Re(\omega)/k = c$, which is still in resonance with the beam.  
+%This unstable wave corresponds to a destabilizing beam and does not correspond to any wave in the unperturbed target plasma.  
 
 In a continuous system, these waves do not matter in comparison to the unstable mode at $k\lambda_D = 1$.   However, for discrete numerical systems, which do not sufficiently resolve the most unstable modes, these sub maximal modes drive the growth of the instability of numerically calculated beam-plasma systems, which may lead to an incorrect nonlinear state in comparison to the physical system.
 
@@ -593,7 +594,7 @@ where $\Gamma_0 \equiv \omega_p \gammabeam (n_b/n_t) (m_e v_B^2/k_B T_b)$ is the
 \includegraphics[width=0.5\textwidth]{pp1.pdf}
 \caption{Oblique growth rate maximized over $\vph$ as a function of
  $\sin\theta$ and $k_BT_b/m_e c^2$, where $\theta$ is the angle between the beam direction and wave vector for $\gammabeam = 10^6$. The maximum growth rate occurs when
-  $\sin\theta \gg1/\gammabeam$. \cp{[ Can you please add $k_B$ instead of $k$ to the axis label and $\Gamma/\Gamma_0$ at the color bar? In the paper, the notation $T$ is used instead of $T_b$ here -- can you unify this?]}}\label{fig:ObliqueGMZ}
+  $\sin\theta \gg1/\gammabeam$. \cp{[ Can you please add $k_B$ instead of $k$ to the axis label and $\Gamma/\Gamma_0$ at the color bar? In the paper, the notation $T$ is used instead of $T_b$ here -- can you unify this?]}\phil{[Changed $k\rightarrow k_B$, but color bar is self-evident.]}}\label{fig:ObliqueGMZ}
 \end{figure}
 
 In Figure \ref{fig:ObliqueGMZ}, we plot the growth rate as a function of
@@ -630,9 +631,7 @@ for $\gammabeam\gtrsim10$, as seen in Figure \ref{fig:OGgen}.
   $k_BT_b/m_ec^2$ and $\gammabeam-1$.  Unlike the beam-plasma case on the right, in the case of the
     oblique kinetic growth rate at high $\gammabeam$ the transition between high
     and low temperature is only marginal, constituting a roughly $10\%$
-    reduction.  \cp{[Can you please add $k_B$ instead of $k$ to the axis label
-      and $\Gamma/\Gamma_0$ at the color bar? In the paper, the notation $T$ is
-      used instead of $T_b$ here -- can you unify this?]}} \label{fig:OGgen}
+    reduction. } \label{fig:OGgen}
 \end{figure*}
 
 This can be contrasted with the right panel of
@@ -643,8 +642,10 @@ sensitive to temperature, varying from $\Gamma/\Gamma_0 \approx 0.4$ for
 $k_BT_b/m_ec^2 \ll 1$ to $\Gamma/\Gamma_0 \approx 0.1$ for $k_BT_b/m_ec^2 \gtrsim
 1$.  Note, however, that that beam-plasma growth rate remains competitive with
 the oblique growth rate, i.e., it is not orders of magnitude lower.
+
+In Paper I, we compared the cold plasma growth rates of the oblique and beam-plasma instabilities and noted that the oblique cold growth rate is larger.  While we also noted oblique instability was in the kinetic regime in Paper I, we made no effort to study the regime of instability of the beam-plasma case.  Here we have shown that while the oblique growth rate is kinetic, the beam-plasma rate is marginally reactive.  We have also shown that the kinetic growth rates for both the oblique and beam-plasma instabilities are similar.  As a result, both instabilities (beam-plasma and oblique) have similar growth rates for the case of  pair beams from TeV blazers. 
 \cp{[Explain why we found the opposite result in Paper I, i.e., a negligible
-    beam-plasma growth rate in comparison to the oblique growth rate.]}
+    beam-plasma growth rate in comparison to the oblique growth rate.]}\phil{[Hope this clarifies it.]}
 
 
 
