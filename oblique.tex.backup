@@ -301,7 +301,7 @@ spectrum above 3~GeV simultaneously with a unified model of AGN evolution
 circumstantial evidence for the presence of virulent plasma beam
 instabilities. 
 
-These potential implications of blazar heating rely on an understanding of the linear and nonlinear physics of these plasma instabilities.  Recent work in this area has been inconclusive.  For instance, \citet{Miniati+12} argued that these instabilities are physically irrelevant for the cooling of these pair beams because they would saturate at a very low level due to nonlinear Landau damping (NLD).  However, \citet{Chang+14} performed a detailed calculation of NLD to show that these plasma processes remain dominant.  In addition, \citet{Sironi+14} performed particle-in-cell simulations of these plasma processes and argued that these processes saturate at a very low level.  It is unclear, however, if the conclusions of their work is applicable to the parameter regime of blazar heating.  \cp{[This last sentence needs to be weakened or supported with a reference, e.g. by Mohamad's paper provided it is out by then.]}\phil{[Hopefully this is sufficiently weak]}
+These potential implications of blazar heating rely on an understanding of the linear and nonlinear physics of these plasma instabilities.  Recent work in this area has been inconclusive.  For instance, \citet{Miniati+12} argued that these instabilities are physically irrelevant for the cooling of these pair beams because they would saturate at a very low level due to nonlinear Landau damping (NLD).  However, \citet{Chang+14} performed a detailed calculation of NLD to show that these plasma processes remain dominant.  In addition, \citet{Sironi+14} performed particle-in-cell simulations of these plasma processes and argued that these processes saturate at a very low level.  It is unclear, however, if the conclusions of their work is applicable to the parameter regime of blazar heating.
 
 To this end, a full nonlinear study is called for.  We begin this task in this initial work where we study the distribution function of the $e^+e^-$ pairs that are produced from VHEGR-EBL photon annihilation.  We study the evolution of a distribution function under Lorentz transformations to develop an analytic understanding of how the perpendicular and parallel velocity dispersions transform under boosts.  Using this understanding, we then develop a simple description of the distribution function of the beam, which we then use to calculate the unstable modes analytically in both the reactive (hydrodynamic) and kinetic regimes. Here the reactive instability refers to the instability where the entire beam participates in the instability.  In particular, all the beam particles are resonant with the unstable wave on a timescale longer than the growth time of the instability.  The reactive instability is also referred to as the hydrodynamic instability since the instability can be derived from the fluid equations instead of kinetic theory.  On the other hand, in the kinetic regime, only a fraction of the beam particles are resonant with the beam over a the growth time of the instability, which reduces the growth rate compared to the reactive instability for the same beam density and beam Lorentz factor.  We recover the well-known results for the reactive regime for both the beam-plasma and oblique modes.  We also derive the growth rate for these two instabilities in the kinetic regime and delineate the range of applicability for both the reactive and kinetic cases and apply these results for ultrarelativistic \epm\ pair beams. 
 
@@ -581,7 +581,7 @@ We discuss the solution to Equation (\ref{eq:dispersion kinetic}) in Appendix \r
 \exp(-\cG'\mu),\label{eq:kinetic growth rate}
 \end{aligned}
 \end{equation}
-where $\mu = m_e c^2/k_B T_b$, $\gph = \left(1 - \vph^2/c^2\right)^{-1/2}$, $\vph = \omega/k$ is the phase velocity of the wave, $v_{b,z'}$ is the velocity of the beam oriented along the wavevector, $v_{b,x'}$ is the velocity of the wave perpendicular to the wavevector, $\cG$, and $\Gamma_0 \equiv \omega_p \gammabeam (n_b/n_t) (m_e v_B^2/k_B T_b)$ is the typical maximum growth rate.  This specializes to the beam-plasma growth rate if we take $v_{b,x'} = 0$, which gives:
+where $\mu = m_e c^2/k_B T_b$, $\gph = \left(1 - \vph^2/c^2\right)^{-1/2}$, $\vph = \omega/k$ is the phase velocity of the wave, $v_{b,z'}$ is the velocity of the beam oriented along the wavevector, $v_{b,x'}$ is the velocity of the wave perpendicular to the wavevector, $\cG$ is the Lorentz factor of a beam particle in a frame comoving with wave at the phase velocity, and $\Gamma_0 \equiv \omega_p \gammabeam (n_b/n_t) (m_e v_B^2/k_B T_b)$ is the typical maximum growth rate.  This specializes to the beam-plasma growth rate if we take $v_{b,x'} = 0$, which gives:
 \begin{equation}
 \Gamma_{\rm bp} \simeq - \Gamma_0
 \frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{b,z'})}{4 \gammabeam \mu K_2(\mu) \cG'^3}
@@ -594,7 +594,7 @@ where $\mu = m_e c^2/k_B T_b$, $\gph = \left(1 - \vph^2/c^2\right)^{-1/2}$, $\vp
 \includegraphics[width=0.5\textwidth]{pp1.pdf}
 \caption{Oblique growth rate maximized over $\vph$ as a function of
  $\sin\theta$ and $k_BT_b/m_e c^2$, where $\theta$ is the angle between the beam direction and wave vector for $\gammabeam = 10^6$. The maximum growth rate occurs when
-  $\sin\theta \gg1/\gammabeam$. \cp{[ Can you please add $k_B$ instead of $k$ to the axis label and $\Gamma/\Gamma_0$ at the color bar? In the paper, the notation $T$ is used instead of $T_b$ here -- can you unify this?]}\phil{[Changed $k\rightarrow k_B$, but color bar is self-evident.]}}\label{fig:ObliqueGMZ}
+  $\sin\theta \gg1/\gammabeam$. }\label{fig:ObliqueGMZ}
 \end{figure}
 
 In Figure \ref{fig:ObliqueGMZ}, we plot the growth rate as a function of
@@ -644,8 +644,6 @@ $k_BT_b/m_ec^2 \ll 1$ to $\Gamma/\Gamma_0 \approx 0.1$ for $k_BT_b/m_ec^2 \gtrsi
 the oblique growth rate, i.e., it is not orders of magnitude lower.
 
 In Paper I, we compared the cold plasma growth rates of the oblique and beam-plasma instabilities and noted that the oblique cold growth rate is larger.  While we also noted oblique instability was in the kinetic regime in Paper I, we made no effort to study the regime of instability of the beam-plasma case.  Here we have shown that while the oblique growth rate is kinetic, the beam-plasma rate is marginally reactive.  We have also shown that the kinetic growth rates for both the oblique and beam-plasma instabilities are similar.  As a result, both instabilities (beam-plasma and oblique) have similar growth rates for the case of  pair beams from TeV blazers. 
-\cp{[Explain why we found the opposite result in Paper I, i.e., a negligible
-    beam-plasma growth rate in comparison to the oblique growth rate.]}\phil{[Hope this clarifies it.]}
 
 
 
@@ -790,10 +788,10 @@ E_{\rm ebl}^{-1.5} & 1\,\eV < E_{\rm ebl} \leq 10\,\eV \\
 \right.
 \end{equation}
 
-In Figure \ref{fig:rates}, we plot the differential rate of pair production as a function of the COM energy of the electron (and positron) for a photon energy of $E_{\rm ph} = 0.3$ (dotted line), $1$ (solid line), $3$ (dash-dotted line) and $10\,\TeV$ (dashed line).  We use the COM energy in this case because in the COM frame, the energy of the EBL and TeV photon is the same and is $E_{\rm COM} = \sqrt{E_{\rm ebl}E_{\rm ph}}$ and $\theta \approx \pi - \sqrt{E_{\rm ebl}/E_{\rm ph}} \approx \pi$.  As a result, we can ignore the dependence on $\theta$ on the energy of the electron in the COM frame (eq.[\ref{eq:threshold}]) and set $1-\cos\theta \approx 2$.\cp{ [What do you mean by $\theta\to\cos\theta$: this is not clear!]}\phil{[hope this clarifies it.]}
+In Figure \ref{fig:rates}, we plot the differential rate of pair production as a function of the COM energy of the electron (and positron) for a photon energy of $E_{\rm ph} = 0.3$ (dotted line), $1$ (solid line), $3$ (dash-dotted line) and $10\,\TeV$ (dashed line).  We use the COM energy in this case because in the COM frame, the energy of the EBL and TeV photon is the same and is $E_{\rm COM} = \sqrt{E_{\rm ebl}E_{\rm ph}}$ and $\theta \approx \pi - \sqrt{E_{\rm ebl}/E_{\rm ph}} \approx \pi$.  As a result, we can ignore the dependence on $\theta$ on the energy of the electron in the COM frame (eq.[\ref{eq:threshold}]) and set $1-\cos\theta \approx 2$.
+
 We note several feature of this Figure.  First the distribution of COM energy for the electrons (and positrons) depends on the initial photon energy. This is because different energy photons probe different regimes of the EBL spectra.  Due to the rapid cutoff in the EBL above $10\,\eV$, lower energy VHEGRs produce colder beams.  This is seen in the average COM energies of the produced electrons, which are respectively, $E_e/m_e c^2 \approx 1.3, 1.6, 2$ and $3$ for $E_{\rm ph} = 0.3, 1, 3$ and $10\,\TeV$. Hence we expect that these pairs are in the sub-relativistic to mildly-relativistic regimes in their COM frame.
 Second, the effect of the EBL spectra on the distribution of electron COM energies is also seen in the breaks in the distribution.  For instance, the cutoff in $d\Gamma_{\pm}/dE_{\rm ebl}$ above $E_e/m_e c^2 \approx 3$ for $E_{\rm ph} = 1\,\TeV$ is due to the cutoff in the EBL spectra above $10\,\eV$.  Additionally, the break in $d\Gamma_{\pm}/dE_{\rm ebl}$ at the same position for $E_{\rm ph} = 10\,\TeV$ is due to change in the EBL spectra at $1\,\eV$.  
-\cp{[What $\Dpp$ does this correspond to?]}
 
 \begin{figure}
  \includegraphics[width=0.5\textwidth]{rates.pdf}
@@ -975,7 +973,7 @@ Equation (\ref{eq:approximate dispersion reactive}) gives three solutions for $\
 
 \section{Solution for the Kinetic Regime}\label{sec:solution kinetic}
 
-As the target plasma is nonrelativistic, we can take $v\ll c$ and $\gamma \rightarrow 1$.  Expanding the denominator in powers of $v$, we find
+As the target plasma is nonrelativistic, we can take $v\ll c$ and $\gamma \rightarrow 1$.  Expanding the denominator in powers of $v$, we find\footnote{An alert reader will note that $\gamma$ will contribute to expansion in power of $v$ to second order.  }
 \begin{eqnarray}
  \int F_t\frac{k^2c^2 - (\kvec\cdot\vel)^2}{\gamma(\omega - \kvec\cdot\vel)^2} d^3p &\approx& k^2c^2
  \int F_t \left(\frac {1}{\omega^2} + \frac {2\kvec\cdot\vel}{\omega^3} + \frac{3 (\kvec\cdot\vel)^2}{\omega^4}\right) d^3p \nonumber \\
