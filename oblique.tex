@@ -468,7 +468,7 @@ We now adopt perturbations of the form $\delta \sim \exp\left(i \kvec\cdot\rvec 
 \begin{equation}\label{eq:dispersion relation}
  \epsilon = 1 + \sum_s \frac{m_e \omega_{p,s}^2}{k^2}\int \frac{\kvec \cdot \gradp F_s}{\omega - \kvec\cdot\vel} d^3\!p = 0,
 \end{equation}
-where $\epsilon$ is the simplified dielectric function, and for each species $\omega_{p,s}^2\equiv 4\pi e^2 n_s/m_e$ is the plasma frequency, $n_s\equiv\int f_{0s} d^3\!p$ is the number density, and $F_s\equiv f_{0s} / n_s$ is the normalized distribution function.
+where $\epsilon$ is the simplified dielectric function, and for each species $\omega_{p,s}^2\equiv 4\pi e^2 n_s/m_e$ is the plasma frequency, $n_s\equiv\int f_{0s} d^3\!p$ is the number density, and $F_s\equiv f_{0s} / n_s$ is the normalized \ab{background} distribution function.
 Upon integrating by parts, Equation (\ref{eq:dispersion relation}) becomes
 %\begin{eqnarray}
 % 1 - \frac{4\pi q_s^2}{m_s k^2}\int F_s\kvec \cdot \gradp\frac{1}{\omega - \kvec\cdot\vel} d^3p &=& 0\\
@@ -493,19 +493,19 @@ also been calculated directly from the continuity equation and the momentum
 equation.  In this limit, the internal distribution of the particles of the
 background or beam are irrelevant to the physics of the instability and it is
 only the bulk response that is important.  In particular, this means that the
-beam particles are resonance with the unstable wave over a timescale much longer
-than the growth time as stated above, i.e., the beam particles
+beam particles are \ab{resonant \sout{resonance}} with the unstable wave over a timescale much longer
+than the growth time \ab{\sout{as stated above}}, i.e., the beam particles
 do not drift a distance larger than the wavelength of the unstable mode over the
 growth time of the instability.  The second is the kinetic regime, where the
 internal distribution of  beam particles is
 important to the physics of the instability. Here, only a fraction of
  beam particles stay within one wavelength of the unstable mode
 over the growth time of the instability.  Moreover, the bulk of
-the plasma (background or beam) does not respond to the disturbance. Instead,
+the plasma (background or beam) does not respond to the disturbance\ab{; instead, \sout{. Instead,}}
 only a fraction of  particles is relevant for
 driving (instability) or damping (Landau damping).  We discuss below the
 evaluation of the dispersion relation in these two regimes, which gives two
-regimes of instability, and the delineation between these two regimes.
+regimes of instability, and the delineation between \ab{them. \sout{these two regimes.}}
 
 \subsection{Hydrodynamic (Reactive) Instability}
 
@@ -527,7 +527,7 @@ For $k_x = 0 \rightarrow Z_x = 0$, this reduces to the beam-plasma growth rate, 
  \Gamma = \Gamma_{\rm TS} \equiv \frac{\sqrt{3}}{2^{4/3}}\left(\frac{n_b}{n_t}\right)^{1/3}\frac{\omega_{p,t}}{\gamma},
 \end{equation}
 which we denote the beam-plasma or ``two-stream'' growth rate.
-For the more general case where $Z_x\ne 0$, this becomes the oblique instability studied by \citet{Bret-Grem-Beni:10}  Indeed for $\gamma \gg 1$ and $Z_x \rightarrow \infty$, the growth rate approaches oblique growth rate:
+For the more general case where $Z_x\ne 0$, this becomes the oblique instability studied by \citet{Bret-Grem-Beni:10}  Indeed for $\gamma \gg 1$ and \ab{$Z_x\gg1$ \sout{$Z_x \rightarrow \infty$}}, the growth rate approaches oblique growth rate:
 \begin{equation}
  \Gamma = \Gamma_{\rm ob} \equiv \frac{\sqrt{3}}{2^{4/3}}\left(\frac{n_b}{n_t}\right)^{1/3}\frac{\omega_{p,t}}{\gamma^{1/3}},
 \end{equation}
@@ -535,7 +535,7 @@ which is much faster than the beam-plasma growth rate, $\Gamma_{\rm TS}$
 
 We should caution in the derivation above that the resonance condition, which is $\omega_{p,t} - k_z \vbeam$, implies that $k_z \neq 0$.  For the case where $k_z \rightarrow 0$, the electrostatic approximation no longer holds and the full dispersion relation must be solved.\footnote{We thank Antoine Bret for helping to clarify this point.}  A solution to the full dispersion relation reveals additional modes, including the zero frequency ($k_z = 0$) filamentation or Weibel mode. 
 
-\subsubsection{Sub-maximal instabilities}
+\subsubsection{Sub-maximal instabilities \ab{[There should be either more or fewer subsubsections]}}
 
 Equation (\ref{eq:dispersion relation reactive}) can also be solved numerically in terms of $k_x$ and $k_z$.  Here let us specialize to the case of $k_x = 0$, i.e., the beam-plasma case.  In this case, we have 
 \begin{equation}\label{eq:dispersion relation beam-plasma}
@@ -544,7 +544,7 @@ Equation (\ref{eq:dispersion relation reactive}) can also be solved numerically 
 which we can numerically solve in terms of $\omega/\omega_{p,t}$, $k_z\lambda_D$, $\vbeam/c$, and $n_b/n_t$, where $\lambda_D = c/\omega_{p,t}$ is the skin depth.  In Figure \ref{fig:OffResonance} we show the real and imaginary parts for $\omega/\omega_{p,t}$ as a function of $k_z\lambda_D$ for representative case of $\vbeam/c \approx 1$ and $n_b/n_t = 10^{-3}$ and $\gamma=100$.    For $k_z\lambda_D = 1$, the growth rate reaches it maximum of $\Gamma_{\rm max}$ and the real part of the frequency is $\Re(\omega) = \omega_{p,t}$, which is the plasma oscillation frequency.  This wave would exist in the absence of a tenuous beam.  However, as we move away from this frequency toward lower $k_z$, we still find substantial growth, with $\Gamma \approx 0.1 \Gamma_{\rm max}$ as $k_z \approx 0.9\lambda_D^{-1}$.  Interestingly, the real part of the unstable wave has a phase velocity, $v_{\rm ph} = \Re(\omega)/k = c$, which is still in resonance with the beam.  
 %This unstable wave corresponds to a destabilizing beam and does not correspond to any wave in the unperturbed target plasma.  
 
-In a continuous system, these waves do not matter in comparison to the unstable mode at $k\lambda_D = 1$.   However, for discrete numerical systems, which do not sufficiently resolve the most unstable modes, these sub maximal modes drive the growth of the instability of numerically calculated beam-plasma systems, which may lead to an incorrect nonlinear state in comparison to the physical system.
+In a continuous system, these waves do not matter in comparison to the unstable mode at $k\lambda_D = 1$.   However, for discrete numerical systems, which do not sufficiently resolve the most unstable modes, these \ab{sub-maximal \sout{sub maximal}} modes drive the growth of the instability of numerically calculated beam-plasma systems, which may lead to an incorrect nonlinear state in comparison to the physical system.
 
 \begin{figure}
 \includegraphics[width=0.5\textwidth]{off_res.pdf}
@@ -555,18 +555,18 @@ In a continuous system, these waves do not matter in comparison to the unstable 
 
 \subsection{Kinetic Instability}
 
-The growth rate expressed in Equation (\ref{eq:growth rate reactive}) is in the reactive (or hydrodynamic) regime as the dispersion relation (Equation (\ref{eq:dispersion reactive})) could have been derived from the fluid equations.  Here all the particles participate in the instability.  However, kinetic theory masks another regime of the instability, where only a fraction of the particle participate in the instability, i.e., the kinetic regime.  We now derive the growth rate of the instability in the kinetic regime.  
+The growth rate expressed in Equation (\ref{eq:growth rate reactive}) is in the reactive (or hydrodynamic) regime as the dispersion relation (Equation (\ref{eq:dispersion reactive})) could have been derived from the fluid equations.  Here all the particles participate in the instability.  However, kinetic theory \ab{marks \sout{masks}} another regime of the instability, where only a fraction of the particle participate in the instability, i.e., the kinetic regime.  We now derive the growth rate of the instability in the kinetic regime.
 
 We begin first with the distribution function for the target plasma:
 \begin{equation}
  F_t = \left(\frac{1}{2\pi m_e k_B T_t}\right)^{3/2}\exp\left(-\frac{p^2}{2m_e k_B T_t}\right),
 \end{equation}
 where the target plasma is assumed to be nonrelativistic, $\bmath{p}=m_e\vel$ is the nonrelativistic momentum,  and $T_t$ is the temperature of the target background plasma.
-For the beam plasma, we adopt the Maxwell-J{\"u}ttner distribution (eq.~\ref{eq:distribution function beam}).
+For the beam plasma, we \ab{again} adopt the Maxwell-J{\"u}ttner distribution (\ab{Equation \sout{eq.}}~(\ref{eq:distribution function beam})).
 %\begin{equation}\label{eq:distribution function beam}
 %F_b = \frac{n_b}{4\pi\gammabeam m^2 T K_2(m/T_{\rm L})} \exp\left(-\frac {\gammabeam(E - \betabeam \cdot \pmom)} {T}\right),
 %\end{equation}
-Inserting these into the dispersion relation (\ref{eq:dispersion relation}), we find
+Inserting these into the dispersion relation\ab{, Equation} (\ref{eq:dispersion relation}), we find
 %\begin{equation}\label{eq:dispersion kinetic}
 % 1 - \frac{\omega_{p,t}^2}{k}\int F_t\frac{k^2 - (\kvec\cdot\betavec)^2}{\gamma(\omega - \kvec\cdot\vel)^2} d^3p - \frac{\omega_{p,t}^2}{k}\int \frac{\kvec\cdot\gradp F_b}{\omega - \kvec\cdot\vel}d^3p  = 0,
 %\end{equation}
@@ -588,7 +588,7 @@ We discuss the solution to Equation (\ref{eq:dispersion kinetic}) in Appendix \r
 \exp(-\cG'\mu),\label{eq:kinetic growth rate}
 \end{aligned}
 \end{equation}
-where $\mu = m_e c^2/k_B T_b$, $\gph = \left(1 - \vph^2/c^2\right)^{-1/2}$, $\vph = \omega/k$ is the phase velocity of the wave, $v_{b,z'}$ is the velocity of the beam oriented along the wavevector, $v_{b,x'}$ is the velocity of the wave perpendicular to the wavevector, $\cG$ is the Lorentz factor of a beam particle in a frame comoving with wave at the phase velocity, and $\Gamma_0 \equiv \omega_p \gammabeam (n_b/n_t) (m_e v_B^2/k_B T_b)$ is the typical maximum growth rate.  This specializes to the beam-plasma growth rate if we take $v_{b,x'} = 0$, which gives:
+where $\mu = m_e c^2/k_B T_b$, $\gph = \left(1 - \vph^2/c^2\right)^{-1/2}$, $\vph = \omega/k$ is the phase velocity of the wave, $v_{b,z'}$ is the velocity of the beam oriented along the wavevector, $v_{b,x'}$ is the velocity of the wave perpendicular to the wavevector, $\cG$ is the Lorentz factor of a beam particle in a frame comoving with wave at the phase velocity \ab{[While this is true, I think $\cG'$ is a little different -- it relates to the transverse boosted frame.]}, and $\Gamma_0 \equiv \omega_p \gammabeam (n_b/n_t) (m_e v_B^2/k_B T_b)$ is the typical maximum growth rate.  This specializes to the beam-plasma growth rate if we take $v_{b,x'} = 0$, which gives:
 \begin{equation}
 \Gamma_{\rm bp} \simeq - \Gamma_0
 \frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{b,z'})}{4 \gammabeam \mu K_2(\mu) \cG'^3}
@@ -607,7 +607,7 @@ where $\mu = m_e c^2/k_B T_b$, $\gph = \left(1 - \vph^2/c^2\right)^{-1/2}$, $\vp
 In Figure \ref{fig:ObliqueGMZ}, we plot the growth rate as a function of
 $\sin\theta$, where $\cos\theta = \hat{\kvec}\cdot\hat{\vel}$, i.e., the angle between the
 beam and the wave vector, and $k_BT_b/m_e c^2$.  Here, it is clear that the growth
-rate reaches it maximum value $\sin\theta \gg 1/\gammabeam$, i.e., at an oblique angle.  Note that at $\sin\theta = 0$, we recover the beam-plasma instability.  Moreover the maximum growth rates vary little and are
+rate reaches it maximum value $\sin\theta \gg 1/\gammabeam$, i.e., at an oblique angle \ab{[I thought it was for $\theta\gtrsim1/\gammabeam$]}.  Note that at $\sin\theta = 0$, we recover the beam-plasma instability.  Moreover the maximum growth rates vary little and are
 robust for broad range of angles between the wavevector and the beam direction.
 Because the maximal oblique growth rate varies little for a wide range of angles
 and relativistic temperatures for $k_B T_b/m_ec^2 > 1$, we maximize over $\theta$
@@ -650,7 +650,7 @@ $k_BT_b/m_ec^2 \ll 1$ to $\Gamma/\Gamma_0 \approx 0.1$ for $k_BT_b/m_ec^2 \gtrsi
 1$.  Note, however, that that beam-plasma growth rate remains competitive with
 the oblique growth rate, i.e., it is not orders of magnitude lower.
 
-In Paper I, we compared the cold plasma growth rates of the oblique and beam-plasma instabilities and noted that the oblique cold growth rate is larger.  While we also noted oblique instability was in the kinetic regime in Paper I, we made no effort to study the regime of instability of the beam-plasma case.  Here we have shown that while the oblique growth rate is kinetic, the beam-plasma rate is marginally reactive.  We have also shown that the kinetic growth rates for both the oblique and beam-plasma instabilities are similar.  As a result, both instabilities (beam-plasma and oblique) have similar growth rates for the case of  pair beams from TeV blazers. 
+In Paper I \ab{[Paper I is nowhere defined]}, we compared the cold plasma growth rates of the oblique and beam-plasma instabilities and noted that the oblique cold growth rate is larger.  While we also noted \ab{that the} oblique instability was in the kinetic regime in Paper I, we made no effort to study the regime of instability of the beam-plasma case.  Here we have shown that while the oblique growth rate is kinetic, the beam-plasma rate is marginally reactive.  We have also shown that the kinetic growth rates for both the oblique and beam-plasma instabilities are similar.  As a result, both instabilities (beam-plasma and oblique) have similar growth rates for the case of  pair beams from TeV blazers. \ab{[Where did we show that the beam-plasma instability is marginally reactive? Does this belong in the conclusions?]}
 
 
 
@@ -694,16 +694,17 @@ In Paper I, we compared the cold plasma growth rates of the oblique and beam-pla
 
 The oblique instability exists in two different regimes, raising the important question: how are the two regimes related to each other. While this question has been studied by many authors in the context of the beam-plasma or two-stream instability \citep[see for instance][]{Melrose86,Boyd},  a clear exposition of how these two regimes are related to each other is lacking.  
 
-To begin let us return to the reactive instability.  For the growth rate of the reactive instability (\ref{eq:growth rate reactive}) to be valid, the velocity dispersion $\rightarrow 0$.   To reach this limit, we demand
+To begin let us return to the reactive instability.  For the growth rate of the reactive instability \ab{in Equation} (\ref{eq:growth rate reactive}) to be valid, the velocity dispersion \ab{must be vanishingly small. Quantitatively, this limit requires \sout{$\rightarrow 0$.   To reach this limit, we demand}}
 \begin{equation}
  \kvec\cdot\Delta \vel \ll \omega - \kvec\cdot\vel_b.
 \end{equation}
 Taking $\kvec$ to be $\omega_{p,t}/\vel_b$, so that the RHS is $\approx \Gamma$, we find
+\ab{[While it is true that $\omega-\omega_{p,t}\approx\Gamma$, this is not fully fleshed out in the main text; rather it is an inline comment in Appendix B.  Thus, this is likely to be a confusing part.  Also, if $\kvec=\omega_{p,t}/\vel_b$ then isn't hte LHS $\Delta v_\parallel/v_b$.]}
 \begin{equation}\label{eq:oblique reactive regime}
  \frac{\Delta v_{\perp}}{\vbeam} \ll \left(\frac{n_b}{\gammabeam n_t}\right)^{1/3}
 %\left(1 - \beta_b^2\cos^2\Psi\right)^{1/3}, 
 \end{equation}
-where we have dropped constant factors of order unity and assumed that $Z_x \sim O(1)$.  Hence, this defines the upper limit on the velocity dispersion of the plasma for the cold-plasma approximation to hold and, hence, the range of validity for the reactive oblique growth rate (\ref{eq:growth rate reactive}).  For $Z_x \ll \gamma^{-2}$, we recover the condition for the relativistic, reactive beam-plasma instability:
+where we have dropped constant factors of order unity and assumed that $Z_x \sim O(1)$.  Hence, this defines the upper limit on the velocity dispersion of the plasma for the cold-plasma approximation to hold and, hence, the range of validity for the reactive oblique growth rate \ab{Equation} (\ref{eq:growth rate reactive}).  For $Z_x \ll \gamma^{-2}$, we recover the condition for the relativistic, reactive beam-plasma instability:
 \begin{equation}\label{eq:bp reactive regime}
 \frac{\Delta v_{\parallel}}{\vbeam} \ll \gammabeam^{-1}\left(\frac{n_b}{n_t}\right)^{1/3}.
 \end{equation}
@@ -723,7 +724,7 @@ Applying these results, we find
 \frac{\Delta v_{\perp}}{\vbeam} &\sim&  \gammabeam^{-1}\sqrt{\frac{k_BT_b}{m_ec^2}},\\
 \frac{\Delta v_{\parallel}}{\vbeam} &\sim& \gammabeam^{-2}\sqrt{\frac{k_BT_b}{m_ec^2}}.
 \end{eqnarray}
-Hence, the conditions for the reactive regime for the oblique mode (eq.~\ref{eq:oblique reactive regime}) and beam-plasma mode (eq.~\ref{eq:bp reactive regime}) can be reduced to 
+Hence, the conditions for the reactive regime for the oblique mode (\ab{\sout{eq.} Equation}~(\ref{eq:oblique reactive regime})) and beam-plasma mode (\ab{\sout{eq.} Equation}~(\ref{eq:bp reactive regime})) can be reduced to 
 \begin{equation}\label{eq:generic reactive regime}
  \displaystyle
 1 \ll \left\{
@@ -734,7 +735,7 @@ Hence, the conditions for the reactive regime for the oblique mode (eq.~\ref{eq:
 \right..
 \end{equation}
 
-We now proceed to study the range of validity for the kinetic growth rate for the beam plasma mode (eq.~\ref{eq:bp kinetic growth rate}) and oblique mode (eq.~\ref{eq:kinetic growth rate}).  Following the argument of \cite{Boyd}, the growth occurs over a range where the distribution function is positive or $\vbeam - \Delta v < \omega/k < \vbeam$.  Hence the bandwidth over which the distribution powers grows is $\Delta \omega \sim k \Delta v$  For the beam plasma case, the growth rate is roughly
+We now proceed to study the range of validity for the kinetic growth rate for the beam plasma mode (\ab{\sout{eq.} Equation}~(\ref{eq:bp kinetic growth rate})) and oblique mode (\ab{\sout{eq.} Equation}~(\ref{eq:kinetic growth rate})).  Following the argument of \cite{Boyd}, the growth occurs over a range where the distribution function is positive or $\vbeam - \Delta v < \omega/k < \vbeam$.  Hence the bandwidth over which the distribution powers grows is $\Delta \omega \sim k \Delta v$  For the beam plasma case, the growth rate is roughly
 \begin{equation}
  \Gamma \sim \frac{n_b}{\gamma^3n_t} \left(\frac{c}{\Delta v_{\parallel}}\right)^{2}.
 \end{equation}
@@ -766,7 +767,7 @@ As discussed in the Introduction, the annihilation of VHEGRs and EBL photons pro
 
 \subsection{Average COM Energy of the \epm\ Beam}\label{sec:temperature}
 
-To find the effective velocity dispersion of the ultrarelativistic \epm\ beam, we must first estimate the average COM energy of the beam.  To do so, we consider the process of photon-photon annihilation.  For a monoenergetic population of VHEGR photons with energy $E_{\rm ph}$, the production rate of \epm\ on EBL photons is
+To find the effective velocity dispersion of the ultrarelativistic \epm\ beam, we must first estimate the average COM energy of the beam.  To do so, we consider the process of photon-photon annihilation.  For a monoenergetic population of VHEGR photons with energy $E_{\rm ph}$, the production rate of \epm\ on EBL photons is \ab{[EBL or ebl?  Should we homogenize the equation subscripts?]}
 \begin{eqnarray}
 \Gamma_{\pm}(E_{\rm ph}) &=& \int \sigma c dn_{\rm ebl} \nonumber \\
 &=& \int \sigma\left(E_{\rm ph}, E_{\rm ebl}\right) c \frac{dn_{\rm ebl}}{dE_{\rm ebl}} dE_{\rm ebl},
@@ -786,13 +787,15 @@ Pair production occurs when $E_e/m_e c^2 \geq 1$.
 
 The second ingredient is the spectra of the EBL, which is not well constrained.  Here we use the constraints from \citet{Ahar_etal:06}, who demonstrated that VHEGR emission from H 2356-309 and 1ES 1101-232 places an upper limit on the EBL that is close to the lower limit of the integrated light from galaxies \citet{Madau+00}. Looking at Figure 1 of \citet{Ahar_etal:06}, we note that the EBL has a flat spectrum, i.e., constant ${dn_{\rm ebl}}/{dE_{\rm ebl}}$ below $1\,\eV$ and a falling spectrum  ${dn_{\rm ebl}}/{dE_{\rm ebl}}\propto E_{\rm ebl}^{-1.5}$ with a spectral index of $\approx 1.5$ above $1\,\eV$ with a rapid cutoff above $10\,\eV$. Thus, we adopt a simplified model:
 \begin{equation}
- \frac{dn_{\rm ebl}}{dE_{\rm ebl}} \propto \left\{ 
-\begin{array}{cl}
-E_{\rm ebl}^0 & E_{\rm ebl} \leq 1\,\eV \\
-E_{\rm ebl}^{-1.5} & 1\,\eV < E_{\rm ebl} \leq 10\,\eV \\
- 0 & E_{\rm ebl} > 10\,\eV 
-\end{array}
-\right.
+  \frac{dn_{\rm ebl}}{dE_{\rm ebl}} \propto %\left\{
+  \begin{cases}
+    %\begin{array}{cl}
+    E_{\rm ebl}^0 & E_{\rm ebl} \leq 1\,\eV \\
+    E_{\rm ebl}^{-1.5} & 1\,\eV < E_{\rm ebl} \leq 10\,\eV \\
+    0 & E_{\rm ebl} > 10\,\eV. 
+    %\end{array}
+  \end{cases}
+  %\right.
 \end{equation}
 
 In Figure \ref{fig:rates}, we plot the differential rate of pair production as a function of the COM energy of the electron (and positron) for a photon energy of $E_{\rm ph} = 0.3$ (dotted line), $1$ (solid line), $3$ (dash-dotted line) and $10\,\TeV$ (dashed line).  We use the COM energy in this case because in the COM frame, the energy of the EBL and TeV photon is the same and is $E_{\rm COM} = \sqrt{E_{\rm ebl}E_{\rm ph}}$ and $\theta \approx \pi - \sqrt{E_{\rm ebl}/E_{\rm ph}} \approx \pi$.  As a result, we can ignore the dependence on $\theta$ on the energy of the electron in the COM frame (eq.[\ref{eq:threshold}]) and set $1-\cos\theta \approx 2$.
