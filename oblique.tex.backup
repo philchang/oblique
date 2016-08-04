@@ -307,7 +307,7 @@ instabilities.
 
 These potential implications of blazar heating rely on an understanding of the linear and nonlinear physics of these plasma instabilities.  Recent work in this area has been inconclusive.  For instance, \citet{Miniati+12} argued that these instabilities are physically irrelevant for the cooling of these pair beams because they would saturate at a very low level due to nonlinear Landau damping (NLD).  However, \citet{Chang+14} performed a detailed calculation of NLD to show that these plasma processes remain dominant.  In addition, \citet{Sironi+14} performed particle-in-cell simulations of these plasma processes and argued that these processes saturate at a very low level.  It is unclear, however, if the conclusions of their work is applicable to the parameter regime of blazar heating.
 
-To this end, a full nonlinear study is called for.  We begin this task in this initial work where we study the distribution function of the $\epm$ pairs that are produced from VHEGR-EBL photon annihilation.  We study the evolution of a distribution function under Lorentz transformations to develop an analytic understanding of how the perpendicular and parallel velocity dispersions transform under boosts.  Using this understanding, we then develop a simple description of the distribution function of the beam, which we then use to calculate the unstable modes analytically in both the reactive (hydrodynamic) and kinetic regimes.
+\phil{While, a full nonlinear study is required, we focus on the nature of the linear instability in this paper, clarifying its robustness and regimes of applicability.}  We begin by studying the distribution function of the $\epm$ pairs that are produced from VHEGR-EBL photon annihilation.  We study the evolution of a distribution function under Lorentz transformations to develop an analytic understanding of how the perpendicular and parallel velocity dispersions transform under boosts.  Using this understanding, we then develop a simple description of the distribution function of the beam, which we then use to calculate the unstable modes analytically in both the reactive (hydrodynamic) and kinetic regimes.
 
 Here the reactive instability refers to the instability where the entire beam participates in the instability.  In particular, all the beam particles are resonant with the unstable wave on a timescale longer than the growth time of the instability.  The reactive instability is also referred to as the hydrodynamic instability since the instability can be derived from the fluid equations instead of kinetic theory.  On the other hand, in the kinetic regime, only a fraction of the beam particles are resonant with the beam over a the growth time of the instability, which reduces the growth rate compared to the reactive instability for the same beam density and beam Lorentz factor.  We recover the well-known results for the reactive regime for both the beam-plasma and oblique modes.  We also derive the growth rate for these two instabilities in the kinetic regime and delineate the range of applicability for both the reactive and kinetic cases and apply these results for ultrarelativistic \epm\ pair beams. 
 
@@ -367,14 +367,14 @@ where $K_2$ is the 2nd order modified Bessel function and $T_b$ is the comoving 
 
 The Maxwell-J{\"u}ttner distribution leads to an anisotropic velocity spread parallel and perpendicular to the beam's direction.  In Appendix \ref{sec:lorentz}, we estimate how the parallel and perpendicular velocity spreads scale.  The relevant results are: 
 \begin{equation}\label{eq:perp dispersion}
-\frac{\Delta v_{\perp}^2}{c^2} \approx \frac {k_B T_b}{\gammabeam^2 m_e c^2 },
+\frac{\Delta v_{\perp}^2}{c^2} \approx \frac {2 k_B T_b}{\gammabeam^2 m_e c^2 },
 \end{equation}
 and 
 \begin{equation}\label{eq:parallel dispersion}
 \frac{\Delta v_{\parallel}^2}{c^2} \approx \frac {k_B T_b}{\gammabeam^4 m_e c^2 },
 \end{equation}
 where $T$ is measured in the COM frame of the beam.  
-These simple scalings of the perpendicular velocity dispersion and parallel velocity dispersions can be understood as a results of time dilation between two frames that are boosted relative to each other, giving one factor of $\gamma^{-1}$. The coordinates perpendicular to the boost axis remain invariant while the axis along the boost suffers from length contraction and gives an extra scaling of $\gamma^{-1}$ for the parallel case.  In any case, an ultrarelativistic beam has a small velocity spread is both the parallel and perpendicular directions by factors of $\gamma^{-2}$ and $\gamma^{-1}$, respectively.  These velocity dispersions will be important in delineating the regime of instability in \S~\ref{sec:transition}. 
+These simple scalings of the perpendicular velocity dispersion and parallel velocity dispersions can be understood as a results of time dilation between two frames that are boosted relative to each other, giving one factor of $\gamma^{-1}$. The coordinates perpendicular to the boost axis remain invariant while the axis along the boost suffers from length contraction and gives an extra scaling of $\gamma^{-1}$ for the parallel case.  In any case, an ultrarelativistic beam has a small velocity spread in both the parallel and perpendicular directions by factors of $\gamma^{-2}$ and $\gamma^{-1}$, respectively.  These velocity dispersions will be important in delineating the regime of instability in \S~\ref{sec:transition}. 
 
 
 %The transformation properties of the drifting Maxwell-J{\"u}ttner distribution coupled with the Lorentz invariance of the distribution function (as discussed in Appendix~\ref{sec:lorentz}) demonstrates that the drifting Maxwell-J{\"u}ttner distribution is the correct description of a boosted isotropic Maxwellian (relativistic or otherwise).
@@ -472,7 +472,7 @@ Here it is useful to work within the electrostatic approximation ($\kvec \times 
 \end{equation}
 where $\delta\rho = \sum_s q_s\int \delta f_s \,d^3\!p$ is the perturbed charge density. 
 By adopting the electrostatic approximation, we have explicitly ignored electromagnetic modes.  This would preclude, for example, the Weibel instability.
-In addition, the electromagnetic terms would introduce corrections to the physics that are not necessarily small in the limit of relativistic particles, i.e., $v/c \rightarrow 1$.  However, we make this approximation for two reasons.  First, a complete calculation of the unstable modes has already been carried out by \citet{Bret-Grem-Beni:10}, who showed that the electrostatic approximation is in excellent agreement with a full calculation (modulo the Weibel instability).  Second, the electrostatic approximation is much simpler than a full calculation and allows us to analytically calculate the unstable growth rates, while permitting a clear exposition of the relevant physics. 
+In addition, the electromagnetic terms would introduce corrections to the physics that are not necessarily small in the limit of relativistic particles, i.e., $v/c \rightarrow 1$.  However, we make this approximation for two reasons.  First, a complete calculation of the unstable modes has already been carried out by \citet{Bret-Grem-Beni:10}, who showed that the oblique mode is mainly electrostatic (modulo the Weibel instability)\phil{so that a electrostatic approximation to the full dispersion relation should recover the essential physics}.  Second, the electrostatic approximation is much simpler than a full calculation and allows us to analytically calculate the unstable growth rates, while permitting a clear exposition of the relevant physics. 
 
 We now adopt perturbations of the form $\delta \sim \exp\left(i \kvec\cdot\rvec - i \omega t\right)$ and without loss of generality assume that $\kvec = (k_x, 0, k_z)$, where $k_z$ is along the beam direction.  Linearizing the Vlasov-Maxwell equations then leads to the dispersion relation:
 %\begin{equation}\label{eq:dispersion relation}
@@ -529,7 +529,7 @@ Taking the limit of Equation (\ref{eq:distribution function beam}) as $k_BT_t  \
 \end{equation}
 For $k_x = 0$, we recover the same beam-plasma instability which was described in the Appendix of BCP12.  
 
-The solution to Equation (\ref{eq:dispersion relation reactive}) is given in Appendix \ref{sec:solution reactive} where we show that the associated growth rate (eq.~\ref{eq:growth rate reactive appendix}) is 
+The solution to Equation (\ref{eq:dispersion relation reactive}) is given in Appendix \ref{sec:solution reactive} where we show that the associated growth rate (Equation (\ref{eq:growth rate reactive appendix})) is 
 \begin{equation}\label{eq:growth rate reactive}
  \Gamma = \frac{\sqrt{3}}{2^{4/3}}\left(\frac{n_b}{n_t}\right)^{1/3}\left(\frac{\gamma^2 Z_x^2 + 1}{Z_x^2 + 1}\right)^{1/3}\frac{\omega_{p,t}}{\gamma},
 \end{equation}
@@ -599,10 +599,10 @@ We discuss the solution to Equation (\ref{eq:dispersion kinetic}) in Appendix \r
 \exp(-\cG'\mu),\label{eq:kinetic growth rate}
 \end{aligned}
 \end{equation}
-where $\mu = m_e c^2/k_B T_b$, $\gph = \left(1 - \vph^2/c^2\right)^{-1/2}$, $\vph = \omega/k$ is the phase velocity of the wave, $v_{b,z'}$ is the velocity of the beam oriented along the wavevector, $v_{b,x'}$ is the velocity of the beam perpendicular to the wavevector, $\gamma_w = \left(1 - w^2/c^2\right)^{-1/2}$, $w = \gamma_{\rm ph}^{-1}v_{b,x'}/(1 - v_{b,z'}v_{\rm ph}/c^2)$ is the beam velocity transverse to the wavevector in a frame that is comoving with wave at its phase velocity, and $\cG'$ is the Lorentz factor of a beam particle in a frame that comoving with wave at the phase velocity and the transverse (to the wavevector) beam bulk velocity \ab{[While this is true, I think $\cG'$ is a little different -- it relates to the transverse boosted frame.]}\phil{[Hopefully, this captures it.]}, and $\Gamma_0 \equiv \omega_p \gammabeam (n_b/n_t) (m_e v_B^2/k_B T_b)$ is the typical maximum growth rate.  This specializes to the beam-plasma growth rate if we take $v_{b,x'} = 0$, which gives:
+where $\mu = m_e c^2/k_B T_b$, $\gph = \left(1 - \vph^2/c^2\right)^{-1/2}$, $\vph = \omega/k$ is the phase velocity of the wave, $v_{b,z'}$ is the velocity of the beam oriented along the wavevector, $v_{b,x'}$ is the velocity of the beam perpendicular to the wavevector, $\gamma_w = \left(1 - w^2/c^2\right)^{-1/2}$, $w = \gamma_{\rm ph}^{-1}v_{b,x'}/(1 - v_{b,z'}v_{\rm ph}/c^2)$ is the beam velocity transverse to the wavevector in a frame that is comoving with the wave at its phase velocity, and $\cG'$ is the Lorentz factor of a beam particle in a frame that is comoving with the wave at the phase velocity and the transverse (to the wavevector) beam bulk velocity \ab{[While this is true, I think $\cG'$ is a little different -- it relates to the transverse boosted frame.]}\phil{[Hopefully, this captures it.]}, and $\Gamma_0 \equiv \omega_p \gammabeam (n_b/n_t) (m_e v_B^2/k_B T_b)$ is the typical maximum growth rate.  This specializes to the beam-plasma growth rate if we take $v_{b,x'} = 0$, which gives:
 \begin{equation}
 \Gamma_{\rm bp} \simeq - \Gamma_0
-\frac{\pi \gamma_w^2 \gph^3 m (\vph-v_{b,z'})}{4 \gammabeam \mu K_2(\mu) \cG'^3}
+\frac{\pi \gamma_w^2 \gph^3 m_e (\vph-v_{b,z'})}{4 \gammabeam \mu K_2(\mu) \cG'^3}
 \left( \cG'^2\mu^2 + 2\cG'\mu + 2 \right) 
 \exp(-\cG'\mu),\label{eq:bp kinetic growth rate}
 \end{equation}
@@ -618,10 +618,10 @@ where $\mu = m_e c^2/k_B T_b$, $\gph = \left(1 - \vph^2/c^2\right)^{-1/2}$, $\vp
 In Figure \ref{fig:ObliqueGMZ}, we plot the growth rate as a function of
 $\sin\theta$, where $\cos\theta = \hat{\kvec}\cdot\hat{\vel}$, i.e., the angle between the
 beam and the wavevector, and $k_BT_b/m_e c^2$.  Here, it is clear that the growth
-rate reaches it maximum value $\sin\theta \gtrsim1/\gammabeam$, i.e., at an oblique angle.  Note that as $\sin\theta \rightarrow 0$, we recover the beam-plasma instability.  Moreover the maximum growth rates vary little and are
-robust for a broad range of angles between the wavevector and the beam direction.  It is clear from this plots that for nearly any combination of wavevector orientation and beam temperature that there exists a broad spectrum of modes that are unstable. 
+rate reaches its maximum value $\sin\theta \gtrsim1/\gammabeam$, i.e., at an oblique angle.  Note that as $\sin\theta \rightarrow 0$, we recover the beam-plasma instability.  Moreover the maximum growth rates vary little and are
+robust for a broad range of angles between the wavevector and the beam direction.  It is clear from this plot that for nearly any combination of wavevector orientation and beam temperature that there exists a broad spectrum of modes that are unstable. 
 
-This does not imply that any individual mode, i.e., a mode with a fixed wavevector, will grow robustly.  Any individual mode only grows when the phase velcocity of the mode in the direction of the beam are in resonance and this resonant width is narrow.  However, the growth is robust as for any for any combination of wavevector orientation and beam temperature, there exists some mode that will grow at the maximum rate. 
+This does not imply that any individual mode, i.e., a mode with a fixed wavevector, will grow robustly.  Any individual mode only grows when the phase velcocity of the mode in the direction of the beam are in resonance and this resonant width is narrow.  However, the growth is robust as for any combination of wavevector orientation and beam temperature, there exists some mode that will grow at the maximum rate. 
 
 Because there is little variation in the maximal oblique growth rate as a wavevector orientation, we plot the maximum growth rate as a function of $T_b$
 and $\gammabeam - 1$ in Figure \ref{fig:OGgen}.  Here for relativistic beams, the maximum growth rate varies
@@ -702,7 +702,7 @@ the oblique growth rate, i.e., it is not orders of magnitude lower.
 
 \subsection{The Transition between the Kinetic and Hydrodynamic Instability}\label{sec:transition}
 
-The oblique instability exists in two different regimes, raising the important question: how are the two regimes related to each other. While this question has been studied by many authors in the context of the beam-plasma or two-stream instability \citep[see for instance][]{Melrose86,Boyd},  a clear exposition of how these two regimes are related to each other is lacking.  
+The oblique instability exists in two different regimes, raising the important question: how are the two regimes related to each other. While this question has been studied by many authors in the context of the beam-plasma or two-stream instability \citep[see for instance][]{Melrose86,Boyd}, a clear exposition of how these two regimes are related to each other \phil{for the oblique instability} is lacking.  
 
 To begin let us return to the reactive instability.  For the growth rate of the reactive instability in Equation (\ref{eq:growth rate reactive}) to be valid, the velocity dispersion must be vanishingly small. In particular, over the growth time of the unstable wave, the beam particles may not be spread significantly, i.e., their spread is much smaller than one wavelength.  Quantitatively, this demands
 \begin{equation}
@@ -720,7 +720,7 @@ where we have dropped constant factors of order unity and assumed that $Z_x \sim
 \end{equation}
 
 
-Applying the scaling of the perpendicular (equation [\ref{eq:perp dispersion}]) and parallel velocity dispersions (equation [\ref{eq:parallel dispersion}]) to these results and assuming $v_b \approx c$, we find
+Applying the scaling of the perpendicular (Equation (\ref{eq:perp dispersion})) and parallel velocity dispersions (Equation (\ref{eq:parallel dispersion})) to these results and assuming $v_b \approx c$, we find
 \begin{eqnarray}
 \frac{\Delta v_{\perp}}{\vbeam} &\sim&  \gammabeam^{-1}\sqrt{\frac{k_BT_b}{m_ec^2}},\\
 \frac{\Delta v_{\parallel}}{\vbeam} &\sim& \gammabeam^{-2}\sqrt{\frac{k_BT_b}{m_ec^2}}.
@@ -799,7 +799,7 @@ The second ingredient is the spectra of the EBL, which is not well constrained. 
   %\right.
 \end{equation}
 
-In Figure \ref{fig:rates}, we plot the differential rate of pair production as a function of the COM energy of the electron (and positron) for a photon energy of $E_{\rm ph} = 0.3$ (dotted line), $1$ (solid line), $3$ (dash-dotted line) and $10\,\TeV$ (dashed line).  We use the COM energy in this case because in the COM frame, the energy of the EBL and TeV photon is the same and is $E_{\rm COM} = \sqrt{E_{\rm EBL}E_{\rm ph}}$ and $\theta \approx \pi - \sqrt{E_{\rm EBL}/E_{\rm ph}} \approx \pi$; in the COM frame the VHEGR and EBL photon have the same energy but opposite momentum.  As a result, we can ignore the dependence on $\theta$ on the energy of the electron in the COM frame (eq.[\ref{eq:threshold}]) and set $1-\cos\theta \approx 2$. \ep{[Not sure I understand this. The $E_{\rm EBL}, E_{\rm ph}$ we get from the spectra are not in the COM frame. So how do we get rid of $\theta$? Or is this an additional assumption here that head-on collisions will dominate pair production? Was that assumption used in Fig. 4?]}\phil{[Assumption i $E_{\rm EBL} \ll E_{\rm ph}$ and so in the COM frame the photons have equal energy, but opposite momentum.]}
+In Figure \ref{fig:rates}, we plot the differential rate of pair production as a function of the COM energy of the electron (and positron) for a photon energy of $E_{\rm ph} = 0.3$ (dotted line), $1$ (solid line), $3$ (dash-dotted line) and $10\,\TeV$ (dashed line).  We use the COM energy in this case because in the COM frame, the energy of the EBL and TeV photon is the same and is $E_{\rm COM} = \sqrt{E_{\rm EBL}E_{\rm ph}}$ and $\theta \approx \pi - \sqrt{E_{\rm EBL}/E_{\rm ph}} \approx \pi$; in the COM frame the VHEGR and EBL photon have the same energy but opposite momentum.  As a result, we can ignore the dependence on $\theta$ on the energy of the electron in the COM frame (Equation (\ref{eq:threshold})) and set $1-\cos\theta \approx 2$. \ep{[Not sure I understand this. The $E_{\rm EBL}, E_{\rm ph}$ we get from the spectra are not in the COM frame. So how do we get rid of $\theta$? Or is this an additional assumption here that head-on collisions will dominate pair production? Was that assumption used in Fig. 4?]}\phil{[Assumption i $E_{\rm EBL} \ll E_{\rm ph}$ and so in the COM frame the photons have equal energy, but opposite momentum.]}
 
 We note several features of this Figure.  First the distribution of COM energy for the electrons (and positrons) depends on the initial photon energy. This is because different energy photons probe different regimes of the EBL spectra.  Due to the rapid cutoff in the EBL above $10\,\eV$, lower energy VHEGRs produce colder beams.  This is seen in the average COM energies of the produced electrons, which are respectively, $E_e/m_e c^2 \approx 1.3, 1.6, 2$ and $3$ for $E_{\rm ph} = 0.3, 1, 3$ and $10\,\TeV$. Hence we expect that these pairs are in the sub-relativistic to mildly-relativistic regimes in their COM frame.
 Second, the effect of the EBL spectra on the distribution of electron COM energies is also seen in the breaks in the distribution.  For instance, the cutoff in $d\Gamma_{\pm}/dE_{\rm EBL}$ above $E_e/m_e c^2 \approx 3$ for $E_{\rm ph} = 1\,\TeV$ is due to the cutoff in the EBL spectra above $10\,\eV$.  Additionally, the break in $d\Gamma_{\pm}/dE_{\rm EBL}$ at the same position for $E_{\rm ph} = 10\,\TeV$ is due to change in the EBL spectra at $1\,\eV$.  
@@ -839,7 +839,7 @@ where $L_E$ is the isotropic luminosity \phil{per unit energy}\ep{[What exactly 
 \end{equation}
 where  $\zeta=4.5$ for $z<1$ and $\zeta=0$ for $z\ge1$ \citep{Knei_etal:04, Nero-Semi:09}.
 
-In Section \ref{sec:transition}, we derived the controlling parameter that delineates the reactive (eq.~\ref{eq:generic reactive regime}) and kinetic regimes (eq.~\ref{eq:generic kinetic regime}) by comparing the frequency spread of resonant waves, $\Delta\omega\sim k\Delta v$, with the growth rate, $\Gamma$.  Applying these conditions (eqns.~\ref{eq:generic reactive regime} and \ref{eq:generic kinetic regime}) to the ultrarelativistic $\epm$ pair beams of interest, we find for the controlling parameter: 
+In Section \ref{sec:transition}, we derived the controlling parameter that delineates the reactive (Equation (\ref{eq:generic reactive regime})) and kinetic regimes (Equation (\ref{eq:generic kinetic regime})) by comparing the frequency spread of resonant waves, $\Delta\omega\sim k\Delta v$, with the growth rate, $\Gamma$.  Applying these conditions (eqns.~\ref{eq:generic reactive regime} and \ref{eq:generic kinetic regime}) to the ultrarelativistic $\epm$ pair beams of interest, we find for the controlling parameter: 
 \begin{eqnarray}
 \frac{\gammabeam^{2/3}}{\sqrt{k_BT_b/m_e c^2}}\left(\frac{n_b}{\nIGM}\right)^{1/3} &=& 3.2\times 10^{-2} \frac{\gamma_6^{2/3}}{\sqrt{k_BT_b/m_e c^2}}\left(\frac{1+z}{2}\right)^{\zeta-7/3}\nonumber\\
 &&\left(\frac{E L_E}{10^{45}\erg\,\s^{-1}}\right)^{1/3}
@@ -851,7 +851,7 @@ and
 &&\left(\frac{E L_E}{10^{45}\erg\,\s^{-1}}\right)^{1/3}
 \left(\frac{E}{\TeV}\right)^{1/3}\label{eq:beam bp condition}
 \end{eqnarray}
-\ep{[The numerical factors here depend on what exactly has been done for Eq. (37).]} where $\gamma_6 = \gamma/10^6$. 
+\ep{[The numerical factors here depend on what exactly has been done for Eq. (37).]}\phil{[Numerical factors are correct.]} where $\gamma_6 = \gamma/10^6$. 
 We see from our reactive (\ref{eq:generic reactive regime}) and kinetic (\ref{eq:generic kinetic regime}) conditions, that the oblique instability always exists in the kinetic regime, but the beam plasma instability is in the reactive regime at $z\gtrsim 1$ or for sufficiently cold beams $k_BT_b/m_e c^2 \lesssim 0.5$, which occurs for $E_{\rm ph} \sim 1\,\TeV$ and for large $\gamma$, which occurs for $E_{\rm ph} \sim 10\,\TeV$ at $z=0$.  
 
 
@@ -953,9 +953,9 @@ while the perpendicular component becomes
 
 It is easier to look at the perpendicular component first.  It is also more intuitive to study how velocity dispersions scale between the center of mass frame and the lab from for non-relativistic center of mass velocity dispersion.  Hence, for $\left|\betaCM\right| \ll 1$ \ep{[This is not the case for the distributions shown in Fig. 4. Why is this good enough?]}\phil{[velocity dispersions are easiest for non-relativistic motion in COM frame.]}, Equation (\ref{eq:dbetabarLABperp}) becomes to lowest order in $\betaCM$ 
 \begin{equation}
- \dbetabarLABperp \approx \frac{\dbetabarCMperp}{\gammabeam^2} \approx \frac {k_B T_b}{\gammabeam^2 m_e c^2 }.
+ \dbetabarLABperp \approx \frac{\dbetabarCMperp}{\gammabeam^2} \approx \frac {2 k_B T_b}{\gammabeam^2 m_e c^2 }.
 \end{equation}
-\ep{[Factor 2 seems missing since perpenticular component has 2 degrees of freedom]}\phil{[Factor of two is absorb in the definition of the average (A8)]} This simple scaling of the perpendicular velocity dispersion can be understood as a scaling with time between two frames boosted relative to each other, where the coordinates perpendicular to the boost axis remain invariant.  This result is also in line with the transformation of temperature as $T\rightarrow T/\gamma$ under a boost, i.e., $mv^2 \sim kT$ -- two factors of $1/\gamma$ from the perpendicular velocity dispersion is countered by one factor of $\gamma$ from the mass.  Let us now consider the parallel component (eq.(\ref{eq:dbetabarLABpara})) again to lowest order in $\betaCM$: 
+\ep{[Factor 2 seems missing since perpenticular component has 2 degrees of freedom]}\phil{[Factor of 2]} This simple scaling of the perpendicular velocity dispersion can be understood as a scaling with time between two frames boosted relative to each other, where the coordinates perpendicular to the boost axis remain invariant.  This result is also in line with the transformation of temperature as $T\rightarrow T/\gamma$ under a boost, i.e., $mv^2 \sim kT$ -- two factors of $1/\gamma$ from the perpendicular velocity dispersion is countered by one factor of $\gamma$ from the mass.  Let us now consider the parallel component (Equation (\ref{eq:dbetabarLABpara})) again to lowest order in $\betaCM$: 
 \begin{equation}
  \dbetabarLABpara \approx \frac{\dbetabarCMpara}{\gammabeam^{4}}  \approx \frac {k_B T_b}{\gammabeam^4 m_e c^2 },
 \end{equation}
@@ -1000,7 +1000,7 @@ where the second term is zero because it is odd, $\lambda_D^2 = k_B T_t/m_e \ome
 \omega \approx \omega_{p,t}\left(1 + \frac 3 2 k^2\lambda_{D,t}^2\right).
 \end{equation}
 
-To compute the contribution from the beam term, we will reorient our coordinate system and define the $z'$-axis along the wavevector, $\kvec$.  In this case we have the beam taking on a non-$z'$ component,  $\vel_b = v_{bz'}\zphat+\ep{v_{bx'}}\xphat$.   
+To compute the contribution from the beam term, we will reorient our coordinate system and define the $z'$-axis along the wavevector, $\kvec$.  In this case we have the beam taking on a non-$z'$ component,  $\vel_b = v_{bz'}\zphat+v_{bx'}\xphat$.   
 This frame moves with a velocity, $\vel_{\rm ph} = \omega_k/k \zphat$.  With an eye toward computing the residue that will appear in equation (\ref{eq:dispersion kinetic}), we define $p_{z'}=\gz\vz E_\perp$, $E=\gz E_\perp$, and
 $E_\perp=\sqrt{m^2+p_\perp^2}$ is the perpendicular energy.  In this case, we can rewrite the beam distribution function as
 \begin{eqnarray}
