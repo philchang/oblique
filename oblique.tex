@@ -344,7 +344,7 @@ pair beam that emerges from this process.
 
 \subsection{Distribution Function of the Pair Beam}
 
-In the COM frame of the beam, we assume that the distribution function is isotropic \ep{[a brief explanation why this is OK might be useful]}, such that $f=f(E)$ is just a function of energy.   This equilibrium energy distribution of a relativistic thermal plasma gas is
+In the COM frame of the beam, we assume that the distribution function is isotropic, such that $f=f(E)$ is just a function of energy.   This equilibrium energy distribution of a relativistic thermal plasma gas is
 \begin{equation}\label{eq:relativistic maxwellian}
 f\propto \exp\left(-\frac E {k_BT}\right),
 \end{equation}
@@ -965,7 +965,21 @@ This scaling of the parallel component of the velocity dispersion has important 
 
 \section{Solution for the Reactive Regime}\label{sec:solution reactive}
 
-This can be rewritten as 
+
+\phil{We begin with the dispersion relation (Equation (\ref{eq:dispersion relation by parts})), which is
+\begin{equation}
+  \epsilon = 
+  1 - \sum_s \frac{m_e\omega_{p,s}^2}{k^2} \int F_s\kvec \cdot \gradp\frac{1}{\omega - \kvec\cdot\vel} d^3p =
+  1 - \sum_s \frac{\omega_{p,s}^2}{k^2c^2}\int F_s \frac{k^2c^2 - (\kvec\cdot\vel)^2}{\gamma(\omega - \kvec\cdot\vel)^2} d^3p 
+  =
+  0\,.
+  \label{eq:dispersion relation appendix}
+\end{equation}
+We then take the limit of Equation (\ref{eq:distribution function beam}) as $k_BT_t  \rightarrow 0$, which yields a $\delta$ function. For the target plasma, $v_0=0$, and for a beam plasma $v_0=\vbeam$.  This leads to equation (\ref{eq:dispersion relation reactive}), which we reproduce below.  
+\begin{equation}\label{eq:dispersion appendix}
+ 1 - \frac{\omega_{p,t}^2}{\omega^2} - \frac{\omega_{p,b}^2}{\gamma^3(\omega-k_z \vbeam)^2}\frac{\gamma^2 k_x^2 + k_z^2}{k_x^2 + k_z^2} = 0.
+\end{equation}
+Equation (\ref{eq:dispersion appendix}) }can be rewritten as 
 \begin{eqnarray}\label{eq:dispersion reactive}
  \left(\omega^2 - \omega_{p,t}^2\right)\left[\left(\omega - k_z \vbeam\right)^2 - \frac{\omega_{p,b}^2}{\gamma^3}\frac{\gamma^2 k_x^2 + k_z^2}{k_x^2 + k_z^2}\right] = \frac{\omega_{p,t}^2\omega_{p,b}^2}{\gamma^3}\frac{\gamma^2 k_x^2 + k_z^2}{k_x^2 + k_z^2},
 \end{eqnarray}
@@ -987,7 +1001,7 @@ Equation (\ref{eq:approximate dispersion reactive}) gives three solutions for $\
 
 \section{Solution for the Kinetic Regime}\label{sec:solution kinetic}
 
-As the target plasma is nonrelativistic, we can take $v\ll c$ and $\gamma \rightarrow 1$.  Expanding the denominator in powers of $v$, we find\footnote{An alert reader will note that Lorentz factor, $\gamma$, and the second term in the numerator both contribute to the expansion in powers of $v$ at second order.  These contributions are the result of the minor deviations from the Lorentz factor of the nonrelativistic electrons and the subtle different between momentum and velocity at order $v^2/c^2$.  These corrections correct the plasma frequency, $\omega_p$ at order $v^2/c^2$, but do not change the physics of the oscillations, i.e., they are independent of the wavevector.  Hence, we ignore these effects while keeping the $O(v^2/c^2)$ correction that determine the Langmuir wave because these corrections depend on the wavevector.}
+As the target plasma is nonrelativistic, we can take $v\ll c$ and $\gamma \rightarrow 1$.  Expanding the denominator \phil{for the target plasma in equation (\ref{eq:dispersion relation appendix})} in powers of $v$, we find\footnote{An alert reader will note that Lorentz factor, $\gamma$, and the second term in the numerator both contribute to the expansion in powers of $v$ at second order.  These contributions are the result of the minor deviations from the Lorentz factor of the nonrelativistic electrons and the subtle different between momentum and velocity at order $v^2/c^2$.  These corrections correct the plasma frequency, $\omega_p$ at order $v^2/c^2$, but do not change the physics of the oscillations, i.e., they are independent of the wavevector.  Hence, we ignore these effects while keeping the $O(v^2/c^2)$ correction that determine the Langmuir wave because these corrections depend on the wavevector.}
 \begin{eqnarray}
  \int F_t\frac{k^2c^2 - (\kvec\cdot\vel)^2}{\gamma(\omega - \kvec\cdot\vel)^2} d^3p &\approx& k^2c^2
  \int F_t \left(\frac {1}{\omega^2} + \frac {2\kvec\cdot\vel}{\omega^3} + \frac{3 (\kvec\cdot\vel)^2}{\omega^4}\right) d^3p \nonumber \\
