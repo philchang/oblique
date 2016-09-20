@@ -1,0 +1,44 @@
+
+REVIEWER:
+The authors investigate the linear kinetic instability of ultrarelativistic pairs against the excitation of oblique electrostatic oscillations in the unmagnetized
+intergalactic medium, where the ultrarelativistic pairs result from the annihilation of TeV photons from extragalactic blazars with the extragactic backgound light (EBL). They demonstrate that the linear growth times of the instability are substantially shorter than the inverse Compton (with the cosmic microwave background radiation (CMB)) energy loss time of the pairs, and conclude from that that most of the kinetic energy of the pairs is dissipated into the electrostatic turbulence.
+
+In the literature only the linear kinetic instability for electrostatic oscillations with wave vectors parallel to the beam direction has been calculated (Schlickeiser, Krakau and Supsar 2013, ApJ 777, 49), whereas oblique electrostatic oscillations were only treated in the reactive limit (Schlickeiser, Ibscher and Supsar 2012, ApJ
+758, 102). Therefore the analysis of the authors in principle could be a valuable addition to the literature. However, for two reasons, detailed below, the manuscript in its present form is not acceptable for publication.
+
+RESPONSE: 
+
+We thank the referee for a thoughtful report.  
+
+REVIEWER:
+
+1) The authors calculated the linear growth rate by adopting the inappropriate relativistically drifting Maxwellian distribition function (Eqs. (1) and (3)) for the pair
+production spectrum from the double photon annihilation process. But this Maxwellian distribution function does not result from the double photon annihilation process. The correct pair production spectrum has been calculated before in Eq. (154) of Schlickeiser et al. (2012, ApJ 758, 101) -- see also the approximations (3) and (5) in Schlickeiser, Krakau and Supsar (2013, ApJ 777, 49) -- and by Aharonian, Atoyan and Nagapetian (1983, Astrofizika (Astrophysics), 19, 1), depending on the incoming TeV gamma-ray enery spectrum and the EBL target photon spectrum. This results in a power law energy spectrum with a strong exponential cut-off at small electron energies, which is substantially different from a drifting Maxwellian. It is necessary for the authors to redo their linear instability analysis with the correct pair production energy spectrum.
+
+RESPONSE:
+
+We agree that a drifting Maxwellian is not the correct distribution function to model a pair beam. But we adopt it because:
+1. It is simpler and allows us to calculate the kinetic instability exactly in the electrostatic approximation.
+2. It has all the features that allows us the elucidate the physics (continuous spread of momenta in the parallel and perpendicular directions)
+3. It is relatively not ad-hoc — by this we mean that it is a distribution that can be realized in physical situation.  
+
+We have added an additional paragraph to the end of section 2.1 elucidating this choice and saying that a correct calculation involves using a distribution function calculated from the \gamma\gamma process such as the ones mentioned by the referee.  We also note that the analytic techniques that we used for calculating the drifting Maxwellian may be useful in the full calculation.
+
+
+REVIEWER:
+
+2) Claiming that most of the kinetic energy of the pairs is dissipated into electrostatic turbulence on the ground, that the minimum linear instability groth time is shorter
+than the inverse Compton energy loss time, is insufficient and not correct. The backreaction of the electrostatic turbulence on the unstable pair distribution function will ultimately lead to a plateaued distribution function in the original beam direction (see Menzler and Schlickeiser 2015, MNRAS 448, 3405) on a time scale much longer than the minimum linear growth time. The pairs are so redistributed in energy but still able to inverse Compton scatter the CMB photons. The authors should address this redistribution time scale and compare it with the inverse Compton energy loss time scale.
+
+RESPONSE:
+
+We completely agree with the referee that this statement is not correct and while we do not make this claim in this paper, we can understand how the discussion in the introduction can give this impression.  We were aware of these subtleties and focus just on the linear physics in this paper avoid any quantitative comparison with the ICC timescales.  We merely confirmed the linear results uses in earlier papers, clarified the physics, especially in regard to the broad support of modes that are unstable, and address the transition between the kinetic and reactive mode for the oblique instability.  
+
+To help clarify this discussion, we have included in the 4th paragraph of the introduction:
+
+We note that this effectiveness of this plasma instabilities is complicated by nonlinear effects, which we briefly discuss below.
+
+We have also added a paragraph below the sixth paragraph 
+
+
+
