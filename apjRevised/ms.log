@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  19 SEP 2016 23:44
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013) (format=pdflatex 2013.5.30)  21 SEP 2016 00:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -174,6 +174,18 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
+(/usr/local/texlive/2013/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box34
+\UL@hyphenbox=\box35
+\UL@skip=\skip49
+\UL@hook=\toks23
+\UL@height=\dimen124
+\UL@pe=\count109
+\UL@pixel=\dimen125
+\ULC@box=\box36
+Package: ulem 2012/05/18
+\ULdepth=\dimen126
+)
 
 LaTeX Warning: Unused global option(s):
     [usenatbib,iop,apj,numberedappendix].
@@ -181,31 +193,31 @@ LaTeX Warning: Unused global option(s):
 (./ms.aux)
 \openout1 = `ms.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 161.
-LaTeX Font Info:    ... okay on input line 161.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 162.
+LaTeX Font Info:    ... okay on input line 162.
  (/usr/local/texlive/2013/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
-\scratchdimen=\dimen124
-\scratchbox=\box34
-\nofMPsegments=\count110
-\nofMParguments=\count111
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count112
-\MPscratchDim=\dimen125
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count110
+\scratchdimen=\dimen127
+\scratchbox=\box37
+\nofMPsegments=\count111
+\nofMParguments=\count112
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count113
+\MPscratchDim=\dimen128
+\MPnumerator=\count114
+\makeMPintoPDFobject=\count115
+\everyMPtoPDFconversion=\toks25
 ) (/usr/local/texlive/2013/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -255,20 +267,22 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 AAS manuscript substyle, v5.2 <12 Dec 2003>.
-LaTeX Font Info:    Try loading font information for U+lasy on input line 189.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 190.
 (/usr/local/texlive/2013/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 189.
+LaTeX Font Info:    Try loading font information for U+msa on input line 190.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 189.
+LaTeX Font Info:    Try loading font information for U+msb on input line 190.
 
 (/usr/local/texlive/2013/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+Missing character: There is no ± in font cmbx12!
+ [1
 
 {/usr/local/texlive/2013/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2
 
@@ -277,41 +291,41 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ] [4] [5]
 [6] [7]
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <8> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 291.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 292.
 LaTeX Font Info:    Font shape `U/lasy/b/n' in size <6> not available
-(Font)              Font shape `U/lasy/m/n' tried instead on input line 291.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 302.
+(Font)              Font shape `U/lasy/m/n' tried instead on input line 292.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 303.
 
  (/usr/local/texlive/2013/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 302.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 303.
  [8]
 [9] [10] [11] [12] <f1.pdf, id=53, 578.16pt x 433.62pt>
 File: f1.pdf Graphic file (type pdf)
  <use f1.pdf>
-Package pdftex.def Info: f1.pdf used on input line 413.
+Package pdftex.def Info: f1.pdf used on input line 414.
 (pdftex.def)             Requested size: 234.87749pt x 176.15768pt.
  [13]
 <f2.pdf, id=58, 290.08376pt x 253.94875pt>
 File: f2.pdf Graphic file (type pdf)
  <use f2.pdf>
-Package pdftex.def Info: f2.pdf used on input line 466.
+Package pdftex.def Info: f2.pdf used on input line 467.
 (pdftex.def)             Requested size: 234.87749pt x 205.61986pt.
  [14] [15 <./f1.pdf> <./f2.pdf>] <f3a.pdf, id=125, 290.08376pt x 253.94875pt>
 File: f3a.pdf Graphic file (type pdf)
  <use f3a.pdf>
-Package pdftex.def Info: f3a.pdf used on input line 498.
+Package pdftex.def Info: f3a.pdf used on input line 499.
 (pdftex.def)             Requested size: 234.87749pt x 205.61986pt.
 
 <f3b.pdf, id=126, 290.08376pt x 253.94875pt>
 File: f3b.pdf Graphic file (type pdf)
  <use f3b.pdf>
-Package pdftex.def Info: f3b.pdf used on input line 499.
+Package pdftex.def Info: f3b.pdf used on input line 500.
 (pdftex.def)             Requested size: 234.87749pt x 205.61986pt.
 
-Overfull \hbox (2.61107pt too wide) in paragraph at lines 498--506
+Overfull \hbox (2.61107pt too wide) in paragraph at lines 499--507
 [][] [] 
  []
 
@@ -319,17 +333,17 @@ Overfull \hbox (2.61107pt too wide) in paragraph at lines 498--506
 <f4.pdf, id=210, 530.2019pt x 409.97021pt>
 File: f4.pdf Graphic file (type pdf)
  <use f4.pdf>
-Package pdftex.def Info: f4.pdf used on input line 626.
+Package pdftex.def Info: f4.pdf used on input line 627.
 (pdftex.def)             Requested size: 234.87749pt x 181.61356pt.
  [22] [23 <./f4.pdf>]
 [24] [25] [26] [27]
-Overfull \hbox (90.57011pt too wide) detected at line 750
+Overfull \hbox (90.57011pt too wide) detected at line 751
 [][] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 N[] [] []f[]d[]p[]d[]x[] [] [][] \OT1/c
 mr/m/n/12 = \OML/cmm/m/it/12 N[] [] []f[]d[]p[]d[]x[];
  []
 
 [28] [29] [30] [31] [32]
-Overfull \hbox (120.21414pt too wide) detected at line 909
+Overfull \hbox (120.21414pt too wide) detected at line 910
 [] []
  []
 
@@ -337,13 +351,13 @@ Overfull \hbox (120.21414pt too wide) detected at line 909
 
 ] [36]) [37] (./ms.aux) ) 
 Here is how much of TeX's memory you used:
- 3672 strings out of 493315
- 47354 string characters out of 6137904
- 116788 words of memory out of 5000000
- 7059 multiletter control sequences out of 15000+600000
+ 3752 strings out of 493315
+ 48149 string characters out of 6137904
+ 117875 words of memory out of 5000000
+ 7135 multiletter control sequences out of 15000+600000
  15695 words of font info for 63 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 38i,11n,28p,1307b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,11n,28p,1397b,297s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2013/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmbsy10.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmbx12.pfb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/
@@ -364,7 +378,7 @@ fb></usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
 usr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></u
 sr/local/texlive/2013/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb
 ></usr/local/texlive/2013/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on ms.pdf (37 pages, 1252408 bytes).
+Output written on ms.pdf (37 pages, 1251948 bytes).
 PDF statistics:
  339 PDF objects out of 1000 (max. 8388607)
  183 compressed objects within 2 object streams
