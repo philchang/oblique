@@ -32,7 +32,7 @@ than the inverse Compton energy loss time, is insufficient and not correct. The 
 
 RESPONSE:
 
-We completely agree with the referee that this statement is not correct and while we do not make this claim in this paper, we can understand how the discussion in the introduction can give this impression.  We were aware of these subtleties and focus just on the linear physics in this paper avoid any quantitative comparison with the ICC timescales.  We merely confirmed the linear results uses in earlier papers, clarified the physics, especially in regard to the broad support of modes that are unstable, and address the transition between the kinetic and reactive mode for the oblique instability.  
+We completely agree with the referee that this statement is not correct and while we do not make this claim in this paper, we can understand how the discussion in the introduction can give this impression.  We were aware of these subtleties and focus just on the linear physics in this paper avoid any quantitative comparison with the ICC timescales.  We merely confirmed the linear results used in earlier papers, clarified the physics, especially in regard to the broad support of modes that are unstable, and address the transition between the kinetic and reactive mode for the oblique instability.  
 
 To help clarify this discussion, we have included in the 4th paragraph of the introduction:
 
